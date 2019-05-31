@@ -1,0 +1,58 @@
+
+body{
+    overflow: hidden;
+}
+header{
+    z-index: 10;
+}
+.no-padding{
+    padding-right: 0;
+    padding-left: 0
+}
+
+
+.bg-style {
+    background-image: url(../img/chips.jpg);
+height: 100vh;
+background-attachment: fixed;
+background-size: cover
+}
+
+
+  .profile-bg{
+      z-index: 1;
+height: 100%;
+  }
+
+    @media screen and (max-width: 1199px) {
+       
+    footer{
+        position: relative !important;
+    }
+    .bg-style{
+       height: 100%;
+    }
+    }
+    /* @media screen and (max-width: 991px) {
+
+        .top-box-indent {
+            margin-top: 0;}} */
+    @media screen and (max-width: 365px) {
+
+        table{
+            font-size: 0.8rem
+        }}
+        @media screen and (min-height: 1054px) {
+        .bg-style{ 
+            height: 100vh !important; 
+            background-repeat: no-repeat;
+            }
+            }
+@media screen and (max-width: 991px) and (min-width: 568px){
+.bg-style {
+    margin-top: 0px;
+}}
+@media screen and (max-width: 575px){
+.top-box-indent {
+    margin-top: 0;
+}}

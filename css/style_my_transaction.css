@@ -1,0 +1,115 @@
+table.TF th {
+    background-color: #228200 !important;
+    color: white !important;
+}
+
+.bg-pic2 {
+    background-position-y: 101px;
+   
+    background-repeat: no-repeat;
+    background-attachment: fixed;
+    background-position-x: center;
+    z-index: -1;
+    width: 101vw;
+    background-size: cover
+}
+
+.bg-gradient-chess {
+    background: rgb(0, 0, 0);
+    background: linear-gradient(0deg, rgba(0, 0, 0, 1) 0%, rgba(0, 0, 0, 1) 30%, rgba(0, 0, 0, 0.15449929971988796) 69%, rgba(0, 0, 0, 0) 100%), url(../img/chess.jpg);
+    background-position-x: center;
+}
+
+@media screen and (max-width: 991px) and (min-width:768px) {
+    .container {
+        max-width: 980px;
+    }
+
+    table {
+        font-size: 0.7rem !important
+    }
+}
+
+@media screen and (max-width: 767px) {
+    table {
+        padding: 0 !important;
+    }
+
+    .row .col-12 {
+        align-content: center
+    }
+}
+
+
+@media screen and (max-width: 991px) {
+
+    .bg-pic2 {
+        background-attachment: scroll !important;
+        background-size: auto;
+        background-position-y: 0;
+        background-repeat: no-repeat;
+
+    }
+    
+    .inf{
+        min-width: 300px !important
+    }
+    .row .col-12{
+        margin-top: 0 !important
+    }
+}
+@media screen and (max-width: 575px) {
+    .chess, .bg-gradient-chess {
+background-image: none !important;
+background-color: black
+    }
+}
+@media screen and (max-width: 415px) {
+    .row .col-12{
+        padding-left: 0;
+        padding-right: 0 
+    }
+    caption {
+        font-size: 0.6rem !important
+    }
+    div.tot{
+        min-width: 80px !important
+    }
+
+
+    .ldiv{
+        width: 20% !important;
+        vertical-align: middle
+    }
+.div.tot{
+    min-width: 70px !important;
+}
+}
+@media screen and (min-height: 1054px) {
+.bg-pic2{
+height: 100vh;
+}
+}
+@media screen and (max-width: 575px) {
+
+    .top-box-indent {
+        margin-top: 0 !important
+    }
+
+    .bg-img {
+        padding-top: 1rem;
+        background-image: none !important;
+        
+    }
+
+}
+@media screen and (min-height: 1054px) {
+    .container-fluid .chess{
+    height: 80vh !important;
+    }
+    
+    .container-fluid .bg-pic2 {
+    height: 80vh !important;
+}
+    }
+

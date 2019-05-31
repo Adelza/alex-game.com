@@ -1,0 +1,390 @@
+header {
+    z-index: 1000;
+}
+
+footer {
+    z-index: 1101;
+}
+
+.bg-style {
+
+
+    height: 100vh;
+    
+    background-position-x: middle;
+    background-repeat: no-repeat;
+    background-size: cover;
+    position: relative;
+    z-index: 1;
+}
+
+.bg-style::after {
+    visibility: hidden;
+    background: transparent;
+    background: rgb(0, 0, 0);
+    background: rgb(0, 0, 0);
+    background: rgb(0, 0, 0);
+    background: -moz-linear-gradient(0deg, rgba(0, 0, 0, 1) 0%, rgba(0, 0, 0, 1) 65%, rgba(0, 0, 0, 0.31556372549019607) 93%, rgba(0, 0, 0, 0) 100%);
+    background: -webkit-linear-gradient(0deg, rgba(0, 0, 0, 1) 0%, rgba(0, 0, 0, 1) 65%, rgba(0, 0, 0, 0.31556372549019607) 93%, rgba(0, 0, 0, 0) 100%);
+    background: linear-gradient(0deg, rgba(0, 0, 0, 1) 0%, rgba(0, 0, 0, 1) 65%, rgba(0, 0, 0, 0.31556372549019607) 93%, rgba(0, 0, 0, 0) 100%);
+    filter: progid:DXImageTransform.Microsoft.gradient(startColorstr="#000000", endColorstr="#000000", GradientType=1);
+    content: "";
+    display: block;
+    height: 100%;
+    left: 0;
+    position: absolute;
+    top: 220px;
+    width: 100%;
+}
+
+
+.profile-bg {
+    height: 640px;
+    max-height: 100%;
+    background-repeat: no-repeat;
+    background-size: cover;
+    z-index: 1;
+    position: relative;
+
+}
+
+.profile-img {
+    display: block;
+    max-width: 100%;
+    height: auto;
+
+}
+
+.profile-m {
+    margin-left: 2rem;
+    margin-top: 1rem;
+}
+
+.btn-profile {
+    max-width: 100%;
+    width: 14rem;
+    border: 2px;
+    margin-top: 1.5rem
+}
+
+
+.btn-dark-green {
+
+    border: 2px rgb(252, 114, 50);
+    background: rgb(2, 56, 0);
+    background: linear-gradient(214deg, rgba(2, 56, 0, 1) 0%, rgba(51, 196, 0, 1) 100%);
+    color: white;
+    font-weight: 600;
+    transition: 0.5s;
+    background-size: 200% auto;
+
+}
+
+.md-shadow {
+    box-shadow: 0 3px 6px rgba(0, 0, 0, 0.16), 0 3px 6px rgba(0, 0, 0, 0.23);
+}
+
+.gradient-border {
+
+    border-radius: 20px;
+    position: relative;
+    border: 5px solid transparent;
+    background: #fff;
+    background-clip: padding-box;
+    margin: auto;
+    max-height: 610px;
+
+}
+
+.gradient-border:after {
+    content: '';
+    position: absolute;
+    top: -5px;
+    bottom: -5px;
+    left: -5px;
+    right: -5px;
+    background: linear-gradient(270deg, #00842c 0%, rgba(51, 196, 0, 1) 100%);
+    border-radius: 20px;
+    z-index: -1;
+}
+
+.f-14 {
+    font-size: 0.9rem
+}
+
+.f-18 {
+    font-size: 1.125rem
+}
+
+.table-align td {
+    text-align: center
+}
+
+.btn-align {
+
+    margin-left: 30%;
+    text-align: center
+}
+
+.bg-gradient-black {
+
+    background: rgb(0, 0, 0);
+    background: linear-gradient(0deg, rgba(0, 0, 0, 1) 0%, rgba(0, 0, 0, 1) 85%, rgba(0, 0, 0, 0.7959558823529411) 92%, rgba(0, 0, 0, 0.24693627450980393) 97%, rgba(0, 0, 0, 0) 100%);
+}
+
+.top-h {
+    top: 100px;
+}
+
+.btn-colum .btn {
+    font-size: 0.9rem
+}
+.modal-body a img{
+    max-width: 100%;
+    height: auto;
+}
+
+
+@media screen and (min-width: 991px) and (max-width: 1199px) {
+
+
+    .f-14 {
+        font-size: 0.75rem
+    }}
+@media screen and (min-width: 568px) and (max-width: 991px) {
+
+
+    .bg-style {
+        margin-top: 0px
+    }
+
+    .profile-bg {
+        top: 0
+    }
+
+    .username {
+        font-size: 1rem
+    }
+
+    table {
+        line-height: 1.15
+    }
+    .f-14 {
+        font-size: 0.65rem
+    }
+}
+
+
+@media screen and (max-width: 575px) {
+
+    .top-box-indent {
+        margin-top: 0
+    }
+
+    .modal-header h5{
+font-size: 1rem
+    }
+
+}
+@media screen and (min-width: 1200px){
+    .profile-bg {
+        height: 560px;
+    }}
+
+
+@media screen and (min-width: 769px) and (max-width: 1199px) {
+
+    .f-18 {
+        font-size: 0.875rem
+    }
+
+   
+
+    .btn-colum .btn {
+        font-size: 0.7rem !important;
+    }
+
+    .profile-bg {
+        height: 520px;
+    }
+
+    div>.prof-into>.btn {
+        font-size: 0.8em !important
+    }
+
+    .username {
+        font-size: 1rem
+    }
+}
+
+
+@media screen and (min-width: 769px) and (max-width: 991px) {
+    .container {
+        max-width: 960px
+    }
+    .prof-info h6 {
+        font-size: 0.68em
+    }
+}
+
+
+@media screen and (max-width: 906px) {
+    table {
+        line-height: 1.15
+    }
+
+}
+
+@media screen and (max-width: 778px) {
+    div>.prof-into>.btn {
+        padding-left: 0.2rem;
+        padding-right: 0.2rem
+    }
+
+    /* .btn-colum{
+        padding-left:0 ;
+    } */
+    .word2{
+        font-size: 0.7rem !important
+    }
+}
+
+@media screen and (max-width: 488px) {
+
+    .btn-colum .btn,
+    .btn-sm-prof {
+        font-size: 0.7rem !important
+    }
+   
+}
+
+@media screen and (max-width: 397px) {
+    .btn-colum {
+        padding-right: 5px;
+        padding-left: 5px;
+    }
+
+    .profile-bg {
+        padding-right: 0
+    }
+
+    .btn-profile {
+        padding-left: 0.2rem;
+        padding-right: 0.2rem
+    }
+
+    .profile-m {
+        margin-left: 0.5rem
+    }
+}
+
+@media screen and (max-width: 1199px) and (min-width: 992px) {
+
+    .text-m {
+        margin-left: 0 !important;
+    }
+    
+}
+
+@media screen and (max-width: 1199px) and (min-width: 769px) {
+
+    .profile-m{
+        margin-left: 1rem
+     }}
+
+@media screen and (max-width: 768px) and (min-width: 576px) {
+
+    .profile-m {
+        margin-left: 5px !important;
+        
+    }
+    
+
+    .profile-bg{
+        padding-right: 5px !important
+    }
+
+   
+    .bg-style{
+        height: 100%;
+    }
+    .profile-bg {
+        height: 500px;
+    }
+}
+
+@media screen and (max-width: 616px){
+    .btn-align{
+        margin-bottom: 7px !important
+    }
+    table{
+        margin-bottom: 7px !important
+    }
+}
+
+@media screen and (max-width: 575px) {
+    .btn-colum {
+margin-top: 0 !important;
+justify-content: center;
+padding-right: 0;
+padding-left: 30px;
+    
+}
+
+.btn-profile{
+    float: none !important
+}
+
+.profile-bg{
+    height: 600px;
+}
+.bg-style{
+
+    height: 860px;
+}
+.profile-bg{
+    padding-right: 0
+}
+    }
+
+@media screen and (max-width: 768px) {
+    
+    .container {
+        max-width: 750px;
+    }
+    .prof-info h6{
+        font-size: 0.6rem
+    }
+    .f-14 {
+        font-size: 0.65rem
+    }
+
+    .f-18 {
+        font-size: 0.7rem
+    }
+
+    div>.prof-into>.btn {
+        font-size: 0.7em;
+    }
+
+    .btn-colum .btn {
+        font-size: 0.7rem !important;
+    }
+    .btn-colum {
+        padding-left: 5px;
+        padding-right: 5px;
+        margin-top: 0 !important
+    }
+   .float-right a{
+       float: right !important
+   }
+
+    
+.username{
+    font-size: 0.8rem
+}
+
+.prof-info{
+    margin-left: 1.1rem !important
+}
+}

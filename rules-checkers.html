@@ -1,0 +1,705 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/css/bootstrap.min.css"
+        integrity="sha384-ggOyR0iXCbMQv3Xipma34MD+dH/1fQ784/j6cY/iJTQUOhcWr7x9JvoRxT2MZw1T" crossorigin="anonymous">
+    <link href="https://fonts.googleapis.com/css?family=Open+Sans:300,400,600,700,800&amp;subset=cyrillic,cyrillic-ext"
+        rel="stylesheet">
+    <link href="css/fontell.css" rel="stylesheet">
+    <link href="css/style.css" rel="stylesheet">
+    <link href="css/styl1e.css" rel="stylesheet">
+
+    <title>alex-game.com</title>
+</head>
+
+<body>
+    <header class="container-fluid zi bg-green-nav">
+        <div class="container">
+            <div class="row logo-img">
+                <div class="col logo-img">
+                    <a class="navbar-brand" href="./index.html">
+                        <img src="img/logo.png"></a></div>
+                <div class="flex-column col-11 offset-1 pl-5 pb-1 pr-0 side-bar">
+                    <nav class="navbar navbar-expand-lg navbar-light nav-text logo-img">
+                        <h6><span class="text-uppercase font-weight-bold site-name">alex-game.com</span><br>
+                            Игра только с реальными игроками</h6>
+                        <div class="collapse navbar-collapse justify-content-between" id="navbarNavDropdown">
+                            <ul class="navbar-nav social-icon pl-3">
+                                <!-- Кнопка "Написать нам" в верхнем меню (модальное окно в конце кода)-->
+                                <li class="nav-item text-center top-social-icon">
+                                    <button type="button" class="btn bg-danger rounded text-white p-0"
+                                        data-toggle="modal" data-target="#mail" style="height:26px;width:26px">
+                                        <i class="icon-mail-1"></i>
+                                    </button>
+                                </li>
+                                <!-- Кнопка "Vkontakte" в верхнем меню -->
+                                <li class="nav-item text-center top-social-icon">
+                                    <a class="nav-link bg-vk rounded  base-icon" href="https://vk.com/public171133653">
+                                        <i class="icon-vkontakte"></i>
+                                    </a>
+                                </li>
+                                <!-- Кнопка "Odnoklassniki" в верхнем меню -->
+                                <li class="nav-item text-center top-social-icon">
+                                    <a class="nav-link bg-ok rounded base-icon"
+                                        href="https://ok.ru/group/55514326302733">
+                                        <i class="icon-odnoklassniki"></i>
+                                    </a>
+                                </li>
+                                <!-- Кнопка "Facebook" в верхнем меню -->
+                                <li class="nav-item text-center top-social-icon">
+                                    <a class="nav-link bg-f rounded base-icon"
+                                        href="https://www.facebook.com/groups/892129730993336/">
+                                        <i class="icon-facebook-1"></i>
+                                    </a>
+                                </li>
+                            </ul>
+
+                            <!-- Этот блок активен, когда ввели логин и пароль. Если нет, то активен блок, который находится ниже (*сейчас скрыт) -->
+                            <div class="d-flex profile-sm">
+                                <div class="balance-info pr-3">
+                                    <h6>Основной счет: 1000.00</h6>
+                                    <h6>Бонусный счет: 10.00</h6>
+                                </div>
+                                <div class="profile-info d-flex">
+                                    <!-- Логин при нажатии переход в профиль -->
+                                    <div class="pr-2">
+                                        <a class="nav-name" href="./profile.html">Вася
+                                            Васили571159826275, кабинет</a><br>
+                                        <!-- Кнопка "Выход" из профиля -->
+                                        <button class="btn btn-logout"><i class="icon-logout"></i>Выход</button>
+                                    </div>
+                                    <div class="player-icon">
+                                        <img class="rounded " width="50" height="50"
+                                            src="https://via.placeholder.com/50">
+                                    </div>
+                                </div>
+                            </div>
+                            <!-- *Сейчас этот блок кнопок скрыт -->
+                            <div class="nav-btn top-text d-none">
+                                <!-- Кнопка вход -->
+                                <button type="button"
+                                    class="btn btn-red rounded dropdown-item text-center d-inline-block"
+                                    data-toggle="modal" data-target="#SignIn">Вход</button>
+                                <!-- Кнопка регистрация -->
+                                <a href="#" class="btn btn-green px-3 rounded">Регистрация</a>
+                            </div>
+                        </div>
+                    </nav>
+                    <nav class="navbar navbar-expand-lg navbar-light menu-items">
+                        <button class="container-fluid navbar-toggler justify-content-center" type="button"
+                            data-toggle="collapse" data-target="#navbarNavDropdown" aria-controls="navbarNavDropdown"
+                            aria-expanded="false" aria-label="Toggle navigation">
+                            <span class="icon-menu-1 text-white"></span>
+                            <h5 class="pl-2 mb-0 text-white">Меню</h5>
+                        </button>
+                        <div class="collapse navbar-collapse justify-content-between " id="navbarNavDropdown">
+                            <ul class="navbar-nav side-item ">
+
+                                <!-- Кнопка меню "Главная" -->
+
+                                <li class="nav-item nav-menu">
+                                    <a class="nav-link " href="./index.html">
+                                        <i class="icon-home-1 ml-5"></i></a>
+                                </li>
+                                <!-- Кнопка меню "Новости" -->
+
+                                <li class="nav-item nav-menu">
+                                    <a class="nav-link " href="./news.html">
+                                        <i class="icon-newspaper p-1"></i>Новости
+                                    </a>
+                                </li>
+                                <!-- Кнопка меню "Зал славы" -->
+                                <li class="nav-item nav-menu">
+                                    <a class="nav-link " href="./glory-hall.html">
+                                        <i class="icon-star"></i>Зал славы
+                                    </a>
+                                </li>
+                                <!-- Кнопка меню "Турниры" -->
+                                <li class="nav-item nav-menu">
+                                    <a class="nav-link " href="#">
+                                        <i class="icon-award"></i>Турниры
+                                    </a>
+                                </li>
+                                <!-- Кнопка меню "Чат" -->
+                                <li class="nav-item nav-menu">
+                                    <a class="nav-link " href="#">
+                                        <i class="icon-chat"></i>Чат
+                                    </a>
+                                </li>
+                                <!-- Кнопка меню "О клубе" с ниспадающим подменю-->
+                                <li class="nav-item dropdown nav-menu">
+                                    <a class="nav-link dropdown-toggle" href="#" id="navbarDropdownMenuLink"
+                                        role="button" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
+                                        <i class="icon-ace-of-club-and-spades"></i>
+                                        О клубе
+                                    </a>
+
+                                    <div class="dropdown-menu nav-item dropdown nav-menu hide-block-menu drop-menu"
+                                        aria-labelledby="navbarDropdownMenuLink">
+                                        <!-- Кнопка подменю "Правила клуба" -->
+                                        <a class="dropdown-item px-3" href="./rules.html">Правила
+                                            клуба</a>
+                                        <!-- Кнопка подменю "О сайте" ссылка ведет на страницу контакта -->
+                                        <a class="dropdown-item px-3" href="./about.html">О
+                                            сайте</a>
+                                    </div>
+                                </li>
+                            </ul>
+                        </div>
+                    </nav>
+                </div>
+            </div>
+        </div>
+    </header>
+    <main>
+        <div class="container-fluid bg-gradient-black-check p-0 overflow-hidden ">
+            <div class="checkers bg-pic2">
+                <div class="container top-indent">
+                    <div class="row no-gutters">
+                        <div class="col-12 m-tp block-btn card mb-5 ">
+                            <div class="row mt-5 mb-3">
+                                <div class="col-lg-8 col-md-8 col-sm-12 col-xs-12 mb-3  ">
+                                    <div class="row">
+                                        <div class="col-lg-10 col-12">
+                                            <figure id="main-image">
+                                                <img src="img/checkers_1.jpg">
+                                            </figure>
+                                        </div>
+                                        <div class="product-options d-flex justify-content-around col-lg-2 col-12">
+                                            <form>
+
+                                                <input type="radio" name="colorSelect" id="color-1"
+                                                    value="img/checkers_1.jpg">
+                                                <label for="color-1" class="color-icon silver7"></label>
+
+                                                <input type="radio" name="colorSelect" id="color-2"
+                                                    value="img/checkers_2.jpg">
+                                                <label for="color-2" class="color-icon pink7"></label>
+
+                                                <input type="radio" name="colorSelect" id="color-3"
+                                                    value="img/checkers_3.jpg">
+                                                <label for="color-3" class="color-icon gold7"></label>
+
+                                            </form>
+                                        </div>
+                                    </div>
+                                </div>
+
+                                <div
+                                    class="col-lg-4 col-md-4 col-sm-12 col-xs-12 pl-lg-3 pl-md-0 pr-lg-3 pr-md-0 pl-3 pr-3 mb-5">
+                                    <p>В интернете можно не просто хорошо проводить время, развлекаться и отдыхать, но и
+                                        зарабатывать на любимых играх. Например, если Вы хорошо разбираетесь в
+                                        настольной игре
+                                        <span class="gren fb">ШАШКИ</span> и являетесь неплохим игроком, можно сыграть
+                                        на деньги с реальным соперником. </p>
+                                    <p class="gren fb">Игра имеет массу преимуществ:</p>
+                                    <p>Возможность заработать реальные деньги<br>
+                                        Увлекательное времяпрепровождение<br>
+                                        Общение с единомышленниками<br>
+                                        Возможность играть в любое удобное время</p>
+                                    <div class="text-center text-lg-left text-md-left"><a href="#"
+                                            class="btn btn-red-inv px-3 rounded ">Играть</a></div>
+                                </div>
+                            </div>
+                            <div class="row no-gutters">
+                                <div class="col-md-6 col-12">
+                                    <div class="pl-lg-5 pr-3 mb-5 pl-3">
+                                        <h3 class="gren my-3">Шашки на деньги с выводом средств</h3>
+                                        <p>Шашки – это логическая игра, правила в которой предельно просты. Не
+                                            обязательно быть профессионалом, чтобы сыграть в эту игру на деньги. Если Вы
+                                            новичок и только пробуете свои силы. Можно делать небольшие ставки. Сражаясь
+                                            с мастерами. Вы будете постепенно накапливать бесценный опыт. </p>
+                                        <p class="fb">В шашках важно научиться:</p>
+                                        <p>Продумывать наперед<br>
+                                            Правильно строить стратегию<br>
+                                            Понимать противника<br>
+                                            Продумывать маневры<br>
+                                            Определять число комбинаций</p>
+                                        <p>Для тактического мастерства понадобится логика и опыт. Играть в шашки на
+                                            деньги гораздо проще, чем в шахматы. </p>
+                                        <p class="fb">Почему игра в шашки онлайн так нравится игрокам:</p>
+                                        <p>Всегда найдется достойный соперник<br>
+                                            Можно заработать на выигрыше<br>
+                                            Возможность делать разные ставки<br>
+                                            Общение с единомышленниками<br>
+                                            Удобный онлайн чат позволит Вам в процессе игры общаться с оппонентом и
+                                            делиться опытом.</p>
+                                        <h3 class="gren my-3">Простая игра с прибылью</h3>
+                                        <p>Шашки – это относительно несложная игра, в этом и заключается ее
+                                            гениальность. Игра остается одной из популярных среди современных настольных
+                                            игр. При желании даже новичок за полчаса разберется в тонкостях шашек и
+                                            сможет сражаться с сильным противником. Для победы игрокам понадобится
+                                            логическое мышление, терпение и способность продумывать ходы наперед.</p>
+                                        <p>На нашем сайте можно играть с друзьями, родственниками или выбирать
+                                            случайного соперника. Делайте ставки, исходя из собственного бюджета и
+                                            мастерства, тренируйтесь, набирайтесь опыта и выигрывайте! Каждая маленькая
+                                            победа – денежное вознаграждение!</p>
+                                        <p>В игре участвуют 2 игрока, каждый из них в начале игры имеет по 12 шашек (у
+                                            каждого игрока комплект шашек своего цвета стандартно белые и черные). Игра
+                                            ведется на стандартной шахматной доске (8x8) повернутой так, что бы перед
+                                            игроком играющим белыми в левом нижнем углу клетка (поле) была черного
+                                            цвета. В процессе игры используются только 32 поля (черного цвета).</p>
+                                        <div class="row">
+                                            <div class="col-6">
+                                                <img src="img/chess01-001.jpg" class="img">
+                                            </div>
+                                            <div class="col-6">
+                                                <img src="img/chess01-002.jpg" class="img">
+                                            </div>
+                                        </div>
+                                        <p>В начальной позиции шашки занимают по 3 горизонтали с каждой стороны.</p>
+                                        <p>Играющий белыми ходит первый, далее поочередно по одному ходу за раз. </p>
+                                        <p>Шашки бывают двух типов: простые и дамки. Дамка обычно обозначается либо
+                                            двумя шашками, поставленными друг на друга, либо перевернутой шашкой. </p>
+                                        <p>На этой картинке изображено различие обозначений простых и дамок, - на полях
+                                            a1, e3 расположены белые простые, на полях h8, g7 белые дамки, на полях a5,
+                                            h4 черные простые, на полях b8 и h2 черные дамки . Простая (в начальной
+                                            позиции все шашки являются простыми) становится дамкой в случае достижения в
+                                            процессе игры последней, относительно игрока ее "владельца", диагонали.
+                                        </p>
+                                        <div class="row">
+                                            <div class="col-6">
+                                                <img src="img/chess01-003.jpg" class="img">
+                                            </div>
+                                            <div class="col-6">
+                                                <img src="img/chess01-001.jpg" class="img">
+                                            </div>
+                                        </div>
+                                        <p>Белая простая g7 следующим ходом может стать дамкой, пойдя либо на поле h8
+                                            либо на поле f6.</p>
+                                        <p class="fb">Простая может ходить двумя способами:</p>
+                                        <p>а)<span class="fb"> тихий ход</span> - передвижение простой вперед по
+                                            диагонали на любое свободное соседнее поле (назад тихий ход не
+                                            осуществляется), </p>
+                                        <p>Например: в начальной позиции белая простая e3 может пойти на f4 или на d4, в
+                                            то время как простая a3 имеет только один вариант на b4;</p>
+                                        <p>б) <span class="fb">бой</span> - при котором простая может перепрыгнуть
+                                            (ударить, съесть) через простую или дамку соперника, находящуюся на соседнем
+                                            поле по диагонали, при условии что следующее по той же диагонали поле
+                                            свободно.</p>
+                                        <div class="row">
+                                            <div class="col-6">
+                                                <img src="img/chess01-004.jpg" class="img">
+                                            </div>
+                                            <div class="col-6">
+                                                <img src="img/chess01-005.jpg" class="img">
+                                            </div>
+                                        </div>
+                                        <p>На картинке белая простая может побить в четырех направлениях на с1, g1, c5,
+                                            g5.</p>
+                                        <p>В случае если после боя бьющая шашка имеет возможность побить еще, то бой
+                                            следует продолжать (бой может осуществляться в любых направлениях с учетом
+                                            ограничений описанных в пункте 2)</p>
+                                        <p>На картинке белая простая может побить в двух направлениях либо e3:c5:e7,
+                                            либо e3:g5. После боя "битые" шашки соперника снимаются с доски.</p>
+                                        <p>Простая в процессе боя достигнувшая последней диагонали становится дамкой и
+                                            при возможности продолжает бой как дамка, по правилам боя для дамок.</p>
+                                        <div class="mb-5">
+                                            <img src="img/chess01-006.jpg" class="img">
+                                            <p>На картинке белая простая может побить в двух направлениях либо e3:c5:e7,
+                                                либо e3:g5. После боя "битые" шашки соперника снимаются с доски.</p>
+                                            <p>Простая в процессе боя достигнувшая последней диагонали становится дамкой
+                                                и при возможности продолжает бой как дамка, по правилам боя для дамок.
+                                            </p>
+                                        </div>
+                                    </div>
+                                </div>
+                                <div class="col-md-6 col-12">
+                                    <div class="pr-lg-5 pl-3 pr-3">
+                                        <div class="row mt-3">
+                                            <div class="col-6">
+                                                <img src="img/chess01-007.jpg" class="img">
+                                            </div>
+                                            <div class="col-6">
+                                                <img src="img/chess01-008.jpg" class="img">
+                                            </div>
+                                        </div>
+                                        <p>На этой иллюстрации белая простая b6 может побить 2 шашки окончив бой либо на
+                                            поле g5 либо h4 при этом тоже превратившись в дамку).
+                                            <br>Ход дамкой также может быть двух типов:</p>
+                                        <p>а) <span class="fb">тихий ход</span> - двигаться в любом направлении по
+                                            диагонали, на любое количество полей (только в одну сторону за раз)</p>
+                                        <p>Белая дамка может ходить в четырех направлениях на любое из полей g1, c1, d4,
+                                            c5, b6, f2, d2, f4, g5, h6);</p>
+                                        <p>б) <span class="fb">бой</span> - при котором дамка, может перепрыгивать через
+                                            любую простую или дамку соперника находящуюся в любом направлении от бьющей
+                                            дамки по диагонали, если за ней (простой или дамкой соперника) по диагонали
+                                            есть свободное поле. </p>
+                                        <p>Если за бьющейся шашкой в направлении боя есть несколько свободных полей
+                                            подряд, то бьющая дамка может занять любое из них. Если с одного или
+                                            нескольких этих полей можно продолжить бой, либо в том же направлении либо
+                                            перпендикулярно ему то необходимо это сделать по одному из направлений (на
+                                            выбор) и так далее</p>
+                                        <div class="mb-5">
+                                            <img src="img/chess01-009.jpg" class="img">
+                                            <p>У белой дамки есть выбор из трех вариантов боев g1:e3:c1, g1:d4:g7,
+                                                g1:d4:h8.</p>
+                                            <p>После боя дамкой "сбитые" шашки соперника также снимаются с доски.</p>
+                                            <p>Если при ходе одного из игроков есть возможность совершить несколько
+                                                различных тихих ходов и ни одного боя, то игрок может выбрать любой из
+                                                вариантов (В начальной позиции у белых есть 7 вариантов тихих ходов, и
+                                                они могут выбрать любой).</p>
+                                        </div>
+                                        <p>В случае если при ходе одного из игроков есть возможность совершить бой и еще
+                                            несколько тихих ходов, то необходимо бить.</p>
+                                        <div class="row">
+                                            <div class="col-6">
+                                                <img src="img/chess01-010.jpg" class="img">
+                                            </div>
+                                            <div class="col-6">
+                                                <img src="img/chess01-011.jpg" class="img">
+                                            </div>
+                                        </div>
+                                        <p>Сделаем пару ходов из начальной позиции с3 - d4, b6 - c5 - теперь белым
+                                            обязательно необходимо бить d4 : b6.</p>
+                                        <p class="mb-5">Если есть несколько различных боев и несколько тихих ходов, то
+                                            нужно выбрать любой из боев .</p>
+                                        <p>Ход черных и им необходимо выбирать из двух боев a7 : c5 или c7 : a5.</p>
+                                        <p>Если ход был сделан не по правилам, то необходимо сделать ход заново по
+                                            возможности той же шашкой.</p>
+                                        <h3 class="gren my-3">Ограничения</h3>
+                                        <p>В процесс боя шашки снимаются после окончания хода (турецкий удар)</p>
+                                        <div class="row">
+                                            <div class="col-6">
+                                                <img src="img/chess01-012.jpg" class="img">
+                                            </div>
+                                            <div class="col-6">
+                                                <img src="img/chess01-013.jpg" class="img">
+                                            </div>
+                                        </div>
+                                        <p>Здесь у белых есть замечательная возможность выиграть 1.b2-c3 черные должны
+                                            бить 1… a5:e1:g3:e5 и все шашку d4 бить нельзя, после чего белые бьют 2.
+                                            d4:f6:d8:a5 с выигрышем.</p>
+                                        <p>Шашку нельзя бить больше чем один раз</p>
+                                        <p>Тут изображена позиция, в которой у белых есть несколько вариантов боя:
+                                            e1:c3:a5; e1:c3:e5:g3:e1; e1:g3:e5:c3:e1; e1:g3:e5:c3:b4, однако все шашки
+                                            соперника за один раз e1:c3:e5:g3:e1:a5 белые побить не могут, поскольку в
+                                            этом варианте шашка d2 бьется дважды, а это запрещено.</p>
+
+                                    </div>
+                                    <div class="r-gren pl-0 my-5 pr-1 ml-0">
+                                        <div class="my-3 img-fluid pr-lg-5 pr-3 pl-3 ml-0">
+                                            <h3 class="gren my-3">Цель игры</h3>
+                                            <p>Побить или запереть (при ходе соперника у него есть шашки, но они не
+                                                могут совершить ни одного хода) все шашки соперника. Если этого не
+                                                удается достичь ни одному из соперников, то присуждается ничья.</p>
+                                        </div>
+
+                                    </div>
+                                    <div class="pr-lg-5 pl-3 pr-3">
+                                        <h3 class="gren my-3">Нотация и условные обозначения</h3>
+                                        <p>Каждое поле на шашечной доске имеет свое обозначение. Для этого
+                                            горизонтальные ряды получают номера от 1, 2, 3, 4, 5, 6, 7, 8, а
+                                            вертикальные ряды обозначаются латинскими буквами a, b, c, d, e, f, g, h.
+                                            Поле, находящееся на пересечении вертикали d и горизонтали 4 обозначается
+                                            как d4. По аналогичной схеме даются обозначения всем полям на доске.</p>
+                                        <div>
+                                            <img src="img/chess01-013.jpg" class="img">
+                                            <p>Тихий ход шашкой с поля c3 на поле d4 будет записан как с3-d4 или cd4
+                                                (сокращенная запись),</p>
+                                            <p>бой же обозначается так e3:c5:e7 или e3:e7 или e:e7.</p>
+                                            <p>Запись 11.a3-b4 d6-e5 означает, что на 11-м ходу белые пошли a3-b4, а
+                                                черные ответили d6-e5</p>
+                                        </div>
+                                        <p>P.S. В последнее время соревнования по русским шашкам проводятся по двум
+                                            вариантам - классические русские шашки и т.н. турниры с выборочным жребием.
+                                        </p>
+                                        <p class="mb-5">Второй вариант предполагает наличие официально утвержденного
+                                            списка начальных 2-3 ходов (а также вариант, когда по одной шашке каждой
+                                            стороны в начале партии занимают какое-либо иное положение - "летучие"
+                                            шашки). Перед партией (или микро- матчем) соперники жребием определяют номер
+                                            дебюта или начальной позиции. Данный вариант настольной игры разрабатывался
+                                            ведущими российскими гроссмейстерами с целью "оживить" игру и избежать
+                                            предполагаемой "ничейной смерти" русских шашек, где теоретические разработки
+                                            достигли критического порога. Список дебютов и позиций, применяемых в таких
+                                            турнирах, постоянно пересматривается и утверждается РФШ раз в два года.</p>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </main>
+
+    <footer class="">
+        <div class="container-fluid bg-green-inv">
+            <div class="container">
+                <div class="row">
+                    <div class="col my-1 d-flex justify-content-between kassa-img">
+                        <div class="align-items-center d-flex">
+
+                            <!-- Кнопка на Freekassa -->
+                            <a class="pr-2" href="http://www.free-kassa.ru">
+                                <img src="img/fk.png" class="img-fluid" alt="Responsive image"></a>
+                            <!-- Кнопка на Payeer -->
+                            <a class="pr-2" href="https://payeer.com/ru">
+                                <img src="img/payeer.png" class="img-fluid" alt="Responsive image"></a>
+                            <!-- Кнопка на Interkassa -->
+                            <a class="pr-2" href="https://www.interkassa.com">
+                                <img src="img/ik.png" class="img-fluid" alt="Responsive image"></a>
+                            <h1><i class="icon-18plus text-white"></i></h1>
+                        </div>
+                        <div class="d-flex align-items-center justify-content-end hide-items">
+                            <ul class="navbar-nav social-icon d-flex d-inline-block">
+                                <!-- Кнопка "Написать нам" в футере -->
+                                <li class="nav-item text-center top-social-icon">
+                                    <button type="button" class="btn bg-danger rounded text-white p-0"
+                                        data-toggle="modal" data-target="#mail" style="height:26px;width:26px">
+                                        <i class="icon-mail-1"></i>
+                                    </button>
+                                </li>
+                                <!-- Кнопка "Vkontakte" в футере -->
+                                <li class="nav-item text-center top-social-icon">
+                                    <a class="nav-link bg-vk rounded  base-icon" href="https://vk.com/public171133653">
+                                        <i class="icon-vkontakte"></i>
+                                    </a>
+                                </li>
+                                <!-- Кнопка "Odnoklassniki" в футере -->
+                                <li class="nav-item text-center top-social-icon">
+                                    <a class="nav-link bg-ok rounded base-icon"
+                                        href="https://ok.ru/group/55514326302733">
+                                        <i class="icon-odnoklassniki"></i>
+                                    </a>
+                                </li>
+                                <!-- Кнопка "Facebook" в футере -->
+                                <li class="nav-item text-center">
+                                    <a class="nav-link bg-f rounded base-icon"
+                                        href="https://www.facebook.com/groups/892129730993336/">
+                                        <i class="icon-facebook-1"></i>
+                                    </a>
+                                </li>
+                            </ul>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+        <div class="container-fluid bg-green-nav pt-2 ">
+            <div class="container">
+                <div class="row">
+                    <div class="col-lg-4 col-md-4 col-sm-12">
+                        <h5 class="text-white">
+                            <i class="icon-info ">Информация</i>
+                        </h5>
+                        <ul class="nav-menu navbar-nav item-list">
+                            <li><a class="nav-link" href="./news.html">Новости</a></li>
+                            <li><a class="nav-link" href="./rules.html">Правила клуба</a></li>
+                            <li><a class="nav-link" href="./rules-alex.html">Условия использования
+                                    сайтом</a></li>
+                            <li><a class="nav-link" href="./pr-policy.html">Политика
+                                    конфиденциальности</a></li>
+                            <li><a class="nav-link" href="./c-b-policy.html">Политика отмены и
+                                    возврата платежей</a></li>
+                        </ul><br>
+                        <p class="nav-menu"><a class="text-white item-list" href="./about.html"><span
+                                    class="font-weight-bold">Контактная
+                                    информация</span><br>
+                                Москва, Россия, 119019, ул. Волхонка, 18</a></p>
+                    </div>
+                    <div class="col-lg-4 col-md-4 col-sm-12 hide-items">
+                        <div class="col-auto">
+                            <h5 class="text-white">
+                                <i class="icon-coin">Игры на деньги</i>
+                            </h5>
+                        </div>
+                        <div class="col d-flex ">
+                            <div class="col-6 nav-menu p-0 ">
+                                <ul class="nav-link">
+                                    <li><a href="./durak.html">Дурак</a></li>
+                                    <li><a href="./chess.html">Шахматы</a></li>
+                                    <li><a href="./checkers.html">Шашки</a></li>
+                                    <li><a href="./bura.html">Бура</a></li>
+                                    <li><a href="./preference.html">Преферанс</a></li>
+                                    <li><a href="./deberc.html">Дебертс</a></li>
+                                    <li><a href="./tic-tac-toe.html">Крестики - нолики</a>
+                                    </li>
+                                    <li><a href="./seabattle.html">Морской бой</a></li>
+                                </ul>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="col-lg-4 col-md-4 col-sm-12 hide-items">
+                        <div class="col-auto">
+                            <h5 class="text-white">
+                                <i class="icon-free">Игры бесплатно</i>
+                            </h5>
+                        </div>
+                        <div class="col d-flex">
+                            <div class="col-6 nav-menu p-0 ">
+                                <ul class="nav-link">
+                                    <li><a href="./durak.html">Дурак</a></li>
+                                    <li><a href="./chess.html">Шахматы</a></li>
+                                    <li><a href="./checkers.html">Шашки</a></li>
+                                    <li><a href="./bura.html">Бура</a></li>
+                                    <li><a href="./preference.html">Преферанс</a></li>
+                                    <li><a href="./deberc.html">Дебертс</a></li>
+                                    <li><a href="./tic-tac-toe.html">Крестики - нолики</a>
+                                    </li>
+                                    <li><a href="./seabattle.html">Морской бой</a></li>
+                                </ul>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="col-12">
+                        <h6 class="text-center">Copyright <i class="icon-copyright"></i>2018 - 2019, Игровой Дом.
+                            Все права защищены.</p>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </footer>
+    </div>
+    <!-- Modal "Написать нам" -->
+    <div class="modal fade" id="mail" tabindex="-1" role="dialog" aria-labelledby="exampleModalCenterTitle"
+        aria-hidden="true">
+        <div class="modal-dialog modal-dialog-centered" role="document">
+            <div class="modal-content">
+                <div class="modal-header btn-green">
+                    <h5 class="modal-title text-dark" id="exampleModalCenterTitle">Написать нам</h5>
+                    <button type="button" class="close" data-dismiss="modal" aria-label="Close">
+                        <span aria-hidden="true">&times;</span>
+                    </button>
+                </div>
+                <div class="modal-body">
+                    <form>
+                        <div class="form-group">
+                            <input type="email" class="form-control" id="exampleInputEmail1"
+                                aria-describedby="emailHelp" placeholder="Ваш e-mail">
+                        </div>
+                        <div class="form-group">
+                            <input type="text" class="form-control mt-4" id="userlogin" aria-describedby="userlogin"
+                                placeholder="Тема сообщения" required="true">
+                        </div>
+                        <div class="form-group">
+                            <label for="exampleFormControlTextarea1">Ваше сообщение</label>
+                            <textarea class="form-control" id="exampleFormControlTextarea1" rows="3"></textarea>
+                        </div>
+                </div>
+                <div class="modal-footer">
+                    <button type="button" class="btn btn-primary btn-green ">Отправить</button>
+                    <button type="button" class="btn btn-secondary btn-red" data-dismiss="modal">Закрыть</button>
+                </div>
+            </div>
+        </div>
+    </div>
+    <!-- Modal "Вход"-->
+    <div class="modal fade" id="SignIn" tabindex="-1" role="dialog" aria-labelledby="exampleModalCenterTitle"
+        aria-hidden="true">
+        <div class="modal-dialog modal-dialog-centered" role="document">
+            <div class="modal-content">
+                <div class="modal-header btn-green">
+                    <h5 class="modal-title text-dark font-weight-bold" id="exampleModalCenterTitle">
+                        Вход</h5>
+                    <button type="button" class="close" data-dismiss="modal" aria-label="Close">
+                        <span aria-hidden="true">&times;</span>
+                    </button>
+                </div>
+                <div class="col text-left">
+                    <form>
+                        <div class="form-group">
+                            <input type="text" class="form-control mt-4" id="userlogin" aria-describedby="userlogin"
+                                placeholder="Ваш логин" required="true">
+                        </div>
+                        <div class="form-group">
+                            <input type="password" class="form-control" id="exampleInputPassword1"
+                                placeholder="Ваш пароль" required="true">
+                        </div>
+                        <div class="form-check">
+                            <input type="checkbox" class="form-check-input" id="exampleCheck1">
+                            <label class="form-check-label" for="exampleCheck1">Запомнить
+                                меня</label>
+                        </div>
+                        <div class="my-3 log-line"> <button type="submit" class="btn btn-green ">Войти</button>
+                            <a class="text-dark mx-3 " href="https://alex-game.com/site/request-password-reset">
+                                Забыли пароль?
+                            </a>
+                            <div class="d-flex mt-4">
+                                <p>Войти через:</p>
+                                <ul class="navbar-nav social-icon px-5">
+                                    <li class="nav-item text-center top-social-icon">
+                                        <a class="nav-link bg-vk rounded  base-icon"
+                                            href="https://alex-game.com/site/auth?authclient=vk">
+                                            <i class="icon-vkontakte"></i>
+                                        </a>
+                                    </li>
+                                    <li class="nav-item text-center top-social-icon">
+                                        <a class="nav-link bg-ok rounded base-icon"
+                                            href="https://alex-game.com/site/auth?authclient=ok">
+                                            <i class="icon-odnoklassniki"></i>
+                                        </a>
+                                    </li>
+                                </ul>
+                            </div>
+                        </div>
+                    </form>
+                </div>
+            </div>
+        </div>
+    </div>
+    <!-- Modal "Создать игру" -->
+    <div class="modal fade" id="exampleModalCenter" tabindex="-1" role="dialog"
+        aria-labelledby="exampleModalCenterTitle" aria-hidden="true">
+        <div class="modal-dialog modal-dialog-centered" role="document">
+            <div class="modal-content ">
+                <div class="modal-header btn-green">
+                    <h5 class="modal-title text-dark" id="exampleModalCenterTitle">Новая игра
+                    </h5>
+                    <button type="button" class="close" data-dismiss="modal" aria-label="Close">
+                        <span aria-hidden="true">&times;</span>
+                    </button>
+                </div>
+                <div class="modal-body">
+                    <p>Размер ставки</p>
+                    <select class="form-control">
+                        <option>0</option>
+                        <option>10</option>
+                        <option>20</option>
+                        <option>40</option>
+                        <option>60</option>
+                        <option>120</option>
+                        <option>160</option>
+                        <option>300</option>
+                    </select>
+                </div>
+                <div class="modal-footer justify-content-center">
+                    <button type="button" class="btn btn-red px-5" data-dismiss="modal">Ок</button>
+                    <button type="button" class="btn btn-green px-4">Отмена</button>
+                </div>
+            </div>
+        </div>
+    </div>
+    <link href="js/ecom.js" rel="stylesheet">
+    <script>
+        const image = document.querySelector('#main-image>img');
+        const colors = document.querySelectorAll('input[name="colorSelect"]');
+        let checkedColor = document.querySelector('input[name="colorSelect"]:checked');
+        colors.forEach(function (el, i) {
+            el.addEventListener('change', changeColor);
+        });
+
+        function changeColor() {
+            checkedColor = document.querySelector('input[name="colorSelect"]:checked');
+            image.src = checkedColor.value;
+
+        }
+
+        changeColor();
+    </script>
+    <script src="https://code.jquery.com/jquery-3.3.1.slim.min.js"
+        integrity="sha384-q8i/X+965DzO0rT7abK41JStQIAqVgRVzpbzo5smXKp4YfRvH+8abtTE1Pi6jizo" crossorigin="anonymous">
+    </script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.14.7/umd/popper.min.js"
+        integrity="sha384-UO2eT0CpHqdSJQ6hJty5KVphtPhzWj9WO1clHTMGa3JDZwrnQq4sF86dIHNDz0W1" crossorigin="anonymous">
+    </script>
+    <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/js/bootstrap.min.js"
+        integrity="sha384-JjSmVgyd0p3pXB1rRibZUAYoIIy6OrQ6VrjIEaFf/nJGzIxFDsf4x0xIM+B07jRM" crossorigin="anonymous">
+    </script>
+</body>
+
+</html>

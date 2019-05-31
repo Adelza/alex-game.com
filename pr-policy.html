@@ -1,0 +1,532 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/css/bootstrap.min.css"
+        integrity="sha384-ggOyR0iXCbMQv3Xipma34MD+dH/1fQ784/j6cY/iJTQUOhcWr7x9JvoRxT2MZw1T" crossorigin="anonymous">
+    <link href="https://fonts.googleapis.com/css?family=Open+Sans:300,400,600,700,800&amp;subset=cyrillic,cyrillic-ext"
+        rel="stylesheet">
+    <link href="css/fontell.css" rel="stylesheet">
+    <link href="css/style.css" rel="stylesheet">
+    <link href="css/styl1e.css" rel="stylesheet">
+    <title>alex-game.com</title>
+</head>
+
+<body>
+    <header class="container-fluid zi bg-green-nav">
+        <div class="container">
+            <div class="row logo-img">
+                <div class="col logo-img">
+                    <a class="navbar-brand" href="./index.html">
+                        <img src="img/logo.png"></a></div>
+                <div class="flex-column col-11 offset-1 pl-5 pb-1 pr-0 side-bar">
+                    <nav class="navbar navbar-expand-lg navbar-light nav-text logo-img">
+                        <h6><span class="text-uppercase font-weight-bold site-name">alex-game.com</span><br>
+                            Игра только с реальными игроками</h6>
+                        <div class="collapse navbar-collapse justify-content-between" id="navbarNavDropdown">
+                            <ul class="navbar-nav social-icon pl-3">
+                                <!-- Кнопка "Написать нам" в верхнем меню (модальное окно в конце кода)-->
+                                <li class="nav-item text-center top-social-icon">
+                                    <button type="button" class="btn bg-danger rounded text-white p-0"
+                                        data-toggle="modal" data-target="#mail" style="height:26px;width:26px">
+                                        <i class="icon-mail-1"></i>
+                                    </button>
+                                </li>
+                                <!-- Кнопка "Vkontakte" в верхнем меню -->
+                                <li class="nav-item text-center top-social-icon">
+                                    <a class="nav-link bg-vk rounded  base-icon" href="https://vk.com/public171133653">
+                                        <i class="icon-vkontakte"></i>
+                                    </a>
+                                </li>
+                                <!-- Кнопка "Odnoklassniki" в верхнем меню -->
+                                <li class="nav-item text-center top-social-icon">
+                                    <a class="nav-link bg-ok rounded base-icon"
+                                        href="https://ok.ru/group/55514326302733">
+                                        <i class="icon-odnoklassniki"></i>
+                                    </a>
+                                </li>
+                                <!-- Кнопка "Facebook" в верхнем меню -->
+                                <li class="nav-item text-center top-social-icon">
+                                    <a class="nav-link bg-f rounded base-icon"
+                                        href="https://www.facebook.com/groups/892129730993336/">
+                                        <i class="icon-facebook-1"></i>
+                                    </a>
+                                </li>
+                            </ul>
+
+                            <!-- Этот блок активен, когда ввели логин и пароль. Если нет, то активен блок, который находится ниже (*сейчас скрыт) -->
+                            <div class="d-flex profile-sm">
+                                <div class="balance-info pr-3">
+                                    <h6>Основной счет: 1000.00</h6>
+                                    <h6>Бонусный счет: 10.00</h6>
+                                </div>
+                                <div class="profile-info d-flex">
+                                    <!-- Логин при нажатии переход в профиль -->
+                                    <div class="pr-2">
+                                        <a class="nav-name" href="./profile.html">Вася
+                                            Васили571159826275, кабинет</a><br>
+                                    <!-- Кнопка "Выход" из профиля -->
+                                        <button class="btn btn-logout"><i class="icon-logout"></i>Выход</button>
+                                    </div>
+                                    <div class="player-icon">
+                                        <img class="rounded " width="50" height="50"
+                                            src="https://via.placeholder.com/50">
+                                    </div>
+                                </div>
+                            </div>
+                            <!-- *Сейчас этот блок кнопок скрыт -->
+                            <div class="nav-btn top-text d-none">
+                                <!-- Кнопка вход -->
+                                <button type="button"
+                                    class="btn btn-red rounded dropdown-item text-center d-inline-block"
+                                    data-toggle="modal" data-target="#SignIn">Вход</button>
+                                <!-- Кнопка регистрация -->
+                                <a href="#"
+                                    class="btn btn-green px-3 rounded">Регистрация</a>
+                            </div>
+                        </div>
+                    </nav>
+                    <nav class="navbar navbar-expand-lg navbar-light menu-items">
+                        <button class="container-fluid navbar-toggler justify-content-center" type="button"
+                            data-toggle="collapse" data-target="#navbarNavDropdown" aria-controls="navbarNavDropdown"
+                            aria-expanded="false" aria-label="Toggle navigation">
+                            <span class="icon-menu-1 text-white"></span>
+                            <h5 class="pl-2 mb-0 text-white">Меню</h5>
+                        </button>
+                        <div class="collapse navbar-collapse justify-content-between " id="navbarNavDropdown">
+                            <ul class="navbar-nav side-item ">
+
+                                <!-- Кнопка меню "Главная" -->
+
+                                <li class="nav-item nav-menu">
+                                    <a class="nav-link " href="./index.html">
+                                        <i class="icon-home-1 ml-5"></i></a>
+                                </li>
+                                <!-- Кнопка меню "Новости" -->
+
+                                <li class="nav-item nav-menu">
+                                    <a class="nav-link " href="./news.html">
+                                        <i class="icon-newspaper p-1"></i>Новости
+                                    </a>
+                                </li>
+                                <!-- Кнопка меню "Зал славы" -->
+                                <li class="nav-item nav-menu">
+                                    <a class="nav-link " href="./glory-hall.html">
+                                        <i class="icon-star"></i>Зал славы
+                                    </a>
+                                </li>
+                                <!-- Кнопка меню "Турниры" -->
+                                <li class="nav-item nav-menu">
+                                    <a class="nav-link " href="#">
+                                        <i class="icon-award"></i>Турниры
+                                    </a>
+                                </li>
+                                <!-- Кнопка меню "Чат" -->
+                                <li class="nav-item nav-menu">
+                                    <a class="nav-link " href="#">
+                                        <i class="icon-chat"></i>Чат
+                                    </a>
+                                </li>
+                                <!-- Кнопка меню "О клубе" с ниспадающим подменю-->
+                                <li class="nav-item dropdown nav-menu">
+                                    <a class="nav-link dropdown-toggle" href="#" id="navbarDropdownMenuLink"
+                                        role="button" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
+                                        <i class="icon-ace-of-club-and-spades"></i>
+                                        О клубе
+                                    </a>
+
+                                    <div class="dropdown-menu nav-item dropdown nav-menu hide-block-menu drop-menu"
+                                        aria-labelledby="navbarDropdownMenuLink">
+                                        <!-- Кнопка подменю "Правила клуба" -->
+                                        <a class="dropdown-item px-3" href="./rules.html">Правила
+                                            клуба</a>
+                                        <!-- Кнопка подменю "О сайте" ссылка ведет на страницу контакта -->
+                                        <a class="dropdown-item px-3" href="./about.html">О
+                                            сайте</a>
+                                    </div>
+                                </li>
+                            </ul>
+                        </div>
+                    </nav>
+                </div>
+            </div>
+        </div>
+    </header>
+    <main>
+            <div class="container-fluid  bg-gradient-black-debrec p-0 overflow-hidden">
+                    <div class="bg-pic2 deberc">
+                    <div class="container top-indent">
+                        <div class="row no-gutters">
+                                <div class="col-12 m-tp block-btn card mb-5">
+                <h1 class="text-center mt-3"><i class="icon-lock gren"></i></h1>
+                <h2 class="text-center gren my-3">Политика конфиденциальности</h2>
+                <div class="row my-5">
+                    <div class="col-lg-6 col-12 ">
+                <div class="pl-lg-5 pl-3 pr-2">
+                <p>Настоящая политика конфиденциальности распространяется на вас, Пользователей Сайта Игровой Дом, владельца и провайдера Сайта. 
+                    Игровой Дом серьезно относится к конфиденциальности информации своих Пользователей. Данная политика применима ко всем Данным, 
+                    собранным нами или предоставленным Пользователями Сайта.</p>
+                <p>Область применения Политики конфиденциальности</p>
+                <p>Данная политика конфиденциальности применима исключительно к действиям Игровой Дом и Пользователей в отношении настоящего Сайта. 
+                    Политика не распространяется на другие сайты, на которые можно перейти с данного Сайта, включая ссылки на онлайн-казино.</p>
+                <p>По отношению к закону по защите данных Игровой Дом является «контроллером данных». Это означает, что Игровой Дом определяет 
+                    цель и способ обработки ваших Данных.</p>
+                    <h1 class="text-center razm mt-5"><i class="icon-archive gren"></i></h1>
+                    <h3 class="text-center gren my-3">Сбор данных</h3>
+                <p>Помимо персональных данных, мы имеем право собирать у наших Пользователей следующие данные:</p>
+                <p>Контактные данные, например адрес электронной почты</p>
+                <p>Автоматически собираемая информация: IP-адрес, тип браузера и операционная система</p>
+                <p class="font-weight-bold">Как осуществляется сбор Данных</p>
+                <p>Игровой Дом собирает данные следующим образом:<br>
+                        Предоставленные вами данные<br>
+                        Автоматически собираемые данные</p>
+                <p class="font-weight-bold">Предоставленные вами данные</p>
+                        <p>гровой Дом собирает данные различными способами, например:<br>
+                        При вашем обращении к нам через Сайт по электронной почте или другими способами. При вашем обращении с 
+                        требованием повысить качество наших услуг (при этом вы не обязаны раскрывать свою личность или сообщать адрес электронной почты и другие данные)</p>
+                <p class="font-weight-bold">Автоматически собираемые данные</p>
+                    <p>Некоторые данные собираются автоматически, когда вы заходите на Сайт, например:</p>
+                <p>Мы автоматически собираем следующую информацию: IP-адрес, дата посещения, количество и периодичность посещений, а также способ взаимодействия с содержимым 
+                    Сайта. Эта информация помогает нам улучшать контент Сайта и его функциональность. </p>
+                <p>Мы автоматически собираем ваши данные через Сookie в соответствии с настройками Cookie в вашем браузере. Дополнительную информацию см. ниже в разделе «Cookies».</p>
+                <p class="font-weight-bold">Как мы используем Данные</p>
+                        <p>Для оптимизации нашего Сайта мы можем просить вас предоставить любые данные. В соответствии с настоящей политикой конфиденциальности мы можем использовать 
+                        Данные в следующих целях - улучшение наших продуктов или услуг. 
+                        </p>
+                <p>Мы можем использовать ваши Данные для вышеуказанной цели, если посчитаем, что это необходимо для наших законных интересов. Если вас это не устраивает, вы имеете право возразить при определенных обстоятельствах (см. раздел «Ваши права»).
+                        Игровой Дом не предоставляет в аренду, не продает и не обменивается персональной информацией о своих Пользователях с другими физическими или юридическими лицами. </p>  
+                        <h1 class="text-center mt-5"><i class="icon-shield gren"></i></h1>
+                        <h3 class="text-center gren my-3">Безопастное хранение данных</h3>    
+                <p>Для защиты ваших Данных мы применяем технические и организационные меры:</p>    
+                <p>доступ к Данным имеет только администратор Сайта
+                        Меры по защите ваших Данных включают меры по устранению сбоя данных. При подозрении в неправильном использовании ваших 
+                        Данных, их утере или получении к ним несанкционированного доступа напишите нам на: <a href="https://alex-game.com/site/contact" class="gren">info@alex-game.com</a>
+                        </p> 
+                <p class="font-weight-bold">Хранение данных</p>
+                    <p>Мы храним ваши Данные на нашем сервере до тех пор, пока они необходимы нам для достижения целей, определенных в настоящей политике конфиденциальности, 
+                        либо до тех пор, пока вы не попросите их удалить.</p>
+                        <h1 class="text-center mt-5"><i class="icon-hammer gren"></i></h1>
+                        <h3 class="text-center gren my-3">Ваши права</h3>    
+                        <p>Вы имеете следующие права относительно своих Данных:
+                                Право на доступ — право в любое время запрашивать копию имеющейся информации о вас или право потребовать изменить, обновить или удалить данную информацию. Мы вправе отказать вам в вашей просьбе при наличии у нас законных оснований. В случае нашего отказа мы сообщим причины.
+                                Право на изменение — право на внесение изменений в ваши Данные, если они неточны.
+                                Право на удаление — право на удаление ваших Данных из наших систем.
+                                Право ограничить использование ваших Данных — право прекратить или ограничить использование ваших Данных.</p>
+                    </div>
+                    </div>
+                <div class="col-lg-6 col-12">
+                <div class="pr-lg-5 pr-2 pl-3">
+                <p>Право на перенос Данных — право требовать перемещения, копирования или переноса ваших Данных.
+                        Право на возражение — право возражать в отношении использования ваших Данных.
+                        Если вас не устраивает способ сбора и обработки ваших Данных, вы можете направить свою претензию в соответствующий орган по защите данных.
+                        Для нас важно, чтобы имеющиеся у нас Данные были точными. Пожалуйста, сообщайте нам об изменениях ваших Данных.</p>
+                        <h1 class="text-center mt-5"><i class="icon-link gren"></i></h1>
+                        <h3 class="text-center gren my-3">Ссылки на другие сайты</h3>  
+                <p>Сайт содержит ссылки на другие сайты. Несмотря на то, что мы делаем подробные обзоры сайтов, на которые даем ссылки, мы не несем ответственности за их содержание. 
+                    Настоящая политика конфиденциальности не распространяется на другие сайты. 
+                    При переходе на другой сайт ознакомьтесь с его политикой конфиденциальности, а также условиями и положениями его использования.</p>
+                    <h1 class="text-center mt-5"><i class="icon-users gren"></i></h1>
+                        <h3 class="text-center gren my-3">Смена владельцев компании</h3>  
+                <p>Игровой Дом может расширить или сократить масштаб бизнеса, что может повлечь за собой продажу и/или передачу контроля над всей компанией или ее частью. 
+                    Если предоставленные Пользователями Данные будут касаться нашей деятельности, они будут переданы новому владельцу. Согласно положениям настоящей политики 
+                    конфиденциальности новый владелец будет иметь право использовать эти Данные для первоначальных целей.
+                    </p>
+                <p>В этом случае мы предпримем все меры для защиты ваших Данных.</p>
+                <h1 class="text-center mt-5"><img src="img/cke.png" height="40px" ></img></h1>
+                <h3 class="text-center gren my-3">Файлы Cookie</h3>  
+                <p>Данный Сайт может размещать и получать доступ к определенным файлам Cookie на вашем компьютере. Игровой Дом использует файлы Cookie для повышения 
+                    удобства использования Сайта. Команда Игровой Дом тщательно собирает файлы Cookie и предпринимает все необходимые меры для защиты вашей конфиденциальности.</p>
+                <p>Все файлы Cookie, хранящиеся на серверах Сайта, используются в соответствии с действующим Законом ЕС о файлах Cookie.</p>
+                <p>Вы можете включить или отключить функцию Cookie в своем браузере. Многие браузеры по умолчанию принимают файлы Cookie, но такую настройку можно изменить.</p>
+                <p>Вы можете в любой момент удалить файлы Cookie, но при этом вы можете потерять информацию, позволяющую вам быстрее и эффективнее получать доступ к Сайту.</p>
+                <p>Ниже приведен список используемых нами файлов Сookie.</p>
+                <p>Cookie сеанса — мы используем файлы Сookie сеанса для того, чтобы запомнить вас и обеспечить бесперебойное использование нашего Сайта</p>
+                <p>Функциональные файлы Cookie — данные файлы Cookie позволяют нам запоминать ваши настройки на нашем Сайте, например ваш язык или страну</p>
+                <p>Аналитические файлы Cookie — данные файлы Cookie позволяют нам собирать информацию о действиях Пользователя на нашем Сайте, например, 
+                    какие использует фильтры, или получает ли сообщения об ошибках при попытке получить доступ к определенным разделам Сайта</p>
+                <p>Файлы Cookie Google Analytics — данные файлы Сookie используются для анализа действий Пользователя на Сайте; компания Google хранит на своих 
+                    серверах информацию, сгенерированную файлом Cookie. Google будет использовать эту информацию для анализа ваших действий на Сайте, а также может передавать эту 
+                    информацию третьим лицам, если это требует закон. Чтобы отказаться от отслеживая Google Analytics на всех сайтах, перейдите по ссылке: 
+                    <a href="http://tools.google.com/dlpage/gaoptout" class="gren">http://tools.google.com/dlpage/gaoptout</a>.</p>
+                <p>Файлы Cookie Mouseflow — данные файлы Cookie собирают информацию о действиях Пользователя на нашем Сайте, например записывают данные о щелчках мыши, движениях мыши 
+                    или прокрутке. Данная информация хранится на серверах Mouseflow. Чтобы отказаться от Mouseflow, перейдите по ссылке: <a href="http://tools.google.com/dlpage/gaoptout" class="gren">https://mouseflow.com/opt-out</a>.</p>
+                    <h1 class="text-center mt-5"><i class="icon-star gren"></i></h1>
+                    <h3 class="text-center gren my-3">Общие положения</h3> 
+                    <p>В соответствии с настоящей политикой конфиденциальности вы не можете передавать свои права третьим лицам. Мы можем передавать наши права в том случае, если уверены, 
+                    что ваши права не будут нарушены.</p>
+                <p>Если какое-либо положение настоящей политики конфиденциальности (в полном или частичном объеме) будет признано недействительным, незаконным или лишенным юридической 
+                    силы по решению суда или другого компетентного органа, положение будет удалено в полном или частичном объеме, при этом действительность и юридическая сила других 
+                    положений настоящей политики конфиденциальности затронута не будет.</p>
+                </div>
+                </div>
+                </div>
+                </div>
+                </div>
+                
+            </div>
+        </div></div>
+    </main>
+
+    <footer class="f-s">
+        <div class="container-fluid bg-green-inv">
+            <div class="container">
+                <div class="row">
+                    <div class="col my-1 d-flex justify-content-between kassa-img">
+                        <div class="align-items-center d-flex">
+
+                            <!-- Кнопка на Freekassa -->
+                            <a class="pr-2" href="http://www.free-kassa.ru">
+                                <img src="img/fk.png" class="img-fluid" alt="Responsive image"></a>
+                            <!-- Кнопка на Payeer -->
+                            <a class="pr-2" href="https://payeer.com/ru">
+                                <img src="img/payeer.png" class="img-fluid" alt="Responsive image"></a>
+                            <!-- Кнопка на Interkassa -->
+                            <a class="pr-2" href="https://www.interkassa.com">
+                                <img src="img/ik.png" class="img-fluid" alt="Responsive image"></a>
+                            <h1><i class="icon-18plus text-white"></i></h1>
+                        </div>
+                        <div class="d-flex align-items-center justify-content-end hide-items">
+                            <ul class="navbar-nav social-icon d-flex d-inline-block">
+                                <!-- Кнопка "Написать нам" в футере -->
+                                <li class="nav-item text-center top-social-icon">
+                                    <button type="button" class="btn bg-danger rounded text-white p-0"
+                                        data-toggle="modal" data-target="#mail" style="height:26px;width:26px">
+                                        <i class="icon-mail-1"></i>
+                                    </button>
+                                </li>
+                                <!-- Кнопка "Vkontakte" в футере -->
+                                <li class="nav-item text-center top-social-icon">
+                                    <a class="nav-link bg-vk rounded  base-icon" href="https://vk.com/public171133653">
+                                        <i class="icon-vkontakte"></i>
+                                    </a>
+                                </li>
+                                <!-- Кнопка "Odnoklassniki" в футере -->
+                                <li class="nav-item text-center top-social-icon">
+                                    <a class="nav-link bg-ok rounded base-icon"
+                                        href="https://ok.ru/group/55514326302733">
+                                        <i class="icon-odnoklassniki"></i>
+                                    </a>
+                                </li>
+                                <!-- Кнопка "Facebook" в футере -->
+                                <li class="nav-item text-center">
+                                    <a class="nav-link bg-f rounded base-icon"
+                                        href="https://www.facebook.com/groups/892129730993336/">
+                                        <i class="icon-facebook-1"></i>
+                                    </a>
+                                </li>
+                            </ul>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+        <div class="container-fluid bg-green-nav pt-2 ">
+            <div class="container">
+                <div class="row">
+                    <div class="col-lg-4 col-md-4 col-sm-12">
+                        <h5 class="text-white">
+                            <i class="icon-info ">Информация</i>
+                        </h5>
+                        <ul class="nav-menu navbar-nav item-list">
+                            <li><a class="nav-link" href="./news.html">Новости</a></li>
+                            <li><a class="nav-link" href="./rules.html">Правила клуба</a></li>
+                            <li><a class="nav-link" href="./rules-alex.html">Условия использования
+                                    сайтом</a></li>
+                            <li><a class="nav-link" href="./pr-policy.html">Политика
+                                    конфиденциальности</a></li>
+                            <li><a class="nav-link" href="./c-b-policy.html">Политика отмены и
+                                    возврата платежей</a></li>
+                        </ul><br>
+                        <p class="nav-menu"><a class="text-white item-list"
+                                href="./about.html"><span class="font-weight-bold">Контактная
+                                    информация</span><br>
+                                Москва, Россия, 119019, ул. Волхонка, 18</a></p>
+                    </div>
+                    <div class="col-lg-4 col-md-4 col-sm-12 hide-items">
+                        <div class="col-auto">
+                            <h5 class="text-white">
+                                <i class="icon-coin">Игры на деньги</i>
+                            </h5>
+                        </div>
+                        <div class="col d-flex ">
+                            <div class="col-6 nav-menu p-0 ">
+                                <ul class="nav-link">
+                                    <li><a href="./durak.html">Дурак</a></li>
+                                    <li><a href="./chess.html">Шахматы</a></li>
+                                    <li><a href="./checkers.html">Шашки</a></li>
+                                    <li><a href="./bura.html">Бура</a></li>
+                                    <li><a href="./preference.html">Преферанс</a></li>
+                                    <li><a href="./deberc.html">Дебертс</a></li>
+                                    <li><a href="./tic-tac-toe.html">Крестики - нолики</a>
+                                    </li>
+                                    <li><a href="./seabattle.html">Морской бой</a></li>
+                                </ul>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="col-lg-4 col-md-4 col-sm-12 hide-items">
+                        <div class="col-auto">
+                            <h5 class="text-white">
+                                <i class="icon-free">Игры бесплатно</i>
+                            </h5>
+                        </div>
+                        <div class="col d-flex">
+                            <div class="col-6 nav-menu p-0 ">
+                                <ul class="nav-link">
+                                    <li><a href="./durak.html">Дурак</a></li>
+                                    <li><a href="./chess.html">Шахматы</a></li>
+                                    <li><a href="./checkers.html">Шашки</a></li>
+                                    <li><a href="./bura.html">Бура</a></li>
+                                    <li><a href="./preference.html">Преферанс</a></li>
+                                    <li><a href="./deberc.html">Дебертс</a></li>
+                                    <li><a href="./tic-tac-toe.html">Крестики - нолики</a>
+                                    </li>
+                                    <li><a href="./seabattle.html">Морской бой</a></li>
+                                </ul>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="col-12">
+                        <h6 class="text-center">Copyright <i class="icon-copyright"></i>2018 - 2019, Игровой Дом.
+                            Все права защищены.</p>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </footer>
+    </div>
+    <!-- Modal "Написать нам" -->
+    <div class="modal fade" id="mail" tabindex="-1" role="dialog" aria-labelledby="exampleModalCenterTitle"
+        aria-hidden="true">
+        <div class="modal-dialog modal-dialog-centered" role="document">
+            <div class="modal-content">
+                <div class="modal-header btn-green">
+                    <h5 class="modal-title text-dark" id="exampleModalCenterTitle">Написать нам</h5>
+                    <button type="button" class="close" data-dismiss="modal" aria-label="Close">
+                        <span aria-hidden="true">&times;</span>
+                    </button>
+                </div>
+                <div class="modal-body">
+                    <form>
+                        <div class="form-group">
+                            <input type="email" class="form-control" id="exampleInputEmail1"
+                                aria-describedby="emailHelp" placeholder="Ваш e-mail">
+                        </div>
+                        <div class="form-group">
+                            <input type="text" class="form-control mt-4" id="userlogin" aria-describedby="userlogin"
+                                placeholder="Тема сообщения" required="true">
+                        </div>
+                        <div class="form-group">
+                            <label for="exampleFormControlTextarea1">Ваше сообщение</label>
+                            <textarea class="form-control" id="exampleFormControlTextarea1" rows="3"></textarea>
+                        </div>
+                </div>
+                <div class="modal-footer">
+                    <button type="button" class="btn btn-primary btn-green ">Отправить</button>
+                    <button type="button" class="btn btn-secondary btn-red" data-dismiss="modal">Закрыть</button>
+                </div>
+            </div>
+        </div>
+    </div>
+    <!-- Modal "Вход"-->
+    <div class="modal fade" id="SignIn" tabindex="-1" role="dialog" aria-labelledby="exampleModalCenterTitle"
+        aria-hidden="true">
+        <div class="modal-dialog modal-dialog-centered" role="document">
+            <div class="modal-content">
+                <div class="modal-header btn-green">
+                    <h5 class="modal-title text-dark font-weight-bold" id="exampleModalCenterTitle">
+                        Вход</h5>
+                    <button type="button" class="close" data-dismiss="modal" aria-label="Close">
+                        <span aria-hidden="true">&times;</span>
+                    </button>
+                </div>
+                <div class="col text-left">
+                    <form>
+                        <div class="form-group">
+                            <input type="text" class="form-control mt-4" id="userlogin" aria-describedby="userlogin"
+                                placeholder="Ваш логин" required="true">
+                        </div>
+                        <div class="form-group">
+                            <input type="password" class="form-control" id="exampleInputPassword1"
+                                placeholder="Ваш пароль" required="true">
+                        </div>
+                        <div class="form-check">
+                            <input type="checkbox" class="form-check-input" id="exampleCheck1">
+                            <label class="form-check-label" for="exampleCheck1">Запомнить
+                                меня</label>
+                        </div>
+                        <div class="my-3 log-line"> <button type="submit" class="btn btn-green ">Войти</button>
+                            <a class="text-dark mx-3 " href="https://alex-game.com/site/request-password-reset">
+                                Забыли пароль?
+                            </a>
+                            <div class="d-flex mt-4">
+                                <p>Войти через:</p>
+                                <ul class="navbar-nav social-icon px-5">
+                                    <li class="nav-item text-center top-social-icon">
+                                        <a class="nav-link bg-vk rounded  base-icon"
+                                            href="https://alex-game.com/site/auth?authclient=vk">
+                                            <i class="icon-vkontakte"></i>
+                                        </a>
+                                    </li>
+                                    <li class="nav-item text-center top-social-icon">
+                                        <a class="nav-link bg-ok rounded base-icon"
+                                            href="https://alex-game.com/site/auth?authclient=ok">
+                                            <i class="icon-odnoklassniki"></i>
+                                        </a>
+                                    </li>
+                                </ul>
+                            </div>
+                        </div>
+                    </form>
+                </div>
+            </div>
+        </div>
+    </div>
+    <!-- Modal "Создать игру" -->
+    <div class="modal fade" id="exampleModalCenter" tabindex="-1" role="dialog"
+        aria-labelledby="exampleModalCenterTitle" aria-hidden="true">
+        <div class="modal-dialog modal-dialog-centered" role="document">
+            <div class="modal-content ">
+                <div class="modal-header btn-green">
+                    <h5 class="modal-title text-dark" id="exampleModalCenterTitle">Новая игра
+                    </h5>
+                    <button type="button" class="close" data-dismiss="modal" aria-label="Close">
+                        <span aria-hidden="true">&times;</span>
+                    </button>
+                </div>
+                <div class="modal-body">
+                    <p>Размер ставки</p>
+                    <select class="form-control">
+                        <option>0</option>
+                        <option>10</option>
+                        <option>20</option>
+                        <option>40</option>
+                        <option>60</option>
+                        <option>120</option>
+                        <option>160</option>
+                        <option>300</option>
+                    </select>
+                </div>
+                <div class="modal-footer justify-content-center">
+                    <button type="button" class="btn btn-red px-5" data-dismiss="modal">Ок</button>
+                    <button type="button" class="btn btn-green px-4">Отмена</button>
+                </div>
+            </div>
+        </div>
+    </div>
+
+    <script src="https://code.jquery.com/jquery-3.3.1.slim.min.js"
+        integrity="sha384-q8i/X+965DzO0rT7abK41JStQIAqVgRVzpbzo5smXKp4YfRvH+8abtTE1Pi6jizo" crossorigin="anonymous">
+    </script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.14.7/umd/popper.min.js"
+        integrity="sha384-UO2eT0CpHqdSJQ6hJty5KVphtPhzWj9WO1clHTMGa3JDZwrnQq4sF86dIHNDz0W1" crossorigin="anonymous">
+    </script>
+    <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/js/bootstrap.min.js"
+        integrity="sha384-JjSmVgyd0p3pXB1rRibZUAYoIIy6OrQ6VrjIEaFf/nJGzIxFDsf4x0xIM+B07jRM" crossorigin="anonymous">
+    </script>
+</body>
+
+</html>

@@ -1,0 +1,233 @@
+body {
+    padding: 0
+}
+
+.pos-rel {
+    position: relative;
+}
+
+.bg-img {
+    position: relative;
+    background-size: cover;
+    max-width: 100%;
+    background-position-x: center;
+    background-repeat: no-repeat;
+    height: 100vh;
+
+}
+
+header {
+    z-index: 999;
+}
+
+@media screen and (max-width: 991px) {
+    .table {
+        box-shadow: 0 3px 6px rgba(0, 0, 0, 0.16), 0 3px 6px rgba(0, 0, 0, 0.23);
+
+    }
+
+    .bg-img {
+        /* background-image: url(../img/preference.jpg) !important; */
+        background-attachment: scroll;
+       /* height: 100% !important; */
+       background-size: 200%
+    }
+
+    .ad_m_0 {
+        margin-top: 0 !important
+    }
+    
+}
+
+@media (max-width: 767px) and (min-width: 657px) {
+    .container {
+        max-width: 747px;
+    }
+    .table-head-font{
+        font-size: 0.8rem
+    }
+}
+
+@media (max-width: 656px) {
+
+    tbody a {
+        font-size: 0.75rem !important;
+
+
+    }
+
+    table {
+        font-size: 0.8rem !important
+    }
+
+}
+
+@media screen and (max-width: 575px) {
+
+    .top-box-indent {
+        margin-top: 0 !important
+    }
+
+    .bg-img {
+        padding-top: 1rem;
+        background-image: none !important;
+        
+    }
+
+}
+
+.bg-gradient-durak {
+    background: rgb(0, 0, 0);
+    background: linear-gradient(0deg, rgba(0, 0, 0, 1) 0%, rgba(0, 0, 0, 1) 30%, rgba(0, 0, 0, 0.15449929971988796) 69%, rgba(0, 0, 0, 0) 100%), url(../img/durak.jpg);
+    background-position-x: center;
+}
+
+.bg-gradient-bj {
+    background: rgb(0, 0, 0);
+    background: linear-gradient(0deg, rgba(0, 0, 0, 1) 0%, rgba(0, 0, 0, 1) 30%, rgba(0, 0, 0, 0.15449929971988796) 69%, rgba(0, 0, 0, 0) 100%), url(../img/BlackJack.png);
+    background-position-x: center;
+}
+
+@media screen and (max-width: 1199px) and (min-width: 992px) {
+   
+
+    footer {
+        position: relative !important;
+    }
+    table{
+max-width: 100%;
+    }
+
+}
+
+@media screen and (min-height: 540px) and (max-height: 850px)  {
+
+.bg-pic2 {
+    height: 40vh !important;
+}
+
+
+}
+@media screen and (min-height: 540px){
+.bg-pic2, .black-jack  {
+    height: 100% !important;
+}
+}
+@media screen and (min-height: 851px) {
+
+    .bg-pic2 {
+        height: 100vh !important;
+    }
+    
+    }
+
+    @media screen and (min-width: 992px) { 
+
+
+
+        .bg-pic2 {
+            height: 70vh !important;
+        }
+        
+        
+        }
+        @media screen and (min-width: 768px) {
+        .bg-pic{
+            height: 70vh !important;
+        }
+        main .b{
+            height: 100vh !important;
+        }
+
+
+
+/* Glory-hall */
+
+
+.page{
+   
+    display: flex;
+    align-items: center;
+    justify-content: center }
+}
+
+
+
+
+
+
+.bg-pic2 {
+    background-position-y: 101px;
+   
+    background-repeat: no-repeat;
+    background-attachment: fixed;
+    background-position-x: center;
+    z-index: -1;
+    width: 101vw;
+    background-size: cover
+}
+
+.bg-gradient-chess {
+    background: rgb(0, 0, 0);
+    background: linear-gradient(0deg, rgba(0, 0, 0, 1) 0%, rgba(0, 0, 0, 1) 30%, rgba(0, 0, 0, 0.15449929971988796) 69%, rgba(0, 0, 0, 0) 100%), url(../img/chess.jpg);
+    background-position-x: center;
+}
+
+
+@media screen and (max-width: 767px) {
+    table {
+        padding: 0 !important;
+    }
+
+    .row .col-12 {
+        align-content: center
+    }
+}
+
+
+@media screen and (max-width: 991px) {
+
+    .bg-pic2 {
+        background-attachment: scroll !important;
+        background-size: auto;
+        background-position-y: 0;
+        background-repeat: no-repeat;
+
+    }
+    
+}
+@media screen and (max-width: 575px) {
+    .chess, .bg-gradient-chess {
+background-image: none !important;
+background-color: black
+    }
+}
+
+@media screen and (min-height: 1054px) {
+.bg-pic2{
+height: 100vh;
+}
+}
+@media screen and (max-width: 575px) {
+
+    .top-box-indent {
+        margin-top: 0 !important
+    }
+
+    .bg-img {
+        padding-top: 1rem;
+        background-image: none !important;
+        
+    }
+
+}
+@media screen and (min-height: 1054px) {
+    .container-fluid .chess{
+    height: 80vh !important;
+    }
+    
+    .container-fluid .bg-pic2 {
+    height: 80vh !important;
+}
+    }
+

@@ -1,0 +1,19 @@
+.table-head-font{
+    font-size: 0.9rem;
+}
+
+
+.bg-style{
+    background-position-x: center;
+   
+}
+.bg-pic{
+    background-size: cover
+}
+@media screen and (max-width: 767px) {
+.table-head-font{
+    font-size: 0.8rem
+}}
+
+
+

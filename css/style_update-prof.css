@@ -1,0 +1,48 @@
+main{
+    font-size: 0.9375rem
+}
+.form-group{
+margin-bottom: 3em
+}
+
+.profile-img{
+    max-height: 183px;
+    width: auto
+}
+
+@media screen and (max-width: 768px) and (min-width: 576px){
+.profile-bg {
+    height: 600px !important;}
+
+
+    .ad_just_center{
+        justify-content: center;
+        display: flex;
+    }}
+
+
+    @media screen and (max-width: 575px){
+        .profile-bg{
+            height: 900px !important;
+        }
+.profile-m{
+    margin-left: 0 !important;
+
+}
+.form-group {
+    margin-bottom: 1em;}
+    .bg-style{
+        background-image: none !important
+    }
+    .ad_just_center{
+        justify-content: center;
+        display: flex;
+    }
+    .ad_padding{
+        padding-left: 15px !important;
+        padding-right: 15px !important;
+    }
+    .ad_padding_top{
+        padding-top: 15px
+    }
+}

@@ -1,0 +1,441 @@
+.bg-gren {
+    background-color: #2ec700;
+    color: #ffffff;
+    border-style: solid;
+    border-radius: 10px;
+    border-color: #2ec700;
+}
+.bg-gren2 {
+    background-color: #00AC11;
+    color: #ffffff;
+
+}
+.r-gren {
+    border-color: #2ec700;
+    border-style: solid;
+    border-radius: 1%;
+}
+.block-btn2 {
+    margin-bottom: 5rem
+}
+.btn-red-inv {
+
+    border: 2px rgb(252, 114, 50);
+    background: rgba(116, 3, 72, 1);
+    background-image: linear-gradient(280deg, rgba(252, 114, 50, 1) 50%, rgba(116, 3, 72, 1) 100%);
+    color: white;
+    font-weight: 600;
+    transition: 0.5s;
+    background-size: 200% auto;
+    width: 40%;
+
+}
+.gren {
+    color: #2ec700 !important;
+}
+.black {
+    color: #000000
+}
+.f-s{
+    font-size: 0.9375rem;
+}
+.bg-pic2 { 
+    background-position-y: 101px;
+    background-position: cover;
+    background-repeat: no-repeat;
+    background-attachment: fixed;
+    background-position-x: center;
+    z-index: -1;
+    width: 101vw; 
+    background-size: cover
+}
+ .bg-pic3 { 
+    background-position-y: 101px;
+    background-position: cover;
+    background-repeat: no-repeat;
+    background-attachment: fixed;
+    background-position-x: center;
+    z-index: -1;
+    width: 101vw; 
+    background-size: cover
+} 
+
+.img {
+    width: 200px;
+    max-width: 100%;
+    float:left; 
+    margin: 10px 10px 10px 0; 
+}
+.rd{
+    border-radius: 2%;
+}
+.m-tp{
+    margin-top: 7.5rem !important;
+}
+.m-tp2{
+   
+    flex-wrap: wrap;
+}
+
+
+@media screen and (min-height: 1054px) { 
+    .bg-pic3{ 
+    height: 71.5vh; 
+    } }
+@media screen and (max-width: 575px) {
+    .bg-pic2  { background: rgb(255, 255, 255);}
+    .bg-pic3  { background: rgb(255, 255, 255); } 
+    .m-tp{margin-top: 0rem !important}
+    .bg-pic  { background: rgb(255, 255, 255); }
+
+}
+@media screen and (max-width: 992px) {
+    .bg-pic2 .container{ 
+        max-width: 980px}
+    .bg-pic  {background-position-y: 0px;
+    }
+}
+@media screen and (max-width: 1199px) {
+.product-options input[type="radio"]+label {
+    height: 89px !important;
+    
+    top: 7px;
+    margin: 0px !important;
+}}
+@media screen and (max-width: 461px) {
+    .product-options input[type="radio"]+label {
+        height: 79px!important;
+        margin: 0px !important;
+        top: 7px;
+    }}
+@media screen and (max-width: 411px) {
+        .product-options input[type="radio"]+label {
+            width: 100px!important;
+            margin: 0px !important;
+            top: 7px;
+        }}
+        @media screen and (max-width: 366px) {
+            .product-options input[type="radio"]+label {
+                width: 90px!important;
+                margin: 0px !important;
+                top: 7px;
+            }}
+            @media screen and (max-width: 337px) {
+                .product-options input[type="radio"]+label {
+                    width: 80px!important;
+                    margin: 0px !important;
+                    top: 7px;
+                }}
+                @media screen and (max-width: 306px) {
+                    .product-options input[type="radio"]+label {
+                        width: 70px!important;
+                        margin: 0px !important;
+                        top: 7px;
+                    }}
+
+@media screen and (max-width: 991px) {
+
+    .bg-pic2  {
+        background-attachment: scroll !important;
+        background-size: auto;
+        background-position-y: 0;
+        background-repeat: no-repeat;
+        
+    }
+    .bg-pic3  {
+        background-attachment: scroll !important;
+        background-size: auto;
+        background-position-y: 0;
+        background-repeat: no-repeat;
+        
+    }
+     .bg-gradient-black-bura {
+        background: rgb(0, 0, 0);
+        background: linear-gradient(0deg, rgba(0,0,0,1) 0%, rgba(0,0,0,1) 80%, rgba(0,0,0,0.7959558823529411) 90%, rgba(0,0,0,0.24693627450980393) 95%, rgba(0,0,0,0) 100%), url(../img/bura.jpg);
+        background-position-x: center; 
+    }
+    .bg-gradient-black-pr {
+        background: rgb(0, 0, 0);
+        background: linear-gradient(0deg, rgba(0,0,0,1) 0%, rgba(0,0,0,1) 80%, rgba(0,0,0,0.7959558823529411) 90%, rgba(0,0,0,0.24693627450980393) 95%, rgba(0,0,0,0) 100%), url(../img/preference.jpg);
+        background-position-x: center; 
+    }
+    .bg-gradient-black-durak {
+        background: rgb(0, 0, 0);
+        background: linear-gradient(0deg, rgba(0,0,0,1) 0%, rgba(0,0,0,1) 80%, rgba(0,0,0,0.7959558823529411) 90%, rgba(0,0,0,0.24693627450980393) 95%, rgba(0,0,0,0) 100%), url(../img/durak.jpg);
+        background-position-x: center; 
+    }
+    .bg-gradient-black-ttt {
+        background: rgb(0, 0, 0);
+        background: linear-gradient(0deg, rgba(0,0,0,1) 0%, rgba(0,0,0,1) 80%, rgba(0,0,0,0.7959558823529411) 90%, rgba(0,0,0,0.24693627450980393) 95%, rgba(0,0,0,0) 100%), url(../img/tic-tac-toe.jpg);
+        background-position-x: center; 
+    }
+    .bg-gradient-black-sb {
+        background: rgb(0, 0, 0);
+        background: linear-gradient(0deg, rgba(0,0,0,1) 0%, rgba(0,0,0,1) 80%, rgba(0,0,0,0.7959558823529411) 90%, rgba(0,0,0,0.24693627450980393) 95%, rgba(0,0,0,0) 100%), url(../img/sea_battle.jpg);
+        background-position-x: center; 
+    }
+    .bg-gradient-black-chess {
+        background: rgb(0, 0, 0);
+        background: linear-gradient(0deg, rgba(0,0,0,1) 0%, rgba(0,0,0,1) 80%, rgba(0,0,0,0.7959558823529411) 90%, rgba(0,0,0,0.24693627450980393) 95%, rgba(0,0,0,0) 100%), url(../img/chess.jpg);
+        background-position-x: center; 
+    }
+    .bg-gradient-black-debrec {
+        background: rgb(0, 0, 0);
+        background: linear-gradient(0deg, rgba(0,0,0,1) 0%, rgba(0,0,0,1) 80%, rgba(0,0,0,0.7959558823529411) 90%, rgba(0,0,0,0.24693627450980393) 95%, rgba(0,0,0,0) 100%), url(../img/deberc.jpg);
+        background-position-x: center; 
+    }
+    .bg-gradient-black-check {
+        background: rgb(0, 0, 0);
+        background: linear-gradient(0deg, rgba(0,0,0,1) 0%, rgba(0,0,0,1) 80%, rgba(0,0,0,0.7959558823529411) 90%, rgba(0,0,0,0.24693627450980393) 95%, rgba(0,0,0,0) 100%), url(../img/checkers.jpg);
+        background-position-x: center; 
+    } 
+     .preference{
+        background-image: none !important
+    }
+    .bura{
+        background-image: none !important
+    }
+    .seabattle{
+        background-image: none !important
+    }
+    .durak{
+        background-image: none !important
+    }
+    .deberc{
+        background-image: none !important
+    }
+    .checkers{
+        background-image: none !important
+    }
+    .chess{
+        background-image: none !important
+    }
+    .tic-tac-toe{
+        background-image: none !important
+    }  
+      }
+.zi{
+    z-index: 100;
+}
+.fb{
+    font-weight: bold;
+}
+h2{
+    text-transform: uppercase;
+    font-weight: bold;
+    font-size: 20px;
+}
+.razm{
+    font-size: 30px !important;
+}
+.razm2{
+    font-size: 31px !important;
+}
+h3{
+    font-weight: bold;
+    font-size: 20px;
+}
+main{
+    font-size: 15px;
+}
+.hgt{
+height: 100%;
+}
+#map {
+    width: 100%;
+     height: 400px;
+}
+.pd{padding-right: 90px
+}
+.page-link {
+    position: relative;
+    display: block;
+    padding: 0.5rem 0.75rem;
+    margin-left: -1px;
+    line-height: 1.25;
+    color: rgb(0, 0, 0) !important;
+  }
+   
+  .page-item.disabled .page-link {
+    color: #000000 !important;
+    pointer-events: none;
+    cursor: auto; 
+  }
+   
+  .page-item.active .page-link {
+    z-index: 1;
+    color: rgb(0, 0, 0) !important;
+  }
+  .page-link:focus, .page-link:hover {
+    color: rgb(0, 0, 0) !important;
+    text-decoration: none;
+  }
+
+#main-image {
+    /* width: 657px; */
+    height: 100%;
+}
+#main-image img {
+    max-width: 100%;
+    float:left;
+}
+.product-options {
+    position: relative;
+    
+}
+.product-options input[type="radio"] {
+    display: none;
+    
+}
+.product-options input[type="radio"]+label {
+    position: relative;
+    width: 115px;
+    height: 110px;
+    background-color: #999; 
+    margin-left: 17px;
+    font-size: 0;
+    line-height: 0;
+}
+.color-4{
+    margin-right: 0;
+}
+.product-options input[type="radio"]:checked+label {
+    outline: 1px solid #777;
+    outline-offset: 2px;
+}
+.product-options input[type="radio"]+label.silver1 {
+    background-image:url(../img/t-t-t_1.jpg);
+    background-size: cover;
+    background-position: center center  
+}
+.product-options input[type="radio"]+label.pink1 {
+    background-image:url(../img/t-t-t_2.jpg);
+    background-size: cover;
+    background-position: center center
+}
+.product-options input[type="radio"]+label.gold1 {
+    background-image:url(../img/t-t-t_3.jpg);
+    background-size: cover;
+    background-position: center center
+}
+
+
+.product-options input[type="radio"]+label.silver2 {
+    background-image:url(../img/bura_1.jpg);
+    background-size: cover;
+    background-position: center center  
+}
+.product-options input[type="radio"]+label.pink2 {
+    background-image:url(../img/bura_2.jpg);
+    background-size: cover;
+    background-position: center center
+}
+.product-options input[type="radio"]+label.gold2 {
+    background-image:url(../img/bura_3.jpg);
+    background-size: cover;
+    background-position: center center
+}
+
+.product-options input[type="radio"]+label.silver3 {
+    background-image:url(../img/sea_battle_1.jpg);
+    background-size: cover;
+    background-position: center center  
+}
+.product-options input[type="radio"]+label.pink3 {
+    background-image:url(../img/sea_battle_2.jpg);
+    background-size: cover;
+    background-position: center center
+}
+.product-options input[type="radio"]+label.gold3 {
+    background-image:url(../img/sea_battle_3.jpg);
+    background-size: cover;
+    background-position: center center
+}
+
+.product-options input[type="radio"]+label.silver4 {
+    background-image:url(../img/deberc_1.jpg);
+    background-size: cover;
+    background-position: center center  
+}
+.product-options input[type="radio"]+label.pink4 {
+    background-image:url(../img/deberc_2.jpg);
+    background-size: cover;
+    background-position: center center
+}
+.product-options input[type="radio"]+label.gold4 {
+    background-image:url(../img/deberc_3.jpg);
+    background-size: cover;
+    background-position: center center
+}
+
+
+.product-options input[type="radio"]+label.silver5 {
+    background-image:url(../img/chess_1.jpg);
+    background-size: cover;
+    background-position: center center  
+}
+.product-options input[type="radio"]+label.pink5 {
+    background-image:url(../img/chess_2.jpg);
+    background-size: cover;
+    background-position: center center
+}
+.product-options input[type="radio"]+label.gold5 {
+    background-image:url(../img/chess_3.jpg);
+    background-size: cover;
+    background-position: center center
+}
+
+
+.product-options input[type="radio"]+label.silver6 {
+    background-image:url(../img/durak_1.jpg);
+    background-size: cover;
+    background-position: center center  
+}
+.product-options input[type="radio"]+label.pink6 {
+    background-image:url(../img/durak_2.jpg);
+    background-size: cover;
+    background-position: center center
+}
+.product-options input[type="radio"]+label.gold6 {
+    background-image:url(../img/durak_3.jpg);
+    background-size: cover;
+    background-position: center center
+}
+
+
+.product-options input[type="radio"]+label.silver7 {
+    background-image:url(../img/checkers_1.jpg);
+    background-size: cover;
+    background-position: center center  
+}
+.product-options input[type="radio"]+label.pink7 {
+    background-image:url(../img/checkers_2.jpg);
+    background-size: cover;
+    background-position: center center
+}
+.product-options input[type="radio"]+label.gold7 {
+    background-image:url(../img/checkers_3.jpg);
+    background-size: cover;
+    background-position: center center
+}
+
+.product-options input[type="radio"]+label.silver7 {
+    background-image:url(../img/preferance_1.jpg);
+    background-size: cover;
+    background-position: center center  
+}
+.product-options input[type="radio"]+label.pink7 {
+    background-image:url(../img/preferance_2.jpg);
+    background-size: cover;
+    background-position: center center
+}
+.product-options input[type="radio"]+label.gold7 {
+    background-image:url(../img/preferance_3.jpg);
+    background-size: cover;
+    background-position: center center
+}
+
+@media screen and (max-width: 400px) {
+    div .img{
+        width: 150px !important;
+    }}

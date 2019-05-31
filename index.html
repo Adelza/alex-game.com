@@ -1,0 +1,766 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/css/bootstrap.min.css"
+        integrity="sha384-ggOyR0iXCbMQv3Xipma34MD+dH/1fQ784/j6cY/iJTQUOhcWr7x9JvoRxT2MZw1T" crossorigin="anonymous">
+    <link href="https://fonts.googleapis.com/css?family=Open+Sans:300,400,600,700,800&amp;subset=cyrillic,cyrillic-ext"
+        rel="stylesheet">
+    <link href="css/fontello.css" rel="stylesheet">
+    <link href="css/style.css" rel="stylesheet">
+    <link href="css/style_main.css" rel="stylesheet">
+    <title>alex-game.com</title>
+</head>
+
+<body>
+    <header class="container-fluid bg-green-nav nav-index">
+        <div class="container">
+            <div class="row logo-img">
+                <div class="col logo-img">
+                    <a class="navbar-brand" href="./index.html">
+                        <img src="img/logo.png"></a></div>
+                <div class="flex-column col-11 offset-1 pl-5 pb-1 pr-0 side-bar">
+                    <nav class="navbar navbar-expand-lg navbar-light nav-text logo-img">
+                        <h6><span class="text-uppercase font-weight-bold site-name">alex-game.com</span><br>
+                            Игра только с реальными игроками</h6>
+                        <div class="collapse navbar-collapse justify-content-between" id="navbarNavDropdown">
+                            <ul class="navbar-nav social-icon pl-3">
+                                <!-- Кнопка "Написать нам" в верхнем меню (модальное окно в конце кода)-->
+                                <li class="nav-item text-center top-social-icon">
+                                    <button type="button" class="btn bg-danger rounded text-white p-0"
+                                        data-toggle="modal" data-target="#mail" style="height:26px;width:26px">
+                                        <i class="icon-mail-1"></i>
+                                    </button>
+                                </li>
+                                <!-- Кнопка "Vkontakte" в верхнем меню -->
+                                <li class="nav-item text-center top-social-icon">
+                                    <a class="nav-link bg-vk rounded  base-icon" href="https://vk.com/public171133653">
+                                        <i class="icon-vkontakte"></i>
+                                    </a>
+                                </li>
+                                <!-- Кнопка "Odnoklassniki" в верхнем меню -->
+                                <li class="nav-item text-center top-social-icon">
+                                    <a class="nav-link bg-ok rounded base-icon"
+                                        href="https://ok.ru/group/55514326302733">
+                                        <i class="icon-odnoklassniki"></i>
+                                    </a>
+                                </li>
+                                <!-- Кнопка "Facebook" в верхнем меню -->
+                                <li class="nav-item text-center top-social-icon">
+                                    <a class="nav-link bg-f rounded base-icon"
+                                        href="https://www.facebook.com/groups/892129730993336/">
+                                        <i class="icon-facebook-1"></i>
+                                    </a>
+                                </li>
+                            </ul>
+
+                            <!-- Этот блок активен, когда ввели логин и пароль. Если нет, то активен блок, который находится ниже (*сейчас скрыт) -->
+                            <div class="d-flex profile-sm">
+                                <div class="balance-info pr-3">
+                                    <h6>Основной счет: 1000.00</h6>
+                                    <h6>Бонусный счет: 10.00</h6>
+                                </div>
+                                <div class="profile-info d-flex">
+                                    <!-- Логин при нажатии переход в профиль -->
+                                    <div class="pr-2">
+                                        <a class="nav-name" href="../main/profile.html">Вася
+                                            Васили571159826275, кабинет</a><br>
+                                        <!-- Кнопка "Выход" из профиля -->
+                                        <button class="btn btn-logout"><i class="icon-logout"></i>Выход</button>
+                                    </div>
+                                    <div class="player-icon">
+                                        <img class="rounded " width="50" height="50"
+                                            src="https://via.placeholder.com/50">
+                                    </div>
+                                </div>
+                            </div>
+                            <!-- *Сейчас этот блок кнопок скрыт -->
+                            <div class="nav-btn top-text d-none">
+                                <!-- Кнопка вход -->
+                                <button type="button"
+                                    class="btn btn-red rounded dropdown-item text-center d-inline-block"
+                                    data-toggle="modal" data-target="#SignIn">Вход</button>
+                                <!-- Кнопка регистрация -->
+                                <a href="#"
+                                    class="btn btn-green px-3 rounded">Регистрация</a>
+                            </div>
+                        </div>
+                    </nav>
+                    <nav class="navbar navbar-expand-lg navbar-light menu-items">
+                        <button class="container-fluid navbar-toggler justify-content-center" type="button"
+                            data-toggle="collapse" data-target="#navbarNavDropdown" aria-controls="navbarNavDropdown"
+                            aria-expanded="false" aria-label="Toggle navigation">
+                            <span class="icon-menu-1 text-white"></span>
+                            <h5 class="pl-2 mb-0 text-white">Меню</h5>
+                        </button>
+                        <div class="collapse navbar-collapse justify-content-between " id="navbarNavDropdown">
+                            <ul class="navbar-nav side-item ">
+
+                                <!-- Кнопка меню "Главная" -->
+
+                                <li class="nav-item nav-menu">
+                                    <a class="nav-link " href="./index.html">
+                                        <i class="icon-home-1 ml-5"></i></a>
+                                </li>
+                                <!-- Кнопка меню "Новости" -->
+
+                                <li class="nav-item nav-menu">
+                                    <a class="nav-link " href="./news.html">
+                                        <i class="icon-newspaper p-1"></i>Новости
+                                    </a>
+                                </li>
+                                <!-- Кнопка меню "Зал славы" -->
+                                <li class="nav-item nav-menu">
+                                    <a class="nav-link " href="./glory-hall.html">
+                                        <i class="icon-star"></i>Зал славы
+                                    </a>
+                                </li>
+                                <!-- Кнопка меню "Турниры" -->
+                                <li class="nav-item nav-menu">
+                                    <a class="nav-link" href="#">
+                                        <i class="icon-award"></i>Турниры
+                                    </a>
+                                </li>
+                                <!-- Кнопка меню "Чат" -->
+                                <li class="nav-item nav-menu">
+                                    <a class="nav-link" href="#">
+                                        <i class="icon-chat"></i>Чат
+                                    </a>
+                                </li>
+                                <!-- Кнопка меню "О клубе" с ниспадающим подменю-->
+                                <li class="nav-item dropdown nav-menu">
+                                    <a class="nav-link dropdown-toggle" href="#" id="navbarDropdownMenuLink"
+                                        role="button" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
+                                        <i class="icon-ace-of-club-and-spades"></i>
+                                        О клубе
+                                    </a>
+
+                                    <div class="dropdown-menu nav-item dropdown nav-menu hide-block-menu drop-menu"
+                                        aria-labelledby="navbarDropdownMenuLink">
+                                        <!-- Кнопка подменю "Правила клуба" -->
+                                        <a class="dropdown-item px-3" href="./rules.html">Правила
+                                            клуба</a>
+                                        <!-- Кнопка подменю "О сайте" ссылка ведет на страницу контакта -->
+                                        <a class="dropdown-item px-3" href="./about.html">О
+                                            сайте</a>
+                                    </div>
+                                </li>
+                            </ul>
+                        </div>
+                    </nav>
+                </div>
+            </div>
+        </div>
+    </header>
+    <main>
+        <div class="container-fluid px-0 bg-gradient-black">
+
+            <div id="background" class="carousel slide carousel-fade top-box-indent bg-slide" data-ride="carousel">
+                <div class="carousel-inner">
+                    <div class="carousel-item active" style="background-image: url(./img/durak.jpg)">
+                        
+                    </div>
+                    <div class="carousel-item" style="background-image: url(./img/bura.jpg)">
+                        
+                        
+                    </div>
+                    <div class="carousel-item" style="background-image: url(./img/sea_battle.jpg)">
+                        
+                    </div>
+                    <div class="carousel-item" style="background-image: url(./img/deberc.jpg)">
+                        
+                    </div>
+                    <div class="carousel-item" style="background-image: url(./img/tic-tac-toe.jpg)">
+                        
+                    </div>
+                    <div class="carousel-item" style="background-image: url(./img/preference.jpg)">
+                           
+                    </div>
+                    <div class="carousel-item" style="background-image: url(./img/chess.jpg)"> 
+                            
+                    </div>
+                    <div class="carousel-item" style="background-image: url(./img/checkers.jpg)">
+
+                    
+                    </div>
+                    <div class="carousel-item" style="background-image: url(./img/BlackJack.png)"> 
+                            
+                    </div> 
+                    <div class="carousel-item" style="background-image: url(./img/domino.png)"> 
+                            
+                    </div>
+                </div>
+            </div>
+
+            <div class="container top-box-indent">
+                <div class="row">
+                    <div class="col-md-9 col-sm-12 px-0">
+                        <div class="row">
+                            <div class="col-md-4 col-6 game-icon top-box-indent">
+
+                                <div class="game-icon-text text-center text-uppercase text-white mob-hide">
+                                    <div class="text-mid">
+                                        <h4 class="font-weight-bold pb-3">Дурак</h4>
+                                        <hr class="align-center" width="200" color="white" />
+                                        <a href="./durak.html">
+                                            <h5 class="py-3">Играть</h5>
+                                        </a>
+                                        <a href="./rules-durak.html">
+                                            <h5>Правила</h5>
+                                        </a>
+                                    </div>
+                                </div>
+                                <div class="game-icon-img">
+                                    <a href="http://alex-game.com/game/public/durak">
+                                        <img src="img/durak.png"></a>
+                                </div>
+                            </div>
+                            <div class="col-md-4 col-6 game-icon top-box-indent">
+                                <div class="game-icon-text text-center text-uppercase text-white mob-hide">
+                                    <div class="text-mid">
+                                        <h4 class="font-weight-bold pb-3">Шахматы</h4>
+                                        <hr class="align-center" width="200" color="white" />
+                                        <a href="./chess.html">
+                                            <h5 class="py-3">Играть</h5>
+                                        </a>
+                                        <a href="./rules-chess.html">
+                                            <h5>Правила</h5>
+                                        </a>
+                                    </div>
+                                </div>
+                                <div class="game-icon-img">
+                                    <a href="./checkers.html">
+                                        <img src="img/chess.png"></a>
+                                </div>
+                            </div>
+                            <div class="col-md-4 col-6 game-icon top-box-indent hide-indent">
+                                <div class="game-icon-text text-center text-uppercase text-white mob-hide">
+                                    <div class="text-mid">
+                                        <h4 class="font-weight-bold pb-3">Шашки</h4>
+                                        <hr class="align-center" width="200" color="white" />
+                                        <a href="./checkers.html">
+                                            <h5 class="py-3">Играть</h5>
+                                        </a>
+                                        <a href="./rules-checkers.html">
+                                            <h5>Правила</h5>
+                                        </a>
+                                    </div>
+                                </div>
+                                <div class="game-icon-img">
+                                    <img src="img/check.png" alt="">
+                                </div>
+                            </div>
+                            <div class="col-md-4 col-6 game-icon">
+                                <div class="game-icon-text text-center text-uppercase text-white mob-hide"
+                                    style="width: 250px; height: 250px">
+                                    <div class="text-mid">
+                                        <h4 class="font-weight-bold pb-3">Бура</h4>
+                                        <hr class="align-center" width="200" color="white" />
+                                        <a href="./bura.html">
+                                            <h5 class="py-3">Играть</h5>
+                                        </a>
+                                        <a href="./rules-bura.html">
+                                            <h5>Правила</h5>
+                                        </a>
+                                    </div>
+                                </div>
+                                <div class="game-icon-img ">
+                                    <img src="img/bura.png" alt="">
+                                </div>
+                            </div>
+                            <div class="col-md-4 col-6 game-icon">
+                                <div class="game-icon-text text-center text-uppercase text-white mob-hide"
+                                    style="width: 250px; height: 250px">
+                                    <div class="text-mid">
+                                        <h4 class="font-weight-bold pb-3">Преферанс</h4>
+                                        <hr class="align-center" width="200" color="white" />
+                                        <a href="./preference.html">
+                                            <h5 class="py-3">Играть</h5>
+                                        </a>
+                                        <a href="./rules-preferance.html">
+                                            <h5>Правила</h5>
+                                        </a>
+                                    </div>
+                                </div>
+                                <div class="game-icon-img">
+                                    <img src="img/pref.png" alt="">
+                                </div>
+                            </div>
+                            <div class="col-md-4 col-6 game-icon">
+                                <div class="game-icon-text text-center text-uppercase text-white mob-hide"
+                                    style="width: 250px; height: 250px">
+                                    <div class="text-mid">
+                                        <h4 class="font-weight-bold pb-3">Деберц</h4>
+                                        <hr class="align-center" width="200" color="white" />
+                                        <a href="./deberc.html">
+                                            <h5 class="py-3">Играть</h5>
+                                        </a>
+                                        <a href="./rules-deberz.html">
+                                            <h5>Правила</h5>
+                                        </a>
+                                    </div>
+                                </div>
+                                <div class="game-icon-img">
+                                    <img src="img/debrec.png" alt="">
+                                </div>
+                            </div>
+                            <div class="col-md-4 col-6 game-icon">
+                                <div class="game-icon-text text-center text-uppercase text-white mob-hide"
+                                    style="width: 250px; height: 250px">
+                                    <div class="text-mid">
+                                        <h5 class="font-weight-bold pb-3">Крестики - нолики</h5>
+                                        <hr class="align-center" width="200" color="white" />
+                                        <a href="./tic-tac-toe.html">
+                                            <h5 class="py-3">Играть</h5>
+                                        </a>
+                                        <a href="./rules-t-t-t.html">
+                                            <h5>Правила</h5>
+                                        </a>
+                                    </div>
+                                </div>
+                                <div class="game-icon-img">
+                                    <img src="img/tic-tac-toe.png" alt="">
+                                </div>
+                            </div>
+                            <div class="col-md-4 col-6 game-icon">
+                                <div class="game-icon-text text-center text-uppercase text-white mob-hide"
+                                    style="width: 250px; height: 250px">
+                                    <div class="text-mid">
+                                        <h5 class="font-weight-bold pb-3">Морской бой</h5>
+                                        <hr class="align-center" width="200" color="white" />
+                                        <a href="./seabattle.html">
+                                            <h5 class="py-3">Играть</h5>
+                                        </a>
+                                        <a href="./rules-s-b.html">
+                                            <h5>Правила</h5>
+                                        </a>
+                                    </div>
+                                </div>
+                                <div class="game-icon-img">
+                                    <img src="img/sea-battle.png" alt="">
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="col-md-3 col-sm-12 px-0 top-box-indent">
+
+                        <div class="prize-box rounded">
+
+                            <a href="#">
+                                <p class="font-weight-bold text-uppercase title-prize-box">Призовой<br>
+                                    фонд<br>
+                                    <span class="font-weight-bold top-side-box-word">10 000 ₽</span></p>
+                              
+                            </a>
+                        </div>
+                        <div>
+                            <ul class="side-box pl-0 pt-3">
+                                <li class="list-group-item d-flex justify-content-between align-items-center">
+                                    <a href="./players-online1.html">Онлайн игроков</a>
+                                    <span class="badge text-lightgreen">20</span></li>
+                                <li class="list-group-item d-flex justify-content-between align-items-center">
+                                    <a href="./player-status.html">Сейчас играют</a>
+                                    <span class="badge text-lightgreen">10</span></li>
+                                <li class="list-group-item d-flex justify-content-between align-items-center">
+                                    <a href="./online.html">Заявок на игры</a>
+                                    <span class="badge text-lightgreen">2</span></li>
+                            </ul>
+                        </div>
+                        <div class="row no-gutters">
+                        <div class="col-md-12 col-lg-12">
+                            <ul class="pl-0">
+                                <li class="list-group-item d-flex justify-content-between align-items-center side-box">
+                                    Лидеры</li>
+                                <li class="list-group-item d-flex justify-content-between ">
+                                    <a class="pl-1 font-leaders" href="#">
+                                        <img class="rounded" src="https://via.placeholder.com/30" width="30"
+                                            height="30"> <span class="pl-2">User1</span>
+                                    </a>
+                                    <span class="badge text-lightgreen">1000</span>
+                                </li>
+
+                                <li class="list-group-item d-flex justify-content-between ">
+                                    <a class="pl-1 font-leaders" href="#">
+                                        <img class="rounded" src="https://via.placeholder.com/30" width="30"
+                                            height="30"> <span class="pl-2">User2</span>
+                                    </a>
+                                    <span class="badge text-lightgreen">900</span>
+                                </li>
+
+                                <li class="list-group-item d-flex justify-content-between ">
+                                    <a class="pl-1 font-leaders" href="#">
+                                        <img class="rounded" src="https://via.placeholder.com/30" width="30"
+                                            height="30"> <span class="pl-2">User3</span>
+                                    </a>
+                                    <span class="badge text-lightgreen">800</span>
+                                </li>
+
+                                <li class="list-group-item d-flex justify-content-between ">
+                                    <a class="pl-1 font-leaders" href="#">
+                                        <img class="rounded" src="https://via.placeholder.com/30" width="30"
+                                            height="30"> <span class="pl-2">User4</span>
+                                    </a>
+                                    <span class="badge text-lightgreen">700</span>
+                                </li>
+
+                                <li class="list-group-item d-flex justify-content-between ">
+                                    <a class="pl-1 font-leaders" href="#">
+                                        <img class="rounded" src="https://via.placeholder.com/30" width="30"
+                                            height="30"> <span class="pl-2">User5</span>
+                                    </a>
+                                    <span class="badge text-lightgreen">600</span>
+                                </li>
+                            </ul>
+                        </div>
+                        <div class="col-md-12 col-lg-12">
+                            <ul class="pl-0 news-list">
+                                <li class="list-group-item d-flex justify-content-between align-items-center side-box">
+                                    Новости</li>
+                                <li class="list-group-item d-flex justify-content-between align-items-center ">
+                                    <a href="#">Внимание!!! Очень важно!!!</a>
+                                </li>
+
+                                <li class="list-group-item d-flex justify-content-between align-items-center">
+                                    <a href="#">Реферальная программа</a></li>
+
+                                <li class="list-group-item d-flex justify-content-between align-items-center">
+                                    <a href="#">Подключение платежной системы
+                                        PAYEER</a></li>
+                                <li class="list-group-item d-flex justify-content-between align-items-center">
+                                    <a href="#">Премирование активных
+                                        игроков</a></li>
+                                <li class="list-group-item d-flex justify-content-between align-items-center">
+                                    <a href="#">Процент платежных систем при
+                                        выводе
+                                        средств</a></li>
+                                <li class="list-group-item-btn text-center rounded">
+                                    <a href="./news.html" class="btn-sm btn-red ">Все новости</a>
+                                </li>
+                            </ul>
+                        </div>
+                        
+                    </div>
+                </div>
+            </div>
+        </div>
+        <div class="container-fluid bg-white py-5">
+            <div class="container bg-white white-box">
+                <div class="row">
+                    <div class="col-12 col-md-7 col-lg-8 short-text">
+                        <h4 class="font-weight-bold pb-4 ">Игра только с <br>
+                            реальными игроками на <br>
+                            <span class="text-style my-3"> ALEX-GAME</span>
+                        </h4>
+                        <p>
+                            Если Вы – азартный игрок и любите проводить свободное время за интересными,
+                            захватывающими
+                            играми, наш сайт приветствует Вас!<p>
+
+                                <p> Не обязательно быть настоящим мастером, чтобы начать выигрывать. Каждый
+                                    человек,
+                                    который мечтает зарабатывать в интернете, так или иначе, рассматривал
+                                    возможность
+                                    дохода через игры онлайн.<p>
+
+                                        <p> На нашем сайте Вы сможете играть в разнообразные игры онлайн:
+                                            <a class="word-color" href="./bura.html">
+                                                <u>Бура,</u></a>
+                                            <a class="word-color" href="./durak.html">
+                                                <u>Дурак,</u></a>
+                                            <a class="word-color" href="./preference.html">
+                                                <u>Преферанс,</u></a>
+                                            <a class="word-color"
+                                                href="./deberc.html"><u>Деберц,</u></a>
+                                            <a class="word-color" href="./chess.html"><u>
+                                                    Шахматы,</u></a>
+                                            <a class="word-color"
+                                                href="./checkers.html"><u>Шашки,</u></a>
+                                            <a class="word-color"
+                                                href="./tic-tac-toe.html"><u>Крестики-нолики,</u></a>
+                                            <a class="word-color"
+                                                href="./seabattle.html"><u>Морской
+                                                    бой.</u></a>
+                                            <p>
+
+
+                                                <p> Спешите отправиться в увлекательное путешествие в мир
+                                                    азартных игр
+                                                    на нашем сайте! Заводите новые знакомства, общайтесь и
+                                                    весело
+                                                    проводите время, играя в любимые игры.</p>
+                    </div>
+                    <div class=" col-12 col-md-5 col-lg-4 hide-items imac-pic">
+                        <img class="img-item" src="img/modern_imac.png">
+                    </div>
+                       
+                </div>
+            </div>
+        </div>
+    </div>
+
+    </main>
+
+    <footer>
+        <div class="container-fluid bg-green-inv">
+            <div class="container">
+                <div class="row">
+                    <div class="col my-1 d-flex justify-content-between kassa-img">
+                        <div class="align-items-center d-flex">
+
+                            <!-- Кнопка на Freekassa -->
+                            <a class="pr-2" href="http://www.free-kassa.ru">
+                                <img src="img/fk.png" class="img-fluid" alt="Responsive image"></a>
+                            <!-- Кнопка на Payeer -->
+                            <a class="pr-2" href="https://payeer.com/ru">
+                                <img src="img/payeer.png" class="img-fluid" alt="Responsive image"></a>
+                            <!-- Кнопка на Interkassa -->
+                            <a class="pr-2" href="https://www.interkassa.com">
+                                <img src="img/ik.png" class="img-fluid" alt="Responsive image"></a>
+                            <h1><i class="icon-18plus text-white"></i></h1>
+                        </div>
+                        <div class="d-flex align-items-center justify-content-end hide-items">
+                            <ul class="navbar-nav social-icon d-flex d-inline-block">
+                                <!-- Кнопка "Написать нам" в футере -->
+                                <li class="nav-item text-center top-social-icon">
+                                    <button type="button" class="btn bg-danger rounded text-white p-0"
+                                        data-toggle="modal" data-target="#mail" style="height:26px;width:26px">
+                                        <i class="icon-mail-1"></i>
+                                    </button>
+                                </li>
+                                <!-- Кнопка "Vkontakte" в футере -->
+                                <li class="nav-item text-center top-social-icon">
+                                    <a class="nav-link bg-vk rounded  base-icon" href="https://vk.com/public171133653">
+                                        <i class="icon-vkontakte"></i>
+                                    </a>
+                                </li>
+                                <!-- Кнопка "Odnoklassniki" в футере -->
+                                <li class="nav-item text-center top-social-icon">
+                                    <a class="nav-link bg-ok rounded base-icon"
+                                        href="https://ok.ru/group/55514326302733">
+                                        <i class="icon-odnoklassniki"></i>
+                                    </a>
+                                </li>
+                                <!-- Кнопка "Facebook" в футере -->
+                                <li class="nav-item text-center">
+                                    <a class="nav-link bg-f rounded base-icon"
+                                        href="https://www.facebook.com/groups/892129730993336/">
+                                        <i class="icon-facebook-1"></i>
+                                    </a>
+                                </li>
+                            </ul>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+        <div class="container-fluid bg-green-nav pt-2 ">
+            <div class="container">
+                <div class="row">
+                    <div class="col-lg-4 col-md-4 col-sm-12">
+                        <h5 class="text-white">
+                            <i class="icon-info">Информация</i>
+                        </h5>
+                        <ul class="nav-menu navbar-nav item-list">
+                            <li><a class="nav-link" href="./news.html">Новости</a></li>
+                            <li><a class="nav-link" href="./rules.html">Правила клуба</a></li>
+                            <li><a class="nav-link" href="./rules-alex.html">Условия использования
+                                    сайтом</a></li>
+                            <li><a class="nav-link" href="./pr-policy.html">Политика
+                                    конфиденциальности</a></li>
+                            <li><a class="nav-link" href="./c-b-policy.html">Политика отмены и
+                                    возврата платежей</a></li>
+                        </ul><br>
+                        <p class="nav-menu"><a class="text-white item-list"
+                                href="./about.html"><span class="font-weight-bold">Контактная
+                                    информация</span><br>
+                                Москва, Россия, 119019, ул. Волхонка, 18</a></p>
+                    </div>
+                    <div class="col-lg-4 col-md-4 col-sm-12 hide-items">
+                        <div class="col-auto">
+                            <h5 class="text-white">
+                                <i class="icon-coin">Игры на деньги</i>
+                            </h5>
+                        </div>
+                        <div class="col d-flex ">
+                            <div class="col-6 nav-menu p-0 ">
+                                <ul class="nav-link">
+                                    <li><a href="./durak.html">Дурак</a></li>
+                                    <li><a href="./chess.html">Шахматы</a></li>
+                                    <li><a href="./checkers.html">Шашки</a></li>
+                                    <li><a href="./bura.html">Бура</a></li>
+                                    <li><a href="./preference.html">Преферанс</a></li>
+                                    <li><a href="./deberc.html">Дебертс</a></li>
+                                    <li><a href="./tic-tac-toe.html">Крестики - нолики</a>
+                                    </li>
+                                    <li><a href="./seabattle.html">Морской бой</a></li>
+                                </ul>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="col-lg-4 col-md-4 col-sm-12 hide-items">
+                        <div class="col-auto">
+                            <h5 class="text-white">
+                                <i class="icon-free">Игры бесплатно</i>
+                            </h5>
+                        </div>
+                        <div class="col d-flex">
+                            <div class="col-6 nav-menu p-0 ">
+                                <ul class="nav-link">
+                                    <li><a href="./durak.html">Дурак</a></li>
+                                    <li><a href="./chess.html">Шахматы</a></li>
+                                    <li><a href="./checkers.html">Шашки</a></li>
+                                    <li><a href="./bura.html">Бура</a></li>
+                                    <li><a href="./preference.html">Преферанс</a></li>
+                                    <li><a href="./deberc.html">Дебертс</a></li>
+                                    <li><a href="./tic-tac-toe.html">Крестики - нолики</a>
+                                    </li>
+                                    <li><a href="./seabattle.html">Морской бой</a></li>
+                                </ul>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="col-12">
+                        <h6 class="text-center">Copyright <i class="icon-copyright"></i>2018 - 2019, Игровой Дом.
+                            Все права защищены.</p>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </footer>
+    </div>
+
+    <!-- Modal "Написать нам" -->
+    <div class="modal fade" id="mail" tabindex="-1" role="dialog" aria-labelledby="exampleModalCenterTitle"
+        aria-hidden="true">
+        <div class="modal-dialog modal-dialog-centered" role="document">
+            <div class="modal-content">
+                <div class="modal-header btn-green">
+                    <h5 class="modal-title text-white" id="exampleModalCenterTitle">Написать нам</h5>
+                    <button type="button" class="close" data-dismiss="modal" aria-label="Close">
+                        <span aria-hidden="true">&times;</span>
+                    </button>
+                </div>
+                <div class="modal-body">
+                    <form>
+                        <div class="form-group">
+                            <input type="email" class="form-control" id="exampleInputEmail1"
+                                aria-describedby="emailHelp" placeholder="Ваш e-mail " required aria-required="true">
+                        </div>
+                        <div class="form-group">
+                            <input type="text" class="form-control mt-4" id="userlogin" aria-describedby="userlogin"
+                                placeholder="Тема сообщения" required aria-required="true">
+                        </div>
+                        <div class="form-group">
+                            <label for="exampleFormControlTextarea1">Ваше сообщение</label>
+                            <textarea class="form-control" id="exampleFormControlTextarea1" rows="3" required aria-required="true"></textarea>
+                        </div>
+                </div>
+                <div class="modal-footer">
+                    <button type="submit" class="btn btn-primary btn-green ">Отправить</button>
+                    <button type="button" class="btn btn-secondary btn-red" data-dismiss="modal">Закрыть</button>
+                </div>
+            </div>
+        </div>
+    </div>
+    <!-- Modal "Вход"-->
+    <div class="modal fade" id="SignIn" tabindex="-1" role="dialog" aria-labelledby="exampleModalCenterTitle"
+        aria-hidden="true">
+        <div class="modal-dialog modal-dialog-centered" role="document">
+            <div class="modal-content">
+                <div class="modal-header btn-green">
+                    <h5 class="modal-title text-white font-weight-bold" id="exampleModalCenterTitle">
+                        Вход</h5>
+                    <button type="button" class="close" data-dismiss="modal" aria-label="Close">
+                        <span aria-hidden="true">&times;</span>
+                    </button>
+                </div>
+                <div class="col text-left">
+                    <form>
+                        <div class="form-group">
+                            <input type="text" class="form-control mt-4" id="userlogin" aria-describedby="userlogin"
+                                placeholder="Ваш логин" required="true">
+                        </div>
+                        <div class="form-group">
+                            <input type="password" class="form-control" id="exampleInputPassword1"
+                                placeholder="Ваш пароль" required="true">
+                        </div>
+                        <div class="form-check">
+                            <input type="checkbox" class="form-check-input" id="exampleCheck1">
+                            <label class="form-check-label" for="exampleCheck1">Запомнить
+                                меня</label>
+                        </div>
+                        <div class="my-3 log-line"> <button type="submit" class="btn btn-green ">Войти</button>
+                            <a class="text-dark mx-3 " href="#">
+                                Забыли пароль?
+                            </a>
+                            <div class="d-flex mt-4">
+                                <p>Войти через:</p>
+                                <ul class="navbar-nav social-icon px-5">
+                                    <li class="nav-item text-center top-social-icon">
+                                        <a class="nav-link bg-vk rounded  base-icon"
+                                            href="https://alex-game.com/site/auth?authclient=vk">
+                                            <i class="icon-vkontakte"></i>
+                                        </a>
+                                    </li>
+                                    <li class="nav-item text-center top-social-icon">
+                                        <a class="nav-link bg-ok rounded base-icon"
+                                            href="https://alex-game.com/site/auth?authclient=ok">
+                                            <i class="icon-odnoklassniki"></i>
+                                        </a>
+                                    </li>
+                                </ul>
+                            </div>
+                        </div>
+                    </form>
+                </div>
+            </div>
+        </div>
+    </div>                                      
+    <!-- Modal "Создать игру" -->
+    <div class="modal fade" id="exampleModalCenter" tabindex="-1" role="dialog"
+        aria-labelledby="exampleModalCenterTitle" aria-hidden="true">
+        <div class="modal-dialog modal-dialog-centered" role="document">
+            <div class="modal-content ">
+                <div class="modal-header btn-green">
+                    <h5 class="modal-title text-dark" id="exampleModalCenterTitle">Новая игра
+                    </h5>
+                    <button type="button" class="close" data-dismiss="modal" aria-label="Close">
+                        <span aria-hidden="true">&times;</span>
+                    </button>
+                </div>
+                <div class="modal-body">
+                    <p>Размер ставки</p>
+                    <select class="form-control">
+                        <option>0</option>
+                        <option>10</option>
+                        <option>20</option>
+                        <option>40</option>
+                        <option>60</option>
+                        <option>120</option>
+                        <option>160</option>
+                        <option>300</option>
+                    </select>
+                </div>
+                <div class="modal-footer justify-content-center">
+                    <button type="button" class="btn btn-red px-5" data-dismiss="modal">Ок</button>
+                    <button type="button" class="btn btn-green px-4">Отмена</button>
+                </div>
+            </div>
+        </div>
+    </div>
+
+    <script src="https://code.jquery.com/jquery-3.3.1.slim.min.js"
+        integrity="sha384-q8i/X+965DzO0rT7abK41JStQIAqVgRVzpbzo5smXKp4YfRvH+8abtTE1Pi6jizo" crossorigin="anonymous">
+    </script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.14.7/umd/popper.min.js"
+        integrity="sha384-UO2eT0CpHqdSJQ6hJty5KVphtPhzWj9WO1clHTMGa3JDZwrnQq4sF86dIHNDz0W1" crossorigin="anonymous">
+    </script>
+    <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/js/bootstrap.min.js"
+        integrity="sha384-JjSmVgyd0p3pXB1rRibZUAYoIIy6OrQ6VrjIEaFf/nJGzIxFDsf4x0xIM+B07jRM" crossorigin="anonymous">
+    </script>
+</body>
+
+</html>

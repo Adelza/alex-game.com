@@ -1,0 +1,30 @@
+.form-group {
+    margin-bottom: 0 !important;
+}
+
+tr .align_btn_bottom {
+    vertical-align: bottom !important
+}
+
+.table td {
+    padding-left: 1em !important;
+
+}
+
+@media screen and (max-width: 830px) {
+    .ad_padding_0 {
+        padding-left: 0;
+        padding-right: 0
+    }
+}
+
+@media screen and (max-width: 639px) {
+
+   
+
+    .align_btn_bottom>.btn {
+        padding-right: 0.9em !important;
+        padding-left: 0.9em !important
+    }
+
+}

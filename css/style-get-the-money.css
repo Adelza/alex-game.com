@@ -1,0 +1,183 @@
+header {
+    z-index: 1000;
+}
+
+footer {
+    z-index: 1101;
+}
+
+.bg-style {
+
+
+    height: 100vh;
+    background-position-x: middle;
+    background-repeat: no-repeat;
+    background-size: cover;
+    position: relative;
+    z-index: 1;
+}
+
+.bg-style::after {
+    visibility: hidden;
+    background: transparent;
+    background: rgb(0, 0, 0);
+    background: rgb(0, 0, 0);
+    background: rgb(0, 0, 0);
+    background: -moz-linear-gradient(0deg, rgba(0, 0, 0, 1) 0%, rgba(0, 0, 0, 1) 65%, rgba(0, 0, 0, 0.31556372549019607) 93%, rgba(0, 0, 0, 0) 100%);
+    background: -webkit-linear-gradient(0deg, rgba(0, 0, 0, 1) 0%, rgba(0, 0, 0, 1) 65%, rgba(0, 0, 0, 0.31556372549019607) 93%, rgba(0, 0, 0, 0) 100%);
+    background: linear-gradient(0deg, rgba(0, 0, 0, 1) 0%, rgba(0, 0, 0, 1) 65%, rgba(0, 0, 0, 0.31556372549019607) 93%, rgba(0, 0, 0, 0) 100%);
+    filter: progid:DXImageTransform.Microsoft.gradient(startColorstr="#000000", endColorstr="#000000", GradientType=1);
+    content: "";
+    display: block;
+    height: 100%;
+    left: 0;
+    position: absolute;
+    top: 220px;
+    width: 100%;
+}
+
+
+.profile-bg {
+    max-height: 100%;
+    background-repeat: no-repeat;
+    background-size: cover;
+    z-index: 1;
+    position: relative;
+
+}
+
+.wallets input[type="radio"]+label {
+    transition: 300ms ease;
+    cursor: pointer;
+
+}
+
+.wallets input[type="radio"]:checked+label {
+
+    border-style: solid;
+    border-radius: 10px;
+    border-color: rgb(166, 247, 37);
+
+}
+
+.wrap {
+    padding-top: 15px
+}
+
+.form-block {
+    margin-top: 40px;
+    margin-bottom: 40px
+}
+
+.wallets img {
+    max-width: 100%
+}
+
+
+@media screen and (min-width: 568px) and (max-width: 991px) {
+
+
+    .bg-style {
+        margin-top: 0px
+    }
+
+    .profile-bg {
+        top: 0
+    }
+
+    .form-group {
+        margin-left: 1.5rem !important
+    }
+}
+
+@media screen and (max-width: 575px) {
+    .form-group {
+        margin-left: 0 !important
+    }
+
+    .bg-profile {
+        height: 860px;
+    }
+
+    .top-box-indent {
+        margin-top: 0
+    }
+
+    .modal-header h5 {
+        font-size: 1rem
+    }
+
+    .control-label {
+        font-size: 0.8rem
+    }
+
+    .bg-style {
+        height: 100%;
+    }
+}
+
+@media screen and (min-width: 769px) and (max-width: 991px) {
+    .container {
+        max-width: 960px
+    }
+
+    h6 {
+        font-size: 0.68em
+    }
+
+}
+
+@media screen and (max-width: 778px) {
+    .btn {
+        padding-left: 0.2rem;
+        padding-right: 0.2rem
+    }
+
+}
+
+@media screen and (max-width: 397px) {
+    .profile-bg {
+        padding-right: 0
+    }
+
+    .control-label {
+        font-size: 0.75rem
+    }
+
+    .form-group .btn {
+        font-size: 0.8rem
+    }
+}
+
+@media screen and (max-width: 768px) and (min-width: 576px) {
+    .profile-bg {
+        padding-right: 5px !important;
+
+    }
+
+
+    .bg-style {
+        height: 100%;
+    }
+
+    .control-label {
+        font-size: 0.9rem
+    }
+}
+
+@media screen and (max-width: 768px) {
+
+    .container {
+        max-width: 750px;
+    }
+
+    h6 {
+        font-size: 0.6rem
+    }
+}
+
+@media screen and (max-width: 1199px) and (min-width: 992px) {
+    .form-group .row {
+        margin-left: 1.5rem !important
+    }
+}

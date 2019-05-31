@@ -1,0 +1,733 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/css/bootstrap.min.css"
+        integrity="sha384-ggOyR0iXCbMQv3Xipma34MD+dH/1fQ784/j6cY/iJTQUOhcWr7x9JvoRxT2MZw1T" crossorigin="anonymous">
+    <link href="https://fonts.googleapis.com/css?family=Open+Sans:300,400,600,700,800&amp;subset=cyrillic,cyrillic-ext"
+        rel="stylesheet">
+    <link href="css/fontell.css" rel="stylesheet">
+    <link href="css/style.css" rel="stylesheet">
+    <link href="css/styl1e.css" rel="stylesheet">
+
+    <title>alex-game.com</title>
+</head>
+
+<body>
+    <header class="container-fluid zi bg-green-nav">
+        <div class="container">
+            <div class="row logo-img">
+                <div class="col logo-img">
+                    <a class="navbar-brand" href="./index.html">
+                        <img src="img/logo.png"></a></div>
+                <div class="flex-column col-11 offset-1 pl-5 pb-1 pr-0 side-bar">
+                    <nav class="navbar navbar-expand-lg navbar-light nav-text logo-img">
+                        <h6><span class="text-uppercase font-weight-bold site-name">alex-game.com</span><br>
+                            Игра только с реальными игроками</h6>
+                        <div class="collapse navbar-collapse justify-content-between" id="navbarNavDropdown">
+                            <ul class="navbar-nav social-icon pl-3">
+                                <!-- Кнопка "Написать нам" в верхнем меню (модальное окно в конце кода)-->
+                                <li class="nav-item text-center top-social-icon">
+                                    <button type="button" class="btn bg-danger rounded text-white p-0"
+                                        data-toggle="modal" data-target="#mail" style="height:26px;width:26px">
+                                        <i class="icon-mail-1"></i>
+                                    </button>
+                                </li>
+                                <!-- Кнопка "Vkontakte" в верхнем меню -->
+                                <li class="nav-item text-center top-social-icon">
+                                    <a class="nav-link bg-vk rounded  base-icon" href="https://vk.com/public171133653">
+                                        <i class="icon-vkontakte"></i>
+                                    </a>
+                                </li>
+                                <!-- Кнопка "Odnoklassniki" в верхнем меню -->
+                                <li class="nav-item text-center top-social-icon">
+                                    <a class="nav-link bg-ok rounded base-icon"
+                                        href="https://ok.ru/group/55514326302733">
+                                        <i class="icon-odnoklassniki"></i>
+                                    </a>
+                                </li>
+                                <!-- Кнопка "Facebook" в верхнем меню -->
+                                <li class="nav-item text-center top-social-icon">
+                                    <a class="nav-link bg-f rounded base-icon"
+                                        href="https://www.facebook.com/groups/892129730993336/">
+                                        <i class="icon-facebook-1"></i>
+                                    </a>
+                                </li>
+                            </ul>
+
+                            <!-- Этот блок активен, когда ввели логин и пароль. Если нет, то активен блок, который находится ниже (*сейчас скрыт) -->
+                            <div class="d-flex profile-sm">
+                                <div class="balance-info pr-3">
+                                    <h6>Основной счет: 1000.00</h6>
+                                    <h6>Бонусный счет: 10.00</h6>
+                                </div>
+                                <div class="profile-info d-flex">
+                                    <!-- Логин при нажатии переход в профиль -->
+                                    <div class="pr-2">
+                                        <a class="nav-name" href="./profile.html">Вася
+                                            Васили571159826275, кабинет</a><br>
+                                        <!-- Кнопка "Выход" из профиля -->
+                                        <button class="btn btn-logout"><i class="icon-logout"></i>Выход</button>
+                                    </div>
+                                    <div class="player-icon">
+                                        <img class="rounded " width="50" height="50"
+                                            src="https://via.placeholder.com/50">
+                                    </div>
+                                </div>
+                            </div>
+                            <!-- *Сейчас этот блок кнопок скрыт -->
+                            <div class="nav-btn top-text d-none">
+                                <!-- Кнопка вход -->
+                                <button type="button"
+                                    class="btn btn-red rounded dropdown-item text-center d-inline-block"
+                                    data-toggle="modal" data-target="#SignIn">Вход</button>
+                                <!-- Кнопка регистрация -->
+                                <a href="#"
+                                    class="btn btn-green px-3 rounded">Регистрация</a>
+                            </div>
+                        </div>
+                    </nav>
+                    <nav class="navbar navbar-expand-lg navbar-light menu-items">
+                        <button class="container-fluid navbar-toggler justify-content-center" type="button"
+                            data-toggle="collapse" data-target="#navbarNavDropdown" aria-controls="navbarNavDropdown"
+                            aria-expanded="false" aria-label="Toggle navigation">
+                            <span class="icon-menu-1 text-white"></span>
+                            <h5 class="pl-2 mb-0 text-white">Меню</h5>
+                        </button>
+                        <div class="collapse navbar-collapse justify-content-between " id="navbarNavDropdown">
+                            <ul class="navbar-nav side-item ">
+
+                                <!-- Кнопка меню "Главная" -->
+
+                                <li class="nav-item nav-menu">
+                                    <a class="nav-link " href="./index.html">
+                                        <i class="icon-home-1 ml-5"></i></a>
+                                </li>
+                                <!-- Кнопка меню "Новости" -->
+
+                                <li class="nav-item nav-menu">
+                                    <a class="nav-link " href="./news.html">
+                                        <i class="icon-newspaper p-1"></i>Новости
+                                    </a>
+                                </li>
+                                <!-- Кнопка меню "Зал славы" -->
+                                <li class="nav-item nav-menu">
+                                    <a class="nav-link " href="./glory-hall.html">
+                                        <i class="icon-star"></i>Зал славы
+                                    </a>
+                                </li>
+                                <!-- Кнопка меню "Турниры" -->
+                                <li class="nav-item nav-menu">
+                                    <a class="nav-link " href="#">
+                                        <i class="icon-award"></i>Турниры
+                                    </a>
+                                </li>
+                                <!-- Кнопка меню "Чат" -->
+                                <li class="nav-item nav-menu">
+                                    <a class="nav-link " href="#">
+                                        <i class="icon-chat"></i>Чат
+                                    </a>
+                                </li>
+                                <!-- Кнопка меню "О клубе" с ниспадающим подменю-->
+                                <li class="nav-item dropdown nav-menu">
+                                    <a class="nav-link dropdown-toggle" href="#" id="navbarDropdownMenuLink"
+                                        role="button" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
+                                        <i class="icon-ace-of-club-and-spades"></i>
+                                        О клубе
+                                    </a>
+
+                                    <div class="dropdown-menu nav-item dropdown nav-menu hide-block-menu drop-menu"
+                                        aria-labelledby="navbarDropdownMenuLink">
+                                        <!-- Кнопка подменю "Правила клуба" -->
+                                        <a class="dropdown-item px-3" href="./rules.html">Правила
+                                            клуба</a>
+                                        <!-- Кнопка подменю "О сайте" ссылка ведет на страницу контакта -->
+                                        <a class="dropdown-item px-3" href="./about.html">О
+                                            сайте</a>
+                                    </div>
+                                </li>
+                            </ul>
+                        </div>
+                    </nav>
+                </div>
+            </div>
+        </div>
+    </header>
+    <main>
+        <div class="container-fluid p-0 overflow-hidden bg-gradient-black-pr">
+            <div class="bg-pic2 preference">
+            <div class="container top-indent">
+                <div class="row no-gutters">
+                    <div class="col-12 m-tp block-btn card mb-5 ">   
+                    <div class="row mt-5 mb-3">
+                    <div class="col-lg-8 col-md-8 col-sm-12 col-xs-12 mb-3 ">
+                        <div class="row">
+                            <div class="col-lg-10 col-12 mb-3">
+                                <figure id="main-image">
+                                    <img src="img/preferance_1.jpg">
+                                </figure>
+                            </div>
+                                <div class="product-options d-flex justify-content-around col-lg-2 col-12">
+                                    <form>
+    
+                                        <input type="radio" name="colorSelect" id="color-1" value="img/preferance_1.jpg">
+                                        <label for="color-1" class="color-icon silver7"></label>
+    
+                                        <input type="radio" name="colorSelect" id="color-2" value="img/preferance_2.jpg">
+                                        <label for="color-2" class="color-icon pink7"></label>
+    
+                                        <input type="radio" name="colorSelect" id="color-3" value="img/preferance_3.jpg">
+                                        <label for="color-3" class="color-icon gold7"></label>
+    
+                                    </form>
+                                </div>
+                            </div>
+                        </div>
+                    
+                    <div class="col-lg-4 col-md-4 col-sm-12 col-xs-12 pl-lg-0 pl-md-0 pr-lg-3 pr-md-3 pl-3 pr-3 mb-0">
+                        <p>
+                        Популярной игрой уже многие годы остается <span class="gren fb">ПРЕФЕРАНС</span>. Эта игра требует не просто внимательности, но и точных математических расчетов и большой сообразительности. Чтобы сыграть в эту игру, 
+                        </p>
+                        <p>Вам понадобится:
+                                Компьютер
+                                Доступ к интернету
+                                Специальный сервис
+                                Противник
+                        </p>
+                        <p>Если Вы хотите играть с реальным человеком, наш сайт предоставит Вам такую возможность.
+                            </p>
+                        <div class="text-center text-lg-left text-md-left"><a href="#" class="btn btn-red-inv  px-3 rounded ">Играть</a></div>
+                    </div>
+                    </div>
+                        <div class="row no-gutters">
+                            <div class="col-md-6 col-12">
+                                <div class="pl-lg-5 pr-3 pl-3">
+                                    <h3 class="gren my-3">Онлайн игра в преферанс с выводом средств</h3>
+                                    <p>- это оптимальный способ, проявляя свой опыт и демонстрируя знания, выигрывать у других игроков и зарабатывать деньги. Можно сказать, что преферанс – уникальная игра, где везение отходит на второй план. Игрокам предстоит решить сложные задачи скорее логического уровня вне зависимости от удачной карты. Опытный игрок сумеет перехитрить и обойти оппонента. В этой игре большое значение имеет опыт. Чем дольше человек играет, чем больше соревнуется с опытными соперниками, тем больше имеет шансов на победу в очередной партии. Преферанс – полезная игра, поскольку учит находить грамотные выходы из сложных ситуаций.                                        
+                                        </p>
+                                    <p>Согласно правилам игры в преферанс играют вдвоём, втроём или вчетвером. При игре вчетвером сдающий не участвует в игре. На нашем портале в игре могут участвовать 3 игрока.</p>
+                                    <h3 class="gren my-3">Колода для игры в преферанс, старшинство карт и мастей
+                                        </h3>
+                                    <p>Колода для игpы в преферанс состоит из 32 каpт — по восемь каpт четырех мастей. По порядку старшинства это следующие масти: ♥ - червы (самая старшая масть),  ♦ - бубны, ♣ - тpефы, ♠ - пики (самая младшая масть). Старшинство мастей имеет значение при торговле и заказе игры (контракта).</p>   
+                                <p>Каждая из этих мастей включает следующие каpты в нисходящем порядке: туз, король, дама, валет, десятка, девятка, восьмерка, семерка.
+                                    </p>
+                                <p>Одна из мастей может быть, по правилам игры, назначена козырем. В этом случае любая карта козырной масти становится старше любой другой карты некозырной масти. Между картами козырной масти сохраняется традиционная иерархия (старшинство).</p>
+                            <p>Порядок (старшинство) карт не изменяются никогда, независимо от величины назначенной игры (контракта) и заказанного козыря. Карты в очках не оцениваются.</p>    
+                            <p>При записи младшие карты традиционно обозначают знаком масти и символом достоинства, например, десятка пик -  ♠ 10, а старшие карты — знаком масти и заглавной буквой её названия (русской или английской), например, дама червей - ♥ Д или бубновый валет -  ♦ J. При обозначении заказанной игры (контракта) на первом месте стоит величина контракта, а на втором знак масти — ♣ 7 (семь треф).</p>
+                            <h3 class="gren my-3">Взятка. Правила выкладывания карт</h3>
+                            <p>В основе игры преферанс лежит принцип взятки. Взятка — карты, выложенные на стол каждым из игроков за один круг игры.
+                            </p>   
+                            <p>Во всех видах игр преферанса задача участников сводится к тому, чтобы брать взятки или, наоборот, не брать взяток.
+                            </p>
+                        <p>Правила игры в преферанс определяют, кому принадлежит взятка и каким образом ведётся учёт набранных взяток. Первая карта, положенная на стол с целью образовать взятку, называется ходом. Ход различают по масти первой карты, например, ход в пику или ход по трефам.</p>
+                        <p>Первый ход принадлежит игроку, сидящему слева от сдатчика, в дальнейшем — игроку, взявшему последнюю взятку.</p>
+                        <p>На ход в масть каждый игрок обязан класть карту той же масти. Если карт этой масти нет, игрок обязан бить козырем. И если только у него нет ни масти хода, ни козырей, он может положить любую карту.</p>
+                        <p>Карта, побившая другие карты или не побитая другими картами, берёт взятку. Игрок, которому принадлежала эта карта, берёт взятку себе.</p>    
+                        <p>Каждая взятка состоит из трех карт, по одной от каждого игрока.</p>
+                    </div>
+                                <div class="r-gren pl-0 ml-0">
+                                    <div class="my-5 img-fluid pl-lg-5 pl-3 pr-3 ml-0">
+                                        <h3 class="gren my-3">Особенности игры в преферанс</h3>
+                                        <p>Для преферанса понадобится колода в 32 карты. Число участников может быть от двух до четырех. Суть игрового процесса состоит в том, чтобы оценив собственные карты, заказать и выиграть самый выгодный контракт. Игра условно делится на этапы:</p>
+                                        <div class="row no-gutters">
+                                            <div class="col-3">
+                                                <p class="fb">Раздача </p>
+                                            </div>
+                                            <div class="col-3">
+                                                    <p class="fb">Торговля </p>
+                                                </div>
+                                                <div class="col-3">
+                                                        <p class="fb">Заказ </p>
+                                                    </div>
+                                                    <div class="col-3">
+                                                            <p class="fb">Розыгрыш</p>
+                                                        </div>
+                                        </div>
+                                        <p>Преферанс на деньги, как правило, предпочитают опытные игроки, поскольку эта карточная игра не из простых.</p>
+                                    </div>
+                                </div>
+                                <div class="pl-lg-5 pl-3 pr-3">
+                        <h3 class="gren my-3">Виды и стоимость игр</h3>
+                        <p>Игры разделяются на три вида: игры на взятки — игрок назначает минимальное количество взяток, которое он обязуется взять при заказанном им козыре или без козыря; мизер — игрок обязуется не взять ни одной взятки; распасовка — все игроки стремятся взять как можно меньше взяток.</p>
+                    <p>Все возможные заказы (контракты) игpока в преферанс ранжируются от младшего к старшему следующим образом:
+                        </p>  
+                        <div class="table-borderless">
+                                <table class="table table-sm">
+                        <tr class="bg-gren rd font-weight-bold">
+                                <td>
+                                    <p>Заказ</p>
+                                </td>
+                                <td class="text-center">
+                                        <p>Игрок обязуется взять взяток</p>
+                                </td>
+                                    <td class="text-center">
+                                            <p>Цена игры </p>
+                                    </td>
+                                    </tr> 
+                        <tr>
+                                <td >
+                                    <p>6♠ (♣- ♦- ♥-б/к)</p>
+                                </td>
+                                <td class="text-center">
+                                        <p>6</p>
+                                </td>
+                                    <td class="text-center">
+                                            <p>2</p>
+                                    </td>
+                                </tr>
+                        <tr>
+                                <td >
+                                    <p>	7♠ ( ♣-♦ -♥-б/к)</p>
+                                </td>
+                                <td class="text-center">
+                                        <p>7</p>
+                                </td>
+                                    <td class="text-center">
+                                            <p>4</p>
+                                    </td>
+                                    </tr>
+                        <tr>
+                                <td >
+                                    <p>8♠ ( ♣- ♦-♥ -б/к)</p>
+                                </td>
+                                <td class="text-center">
+                                        <p>8</p>
+                                </td>
+                                    <td class="text-center">
+                                            <p>6</p>
+                                    </td>
+                                    </tr>
+                        <tr>
+                                <td >
+                                    <p>МИЗЕР</p>
+                                </td>
+                                <td class="text-center">
+                                        <p> ни одной взятки</p>
+                                </td>
+                                    <td class="text-center">
+                                            <p>10</p>
+                                    </td>
+                                    </tr>
+                        <tr>
+                                <td >
+                                    <p>9♠(♣ -♦ -♥ -б/к)</p>
+                                </td>
+                                <td class="text-center">
+                                        <p>9</p>
+                                </td>
+                                    <td class="text-center">
+                                            <p>8</p>
+                                    </td>
+                            </tr>
+                        <tr>
+                                <td>
+                                    <p>10♠ (♣ -♦ -♥ -б/к)</p>
+                                </td>
+                                <td class="text-center">
+                                        <p>10 </p>
+                                </td>
+                                    <td class="text-center">
+                                            <p>10  </p>
+                                    </td>
+                        </tr>  
+                    </table>
+                    </div>
+                        <p>Смысл игры заключается в том, чтобы, оценив в каждой сдаче свои карты, заказать наилучший контракт и выиграть возможно большее количество очков.</p> 
+                        <h3 class="gren my-3">Правила записи результатов игры в преферанс (пуля, пулька)</h3>
+                        <p>Вся совокупность контрактов, образующих самостоятельную игру, называется «пулькой». Такое же название носят: протокол, регистрирующий результаты каждого контракта; часть этого протокола, регистрирующая только результаты выигранных контрактов (другие части этого протокола называются «гора» и «висты»). <span clas="gren">Правила расчета пули в преферансе</span>
+                            </p>
+                        <img src="img/pf.png" class="img_p" style="width: 600px; max-width: 100%; max-height: 100%">
+                    </div>
+                    </div>
+                            <div class="col-md-6 col-12">
+                                    <div class="pr-lg-5 pl-3 pr-3">
+                                <h3 class="gren my-3">Правила торговли в преферансе</h3>
+                                <p>После того, как все карты розданы, происходит торговля: игроки конкурируют за право взять прикуп и назначить контракт. Берёт прикуп и назначает контракт тот, кто сделает в конкурентной торговле наивысшее назначение.</p>
+                                <p>Контракт назначается из расчёта количества взяток, которые игрок сможет взять, если возьмёт прикуп и назначит по своему усмотрению козырь или игру без козыря.
+                                    </p>
+                                <p>Начинать торговлю можно с назначения не менее, чем 6♠. Следующий игрок может принять участие в торговле за прикуп и сказать «шесть треф», или «трефа», или просто «два».
+                                    </p>
+                                <p>Торговля в преферансе идет последовательно, по нарастающей, каждый следующий заказ старше предыдущего — 6♠  — 6♣  — 6♦ — 6 ♥  — 6 без козыря,  — 7♠  и т.д. до 10-ти без козыря. После того как игрок выиграл торги он может играть ту игру, на которой торги остановились или любую старше. Исключение составляет контракт «мизер», который можно заказать только сразу.
+                                    </p>
+                                <p>Игра «мизер» не может быть заказана игроком, который участвовал в торговле любой заявкой. Желающий играть мизер должен объявить об этом своей первой заявкой. Если игрок успел сделать любую другую заявку, он теряет право заказать мизер.
+                                    </p>
+                                <p>Игрок, не желающий начинать или продолжать торговлю, говорит «пас» и в дальнейших торгах участие не принимает. </p>
+                                <p>Если все игроки сказали «пас», то играется распасы - игра, в которой все стараются взять как можно меньше взяток.</p>
+                            <p>Игpок, сделавший в процессе торговли самое высокое назначение, становится «игpающим». Он берёт прикуп и заказывает контракт. Он обязан заказать игру в любом случае, даже если не видит вариантов взять заказанное количество взяток.</p>
+                            <p>Игрок, выигравший торги, и взявший прикуп, заказывает свою игру, в которой он обязуется взять определённое количество взяток при заказанном им козыре или без козырей. Все игры, в которых играющий стремится взять взятки (в отличии от мизера и распасов) называются играми на взятки. Все игры на взятки разыгрываются в случае, если завистованы.  Игрок, взявший прикуп, не может «сдаться без боя», иначе как признав, что остался «без всех», и должен играть завистованную игру до конца.</p>
+                            <h3 class="gren my-3">Правила розыгрыша мизера</h3>
+                            <p>Игра, в которой победитель торгов  обязуется не взять ни одной взятки, называется мизером.
+                                </p>
+                            <p>Козырей на мизере не существует. Старшинство карт сохраняется, равно как и все основные правила преферанса: на ход в масть обязательно давать в масть, ход принадлежит игроку, взявшему последнюю взятку и т.д. Если ход принадлежит разыгрывающему, он должен сделать его до того, как противники «лягут» — откроют карты. Если первый ход принадлежит вистующим, они открывают карты до первого хода.</p>
+                            <h3 class="gren my-3">Правила розыгрыша распасов</h3>
+                            <p>Если все три игрока не вступили в торговлю (заявили «пас») то играется распасы - игра, в которой все игроки стараются взять как можно меньше взяток.</p>
+                            <p>В различных разновидностях преферанса результаты распасовки записываются по-разному: в гору или в вистовую запись. Дополнительные соглашения о проведении распaсов на портале вы можете прочитать ниже.</p>
+                            <p>Козырей на распасовке не существует. Давать в масть обязательно. При отсутствии масти можно нести любую карту.</p>
+                            <h3 class="gren my-3">Правила преферанса для вистующих, подсчет вистов</h3>
+                            <p>После того, как заказана игра, следующий за разыгрывающим игрок должен сказать, обязуется ли он взять обязательное для данной игры количество взяток, как правило, равное разности от вычитания величины заказанной игры из числа 10. Если обязуется, он говорит «вист», а если не обязуется, говорит «пас». Игрок, сделавший заявку «вист», называется «вистующим». Вистующие игроки обязаны взять определенное количество взяток в раздаче</p>
+                            <p>Обязательное для вистующих количество взяток:</p>
+                            <div class="table-borderless">
+                                    <table class="table table-sm">
+                            <tr class="bg-gren rd font-weight-bold">
+                                    <td>
+                                        <p>	Заказ</p>
+                                    </td>
+                                    <td class="text-center">
+                                            <p>Вистующие должны взять взяток</p>
+                                        </td>
+                                    </tr> 
+                            <tr>
+                                    <td >
+                                            <p>	6♠ (♣- ♦- ♥-б/к)</p>
+                                    </td>
+                                        <td class="text-center">
+                                                <p>4</p>
+                                        </td>
+                                        </tr>
+                            <tr>
+                                    <td>
+                                            <p>	7♠ ( ♣-♦ -♥-б/к)</p>
+                                    </td>
+                                        <td class="text-center">
+                                                <p>2</p>
+                                        </td>
+                                    </tr>
+                            <tr>
+                                    <td>
+                                            <p>8♠ ( ♣- ♦-♥ -б/к)</p>
+                                    </td>
+                                        <td class="text-center">
+                                                <p>1</p>
+                                        </td>
+                                        </tr>
+                            <tr>
+                                    <td>
+                                            <p>	МИЗЕР </p>
+                                    </td>
+                                        <td class="text-center">
+                                                <p>нет обязательств</p>
+                                        </td>
+                                        </tr>
+                            <tr>
+                                    <td>
+                                            <p>9♠(♣ -♦ -♥ -б/к)</p>
+                                    </td>
+                                        <td class="text-center">
+                                                <p>1</p>
+                                        </td>
+                                        </tr>
+                            <tr>
+                                    <td >
+                                            <p>10♠ (♣ -♦ -♥ -б/к)</p>
+                                    </td>
+                                        <td class="text-center">
+                                                <p>1</p>
+                                        </td>
+                                        </tr>
+                    </table>
+                </div>
+                        <p>Если завистовали оба противника разыгрывающего, то они вместе должны взять обязательное для данной игры количество взяток.</p>
+                        <p>Существует совокупность договорных условий о правилах виста, характеризуемых как жёсткие, называемая жлобским вистом или мягкие, называемая джентльменским вистом. Является предметом предварительной договорённости между игроками.</p>
+                        <h3 class="gren my-3">Дополнительные соглашения Преферанса:
+                            </h3>  
+                        <p><span class="fb">Вист</span> - ответственный, жлобский Мизер с прикупом перебивается девятерной с прикупом.</p>   
+                        <p><span class="fb">Девятерная с прикупом</span> перебивается мизером без прикупа. </p> 
+                        <p><span class="fb">Мизер без прикупа</span> перебивается девятерной (или десятерной) без прикупа.</p> 
+                        <p><span class="fb">Десятерная игра</span> - проверяется</p> 
+                        <p><span class="fb">Первый ход разыгрывающего</span> - в темную</p> 
+                        <p><span class="fb">Вистование на восьмерной, девятерной</span> - ответственный для обоих вистующих</p> 
+                        <p><span class="fb">6 пик («Сталинград»)</span> - все вистуют</p> 
+                        <p><span class="fb">Вист-пас-полвиста</span> - не допускается</p> 
+                        <p><span class="fb">Без трех без вистов</span> - не допускается</p> 
+                        <p><span class="fb">Выход из распасов</span> - ужесточенный (6,7,8,8…)</p> 
+                        <p><span class="fb">Прогрессия стоимости взяток на распасах</span> - ограниченная арифметическая (х1,х2,х3,х3…)</p> 
+                        <p><span class="fb">Прикуп на распасах</span> - открывается</p> 
+                        <p><span class="fb">Выход из распасов подсадом</span> - не допускается</p> 
+                        <p><span class="fb">Переход сдачи в распасах</span> – сдача не переходит</p> 
+                    </div>
+                        </div>
+                    </div>
+                </div>
+        </div>
+    </div></div>
+    </main>
+
+    <footer class="">
+        <div class="container-fluid bg-green-inv">
+            <div class="container">
+                <div class="row">
+                    <div class="col my-1 d-flex justify-content-between kassa-img">
+                        <div class="align-items-center d-flex">
+
+                            <!-- Кнопка на Freekassa -->
+                            <a class="pr-2" href="http://www.free-kassa.ru">
+                                <img src="img/fk.png" class="img-fluid" alt="Responsive image"></a>
+                            <!-- Кнопка на Payeer -->
+                            <a class="pr-2" href="https://payeer.com/ru">
+                                <img src="img/payeer.png" class="img-fluid" alt="Responsive image"></a>
+                            <!-- Кнопка на Interkassa -->
+                            <a class="pr-2" href="https://www.interkassa.com">
+                                <img src="img/ik.png" class="img-fluid" alt="Responsive image"></a>
+                            <h1><i class="icon-18plus text-white"></i></h1>
+                        </div>
+                        <div class="d-flex align-items-center justify-content-end hide-items">
+                            <ul class="navbar-nav social-icon d-flex d-inline-block">
+                                <!-- Кнопка "Написать нам" в футере -->
+                                <li class="nav-item text-center top-social-icon">
+                                    <button type="button" class="btn bg-danger rounded text-white p-0"
+                                        data-toggle="modal" data-target="#mail" style="height:26px;width:26px">
+                                        <i class="icon-mail-1"></i>
+                                    </button>
+                                </li>
+                                <!-- Кнопка "Vkontakte" в футере -->
+                                <li class="nav-item text-center top-social-icon">
+                                    <a class="nav-link bg-vk rounded  base-icon" href="https://vk.com/public171133653">
+                                        <i class="icon-vkontakte"></i>
+                                    </a>
+                                </li>
+                                <!-- Кнопка "Odnoklassniki" в футере -->
+                                <li class="nav-item text-center top-social-icon">
+                                    <a class="nav-link bg-ok rounded base-icon"
+                                        href="https://ok.ru/group/55514326302733">
+                                        <i class="icon-odnoklassniki"></i>
+                                    </a>
+                                </li>
+                                <!-- Кнопка "Facebook" в футере -->
+                                <li class="nav-item text-center">
+                                    <a class="nav-link bg-f rounded base-icon"
+                                        href="https://www.facebook.com/groups/892129730993336/">
+                                        <i class="icon-facebook-1"></i>
+                                    </a>
+                                </li>
+                            </ul>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+        <div class="container-fluid bg-green-nav pt-2 ">
+            <div class="container">
+                <div class="row">
+                    <div class="col-lg-4 col-md-4 col-sm-12">
+                        <h5 class="text-white">
+                            <i class="icon-info ">Информация</i>
+                        </h5>
+                        <ul class="nav-menu navbar-nav item-list">
+                            <li><a class="nav-link" href="./news.html">Новости</a></li>
+                            <li><a class="nav-link" href="./rules.html">Правила клуба</a></li>
+                            <li><a class="nav-link" href="./rules-alex.html">Условия использования
+                                    сайтом</a></li>
+                            <li><a class="nav-link" href="./pr-policy.html">Политика
+                                    конфиденциальности</a></li>
+                            <li><a class="nav-link" href="./c-b-policy.html">Политика отмены и
+                                    возврата платежей</a></li>
+                        </ul><br>
+                        <p class="nav-menu"><a class="text-white item-list"
+                                href="./about.html"><span class="font-weight-bold">Контактная
+                                    информация</span><br>
+                                Москва, Россия, 119019, ул. Волхонка, 18</a></p>
+                    </div>
+                    <div class="col-lg-4 col-md-4 col-sm-12 hide-items">
+                        <div class="col-auto">
+                            <h5 class="text-white">
+                                <i class="icon-coin">Игры на деньги</i>
+                            </h5>
+                        </div>
+                        <div class="col d-flex ">
+                            <div class="col-6 nav-menu p-0 ">
+                                <ul class="nav-link">
+                                    <li><a href="./durak.html">Дурак</a></li>
+                                    <li><a href="./chess.html">Шахматы</a></li>
+                                    <li><a href="./checkers.html">Шашки</a></li>
+                                    <li><a href="./bura.html">Бура</a></li>
+                                    <li><a href="./preference.html">Преферанс</a></li>
+                                    <li><a href="./deberc.html">Дебертс</a></li>
+                                    <li><a href="./tic-tac-toe.html">Крестики - нолики</a>
+                                    </li>
+                                    <li><a href="./seabattle.html">Морской бой</a></li>
+                                </ul>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="col-lg-4 col-md-4 col-sm-12 hide-items">
+                        <div class="col-auto">
+                            <h5 class="text-white">
+                                <i class="icon-free">Игры бесплатно</i>
+                            </h5>
+                        </div>
+                        <div class="col d-flex">
+                            <div class="col-6 nav-menu p-0 ">
+                                <ul class="nav-link">
+                                    <li><a href="./durak.html">Дурак</a></li>
+                                    <li><a href="./chess.html">Шахматы</a></li>
+                                    <li><a href="./checkers.html">Шашки</a></li>
+                                    <li><a href="./bura.html">Бура</a></li>
+                                    <li><a href="./preference.html">Преферанс</a></li>
+                                    <li><a href="./deberc.html">Дебертс</a></li>
+                                    <li><a href="./tic-tac-toe.html">Крестики - нолики</a>
+                                    </li>
+                                    <li><a href="./seabattle.html">Морской бой</a></li>
+                                </ul>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="col-12">
+                        <h6 class="text-center">Copyright <i class="icon-copyright"></i>2018 - 2019, Игровой Дом.
+                            Все права защищены.</p>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </footer>
+    </div>
+    <!-- Modal "Написать нам" -->
+    <div class="modal fade" id="mail" tabindex="-1" role="dialog" aria-labelledby="exampleModalCenterTitle"
+        aria-hidden="true">
+        <div class="modal-dialog modal-dialog-centered" role="document">
+            <div class="modal-content">
+                <div class="modal-header btn-green">
+                    <h5 class="modal-title text-dark" id="exampleModalCenterTitle">Написать нам</h5>
+                    <button type="button" class="close" data-dismiss="modal" aria-label="Close">
+                        <span aria-hidden="true">&times;</span>
+                    </button>
+                </div>
+                <div class="modal-body">
+                    <form>
+                        <div class="form-group">
+                            <input type="email" class="form-control" id="exampleInputEmail1"
+                                aria-describedby="emailHelp" placeholder="Ваш e-mail">
+                        </div>
+                        <div class="form-group">
+                            <input type="text" class="form-control mt-4" id="userlogin" aria-describedby="userlogin"
+                                placeholder="Тема сообщения" required="true">
+                        </div>
+                        <div class="form-group">
+                            <label for="exampleFormControlTextarea1">Ваше сообщение</label>
+                            <textarea class="form-control" id="exampleFormControlTextarea1" rows="3"></textarea>
+                        </div>
+                </div>
+                <div class="modal-footer">
+                    <button type="button" class="btn btn-primary btn-green ">Отправить</button>
+                    <button type="button" class="btn btn-secondary btn-red" data-dismiss="modal">Закрыть</button>
+                </div>
+            </div>
+        </div>
+    </div>
+    <!-- Modal "Вход"-->
+    <div class="modal fade" id="SignIn" tabindex="-1" role="dialog" aria-labelledby="exampleModalCenterTitle"
+        aria-hidden="true">
+        <div class="modal-dialog modal-dialog-centered" role="document">
+            <div class="modal-content">
+                <div class="modal-header btn-green">
+                    <h5 class="modal-title text-dark font-weight-bold" id="exampleModalCenterTitle">
+                        Вход</h5>
+                    <button type="button" class="close" data-dismiss="modal" aria-label="Close">
+                        <span aria-hidden="true">&times;</span>
+                    </button>
+                </div>
+                <div class="col text-left">
+                    <form>
+                        <div class="form-group">
+                            <input type="text" class="form-control mt-4" id="userlogin" aria-describedby="userlogin"
+                                placeholder="Ваш логин" required="true">
+                        </div>
+                        <div class="form-group">
+                            <input type="password" class="form-control" id="exampleInputPassword1"
+                                placeholder="Ваш пароль" required="true">
+                        </div>
+                        <div class="form-check">
+                            <input type="checkbox" class="form-check-input" id="exampleCheck1">
+                            <label class="form-check-label" for="exampleCheck1">Запомнить
+                                меня</label>
+                        </div>
+                        <div class="my-3 log-line"> <button type="submit" class="btn btn-green ">Войти</button>
+                            <a class="text-dark mx-3 " href="https://alex-game.com/site/request-password-reset">
+                                Забыли пароль?
+                            </a>
+                            <div class="d-flex mt-4">
+                                <p>Войти через:</p>
+                                <ul class="navbar-nav social-icon px-5">
+                                    <li class="nav-item text-center top-social-icon">
+                                        <a class="nav-link bg-vk rounded  base-icon"
+                                            href="https://alex-game.com/site/auth?authclient=vk">
+                                            <i class="icon-vkontakte"></i>
+                                        </a>
+                                    </li>
+                                    <li class="nav-item text-center top-social-icon">
+                                        <a class="nav-link bg-ok rounded base-icon"
+                                            href="https://alex-game.com/site/auth?authclient=ok">
+                                            <i class="icon-odnoklassniki"></i>
+                                        </a>
+                                    </li>
+                                </ul>
+                            </div>
+                        </div>
+                    </form>
+                </div>
+            </div>
+        </div>
+    </div>
+    <!-- Modal "Создать игру" -->
+    <div class="modal fade" id="exampleModalCenter" tabindex="-1" role="dialog"
+        aria-labelledby="exampleModalCenterTitle" aria-hidden="true">
+        <div class="modal-dialog modal-dialog-centered" role="document">
+            <div class="modal-content ">
+                <div class="modal-header btn-green">
+                    <h5 class="modal-title text-dark" id="exampleModalCenterTitle">Новая игра
+                    </h5>
+                    <button type="button" class="close" data-dismiss="modal" aria-label="Close">
+                        <span aria-hidden="true">&times;</span>
+                    </button>
+                </div>
+                <div class="modal-body">
+                    <p>Размер ставки</p>
+                    <select class="form-control">
+                        <option>0</option>
+                        <option>10</option>
+                        <option>20</option>
+                        <option>40</option>
+                        <option>60</option>
+                        <option>120</option>
+                        <option>160</option>
+                        <option>300</option>
+                    </select>
+                </div>
+                <div class="modal-footer justify-content-center">
+                    <button type="button" class="btn btn-red px-5" data-dismiss="modal">Ок</button>
+                    <button type="button" class="btn btn-green px-4">Отмена</button>
+                </div>
+            </div>
+        </div>
+    </div>
+    <link href="js/ecom.js" rel="stylesheet">
+    <script>
+        const image = document.querySelector('#main-image>img');
+        const colors = document.querySelectorAll('input[name="colorSelect"]');
+        let checkedColor = document.querySelector('input[name="colorSelect"]:checked');
+        colors.forEach(function (el, i) {
+            el.addEventListener('change', changeColor);
+        });
+
+        function changeColor() {
+            checkedColor = document.querySelector('input[name="colorSelect"]:checked');
+            image.src = checkedColor.value;
+
+        }
+
+        changeColor();
+    </script>
+    <script src="https://code.jquery.com/jquery-3.3.1.slim.min.js"
+        integrity="sha384-q8i/X+965DzO0rT7abK41JStQIAqVgRVzpbzo5smXKp4YfRvH+8abtTE1Pi6jizo" crossorigin="anonymous">
+    </script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.14.7/umd/popper.min.js"
+        integrity="sha384-UO2eT0CpHqdSJQ6hJty5KVphtPhzWj9WO1clHTMGa3JDZwrnQq4sF86dIHNDz0W1" crossorigin="anonymous">
+    </script>
+    <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/js/bootstrap.min.js"
+        integrity="sha384-JjSmVgyd0p3pXB1rRibZUAYoIIy6OrQ6VrjIEaFf/nJGzIxFDsf4x0xIM+B07jRM" crossorigin="anonymous">
+    </script>
+</body>
+
+</html>

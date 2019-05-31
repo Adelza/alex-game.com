@@ -1,0 +1,187 @@
+.message-title {
+    height: auto;
+    max-width: 100%;
+    position: relative;
+
+
+}
+
+.title-name {
+    padding-left: 35px;
+    line-height: 30px;
+    font-size: 15px;
+}
+
+.form-w {
+    width: auto;
+
+
+
+
+}
+
+.form-w .form-control {
+    width: auto;
+    font-size: 14px;
+}
+
+.text-mes {
+    height: 550px;
+    width: 100%
+}
+
+.text-area .form-control {
+    width: 98% !important;
+    resize: none;
+}
+
+.other_message {
+    width: 100%;
+    padding-right: calc(100% - 450px);
+    padding-left: 0;
+}
+
+.other_message div {
+    background-color: rgb(224, 255, 231)
+}
+
+.my_message {
+    width: 100%;
+    padding-left: calc(100% - 450px);
+    padding-right: 0;
+}
+
+
+.scrollbar {
+    height: 380px;
+    width: 100%;
+    max-width: 100%;
+
+    overflow-y: scroll;
+    margin-bottom: 25px;
+}
+
+.scrollbar_right {
+    height: 485px;
+    width: 100%;
+    max-width: 100%;
+    overflow: hidden;
+    overflow-y: scroll;
+   
+   
+}
+
+.force-overflow {
+    min-height: 370px;
+    position: relative;
+}
+
+.viewport {
+    height: 320px;
+}
+
+.icon_user{
+    width: 60px;
+    
+    max-width: 100%;
+    max-height: 100%
+}
+
+#style-15::-webkit-scrollbar-track {
+    -webkit-box-shadow: inset 0 0 6px rgba(0, 0, 0, 0.1);
+    background-color: #F5F5F5;
+    border-radius: 10px;
+}
+
+#style-15::-webkit-scrollbar {
+    width: 10px;
+    background-color: #F5F5F5;
+}
+
+#style-15::-webkit-scrollbar-thumb {
+    border-radius: 10px;
+    background-color: #FFF;
+    background-image: -webkit-gradient(linear,
+            40% 0%,
+            75% 84%,
+            from(#4D9C41),
+            to(#19911D),
+            color-stop(.6, #54DE5D))
+}
+
+
+@media screen and (max-width: 1199px) and (min-width: 698px) {
+
+    .form-w .form-control {
+        width: 170px;
+    }
+}
+
+@media screen and (max-width: 575px) {
+    .message {
+        height: 600px !important;
+    }
+}
+
+
+@media screen and (max-width: 697px) {
+    .form-w .form-control {
+        width: 140px;
+    }
+    .scrollbar_right p{
+        font-size: 12px;
+        word-wrap: break-word;
+    }
+    .form-w .form-control {
+        font-size: 10px
+    }
+
+    .form-w .btn {
+        font-size: 10px
+    }
+
+    .form-w .form-control {
+        width: 150px;
+    }
+
+}
+
+@media screen and (max-width: 575px) {
+    .form-w .form-control {
+        width: 100px;
+    }
+
+    .title-name {
+        font-size: 14px;
+        padding-left: 10px;
+        line-height: 20px
+    }
+
+    .other_message,
+    .my_message {
+        font-size: 12px
+    }
+    
+  
+}
+
+@media screen and (max-width: 500px) {
+    .icon_user{
+       display: none;
+    }
+}
+@media screen and (max-width: 420px) {
+    .form-w .btn {
+        padding-left: 5px;
+        padding-right: 5px
+    }
+
+    .form-w .form-control {
+        width: 80px;
+    }
+}
+
+@media screen and (max-height: 688px) {
+    main .bg-style{
+        height: 100% !important;
+    }
