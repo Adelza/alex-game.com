@@ -85,8 +85,9 @@
                                     class="btn btn-red rounded dropdown-item text-center d-inline-block"
                                     data-toggle="modal" data-target="#SignIn">Вход</button>
                                 <!-- Кнопка регистрация -->
-                                <a href="#"
-                                    class="btn btn-green px-3 rounded">Регистрация</a>
+                                <button type="button"
+                                class="btn btn-green rounded text-center d-inline-block px-3"
+                                data-toggle="modal" data-target="#Signup">Регистрация</button>
                             </div>
                         </div>
                     </nav>
@@ -543,7 +544,65 @@
             </div>
         </div>
     </div>
-
+<!-- Modal "Регистрация"-->
+<div class="modal fade" id="Signup" tabindex="-1" role="dialog" aria-labelledby="exampleModalCenterTitle"
+aria-hidden="true">
+<div class="modal-dialog modal-dialog-centered" role="document">
+    <div class="modal-content">
+        <div class="modal-header btn-green">
+            <h5 class="modal-title text-white font-weight-bold" id="exampleModalCenterTitle">
+                Регистрация</h5>
+            <button type="button" class="close" data-dismiss="modal" aria-label="Close">
+                <span aria-hidden="true">&times;</span>
+            </button>
+        </div>
+        <div class="col text-left">
+            <form>
+                <div class="form-group">
+                    <input type="text" class="form-control mt-4" id="userlogin" aria-describedby="userlogin"
+                        placeholder="Ваш ник" required="true">
+                </div>
+                <div class="form-group">
+                   <input type="email" class="form-control mt-4" id="userlogin" aria-describedby="userlogin"
+                       placeholder="Email" required="true">
+               </div>
+                <div class="form-group">
+                    <input type="password" class="form-control" id="exampleInputPassword1"
+                        placeholder="Ваш пароль" required="true">
+                </div>
+                <div class="form-group">
+                   <input type="text" class="form-control" id="exampleInputPassword1"
+                       placeholder="Реферал" required="true">
+               </div>
+                <div class="form-check">
+                    <input type="checkbox" class="form-check-input" id="exampleCheck1">
+                    <label class="form-check-label" for="exampleCheck1">Подтверждаю, что мне 18 лет</label>
+                </div>
+                <div class="my-3 log-line"> <button type="submit" class="btn btn-green ">Зарегистрироваться</button>
+                    
+                    <div class="d-flex mt-4">
+                        <p>Войти через:</p>
+                        <ul class="navbar-nav social-icon px-5">
+                            <li class="nav-item text-center top-social-icon">
+                                <a class="nav-link bg-vk rounded  base-icon"
+                                    href="https://alex-game.com/site/auth?authclient=vk">
+                                    <i class="icon-vkontakte"></i>
+                                </a>
+                            </li>
+                            <li class="nav-item text-center top-social-icon">
+                                <a class="nav-link bg-ok rounded base-icon"
+                                    href="https://alex-game.com/site/auth?authclient=ok">
+                                    <i class="icon-odnoklassniki"></i>
+                                </a>
+                            </li>
+                        </ul>
+                    </div>
+                </div>
+            </form>
+        </div>
+    </div>
+</div>
+</div>    
 
     <script src="https://code.jquery.com/jquery-3.3.1.slim.min.js"
         integrity="sha384-q8i/X+965DzO0rT7abK41JStQIAqVgRVzpbzo5smXKp4YfRvH+8abtTE1Pi6jizo" crossorigin="anonymous">
