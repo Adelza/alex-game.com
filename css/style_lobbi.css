@@ -16,6 +16,10 @@ i {
     font-style: normal
 }
 
+.d, .d-none{
+    display: none !important
+}
+
 li,
 a {
     color: white !important;
@@ -40,6 +44,10 @@ a {
     justify-content: space-between
 }
 
+.nav-index {
+    z-index: 100;
+   
+}
 .btn:hover {
     background-position: right center;
     color: white;
@@ -518,6 +526,14 @@ height: 70vh
     }
 
 }
+
+@media (min-width: 992px){
+       
+    .nav-index {
+        
+        height: 101px;
+    }}
+    
 
 @media (min-width: 993px) {
     .navbar-expand-lg .navbar-nav .nav-link {

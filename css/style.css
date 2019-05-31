@@ -46,6 +46,11 @@ a {
     
 }
 
+.nav-index {
+    z-index: 100;
+  
+}
+
 .btn-red {
 
     border: 2px rgb(252, 114, 50);
@@ -558,8 +563,12 @@ h1 {
 margin-left: 0
     }}
 
-
+    @media (min-width: 992px){
        
+    .nav-index {
+        
+        height: 101px;
+    }}
     
        
 

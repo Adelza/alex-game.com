@@ -53,7 +53,9 @@ body{
     background-position-x: center
    
 }
-
+.d, .d-none{
+    display: none !important
+}
 
 /* .game-icon-img {
     background-size: cover
