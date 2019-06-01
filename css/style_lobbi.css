@@ -271,6 +271,7 @@ vertical-align: inherit !important;}
     background-position-x: center;
     height: 100%;
     width: 100vw;
+    background-size: cover
    
 }
 
@@ -669,7 +670,7 @@ margin-left: 0
 
 }
 
-@media (min-width: 1200px) {
+@media (min-width: 992px) {
     .footer {
         height: 80px !important;
     }
