@@ -225,8 +225,9 @@ height: 100%;
   }
 
 #main-image {
-    /* width: 657px; */
-    height: 300px;
+    width: 560px;
+    max-width: 100%;
+    /* height: 300px; */
 }
 #main-image img {
     max-width: 100%;
@@ -258,117 +259,117 @@ height: 100%;
     outline-offset: 2px;
 }
 .product-options input[type="radio"]+label.silver1 {
-    background-image:url(./img/t-t-t_1.jpg);
+    background-image:url(../img/t-t-t_1.jpg);
     background-size: cover;
     background-position: center center  
 }
 .product-options input[type="radio"]+label.pink1 {
-    background-image:url(./img/t-t-t_2.jpg);
+    background-image:url(../img/t-t-t_2.jpg);
     background-size: cover;
     background-position: center center
 }
 .product-options input[type="radio"]+label.gold1 {
-    background-image:url(./img/t-t-t_3.jpg);
+    background-image:url(../img/t-t-t_3.jpg);
     background-size: cover;
     background-position: center center
 }
 
 
 .product-options input[type="radio"]+label.silver2 {
-    background-image:url(./img/bura_1.jpg);
+    background-image:url(../img/bura_1.jpg);
     background-size: cover;
     background-position: center center  
 }
 .product-options input[type="radio"]+label.pink2 {
-    background-image:url(./img/bura_2.jpg);
+    background-image:url(../img/bura_2.jpg);
     background-size: cover;
     background-position: center center
 }
 .product-options input[type="radio"]+label.gold2 {
-    background-image:url(./img/bura_3.jpg);
+    background-image:url(../img/bura_3.jpg);
     background-size: cover;
     background-position: center center
 }
 
 .product-options input[type="radio"]+label.silver3 {
-    background-image:url(./img/sea_battle_1.jpg);
+    background-image:url(../img/sea_battle_1.jpg);
     background-size: cover;
     background-position: center center  
 }
 .product-options input[type="radio"]+label.pink3 {
-    background-image:url(./img/sea_battle_2.jpg);
+    background-image:url(../img/sea_battle_2.jpg);
     background-size: cover;
     background-position: center center
 }
 .product-options input[type="radio"]+label.gold3 {
-    background-image:url(./img/sea_battle_3.jpg);
+    background-image:url(../img/sea_battle_3.jpg);
     background-size: cover;
     background-position: center center
 }
 
 .product-options input[type="radio"]+label.silver4 {
-    background-image:url(./img/deberc_1.jpg);
+    background-image:url(../img/deberc_1.jpg);
     background-size: cover;
     background-position: center center  
 }
 .product-options input[type="radio"]+label.pink4 {
-    background-image:url(./img/deberc_2.jpg);
+    background-image:url(../img/deberc_2.jpg);
     background-size: cover;
     background-position: center center
 }
 .product-options input[type="radio"]+label.gold4 {
-    background-image:url(./img/deberc_3.jpg);
+    background-image:url(../img/deberc_3.jpg);
     background-size: cover;
     background-position: center center
 }
 
 
 .product-options input[type="radio"]+label.silver5 {
-    background-image:url(./img/chess_1.jpg);
+    background-image:url(../img/chess_1.jpg);
     background-size: cover;
     background-position: center center  
 }
 .product-options input[type="radio"]+label.pink5 {
-    background-image:url(./img/chess_2.jpg);
+    background-image:url(../img/chess_2.jpg);
     background-size: cover;
     background-position: center center
 }
 .product-options input[type="radio"]+label.gold5 {
-    background-image:url(./img/chess_3.jpg);
+    background-image:url(../img/chess_3.jpg);
     background-size: cover;
     background-position: center center
 }
 
 
 .product-options input[type="radio"]+label.silver6 {
-    background-image:url(./img/Durak_1.jpg);
+    background-image:url(../img/Durak_1.jpg);
     background-size: cover;
     background-position: center center  
 }
 .product-options input[type="radio"]+label.pink6 {
-    background-image:url(./img/Durak_2.jpg);
+    background-image:url(../img/Durak_2.jpg);
     background-size: cover;
     background-position: center center
 }
 .product-options input[type="radio"]+label.gold6 {
-    background-image:url(./img/Durak_3.jpg);
+    background-image:url(../img/Durak_3.jpg);
     background-size: cover;
     background-position: center center
 }
 
 
 .product-options input[type="radio"]+label.silver7 {
-    background-image:url(./img/checkers_1.jpg);
+    background-image:url(../img/checkers_1.jpg);
     background-size: cover;
     background-position: center center  
 }
 .product-options input[type="radio"]+label.pink7 {
-    background-image:url(./img/checkers_2.jpg);
+    background-image:url(../img/checkers_2.jpg);
     background-size: cover;
     background-position: center center
 }
 .product-options input[type="radio"]+label.gold7 {
-    background-image:url(./img/checkers_3.jpg);
+    background-image:url(../img/checkers_3.jpg);
     background-size: cover;
     background-position: center center
 }
