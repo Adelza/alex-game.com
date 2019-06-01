@@ -53,10 +53,3 @@ document.addEventListener('DOMContentLoaded', function (e) {
 });
 
 
-if(ontouchstart in window) { //проверить, является ли экран touch-screen'ом
-$('game-icon-img').click(function(e){ //клик по элементу с иконкой игры
-e.preventDefault(); //отменить стандартный переход по ссылке
-$('game-icon-text').removeClass('show'); //убрать класс .show у ВСЕХ элементов с кнопками играть и правила
-$(this).find('game-icon-text').addClass('show'); //добавить класс .show данному элементу с кнопками играть и правила
-});
-}
