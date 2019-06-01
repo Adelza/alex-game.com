@@ -109,13 +109,13 @@ hr {
     
 }
 
-.game-icon-text .show {
+/* .game-icon-text .show {
     background-color: rgba(0, 0, 0, 0.805);
     transition: 400ms
-}
+} */
 
-.game-icon .game-icon-text .show {
-
+.game-icon .show {
+    background-color: rgba(0, 0, 0, 0.805);
     opacity: 1;
     transform: scale(1, 1);
     color: rgb(166, 247, 37) !important;

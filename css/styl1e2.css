@@ -21,12 +21,25 @@
       
       #summary a.collapsed:after  {
           content: 'Подробнее';
-          color: #000000;
-          font-style: italic;
+          color: #ffffff;
       }
       
       #summary a:not(.collapsed):after {
           content: 'Свернуть';
-          color: #000000;
-          font-style: italic;
+          color: #ffffff;
       }
+      .white{
+          color:  #2ec700 !important;
+          font-size: 30px !important;
+      }
+      .white2{
+        color:  #ffffff !important;
+        font-size: 30px !important;
+    }
+
+    @media screen and (max-width: 575px) {
+        .white2  { font-size: 25px !important;
+            color:  #000000 !important;}
+        .white  { font-size: 25px !important;}
+    
+    }
