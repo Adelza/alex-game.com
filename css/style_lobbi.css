@@ -369,12 +369,14 @@ h1 {
 /* ADAPTIVE */
 
 
-/* @media screen and (min-height: 850px) {
+@media screen and (max-width: 334px) {
+    .profile-sm> .profile-info {
+      
+        text-align: right !important;
+        line-height: 1em;
+    }}
 
-    .bg-pic{
-height: 70vh
-    }
-} */
+
 @media screen and (max-width: 568px) {
     .profile-sm {
         padding-top: 2em;
