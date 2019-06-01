@@ -108,6 +108,22 @@ hr {
     transition: 250ms ease;
     
 }
+
+.game-icon-text .show {
+    background-color: rgba(0, 0, 0, 0.805);
+    transition: 400ms
+}
+
+.game-icon .game-icon-text .show {
+
+    opacity: 1;
+    transform: scale(1, 1);
+    color: rgb(166, 247, 37) !important;
+    transition: 250ms ease;
+    
+}
+
+
 .news-list li a{
     font-size: 0.8em
 }
