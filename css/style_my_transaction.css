@@ -20,6 +20,11 @@ table.TF th {
     background-position-x: center;
 }
 
+
+@media screen and (min-height: 540px){
+.bg-pic2, .black-jack {
+    height: 100% !important;}}
+
 @media screen and (max-width: 991px) and (min-width:768px) {
     .container {
         max-width: 980px;

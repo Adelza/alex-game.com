@@ -52,7 +52,7 @@ document.addEventListener('DOMContentLoaded', function (e) {
     tf.init();
 });
 
-$(document).ready(function (){
+
 if(ontouchstart in window) { //проверить, является ли экран touch-screen'ом
 $('game-icon-img').click(function(e){ //клик по элементу с иконкой игры
 e.preventDefault(); //отменить стандартный переход по ссылке
