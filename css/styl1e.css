@@ -83,7 +83,22 @@
 @media screen and (max-width: 461px) {
     .product-options input[type="radio"]+label {
         width: 88px!important;
-    }}
+    }
+}
+
+@media screen and (max-width: 381px ) {
+    .product-options input[type="radio"]+label {
+        margin-left: 0!important;
+    }
+    .row> .col-lg-10,  .row .product-options {
+        padding-left: 0 !important;
+        padding-right: 0 !important
+    }
+   
+    
+}
+
+
 
 @media screen and (max-width: 991px) {
 
@@ -373,3 +388,6 @@ height: 100%;
     background-size: cover;
     background-position: center center
 }
+
+
+
