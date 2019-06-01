@@ -11,6 +11,7 @@ tr .align_btn_bottom {
 
 }
 
+
 @media screen and (max-width: 830px) {
     .ad_padding_0 {
         padding-left: 0;
@@ -20,11 +21,42 @@ tr .align_btn_bottom {
 
 @media screen and (max-width: 639px) {
 
-   
-
     .align_btn_bottom>.btn {
         padding-right: 0.9em !important;
         padding-left: 0.9em !important
     }
 
+}
+
+
+.scrollbar_right {
+    height: 560px;
+    width: 100%;
+    max-width: 100%;
+    overflow: hidden;
+    overflow-y: scroll;
+   
+   
+}
+
+#style-15::-webkit-scrollbar-track {
+    -webkit-box-shadow: inset 0 0 6px rgba(0, 0, 0, 0.1);
+    background-color: rgba(245, 245, 245, 0);
+    border-radius: 10px;
+}
+
+#style-15::-webkit-scrollbar {
+    width: 10px;
+    background-color: rgba(245, 245, 245, 0);
+}
+
+#style-15::-webkit-scrollbar-thumb {
+    border-radius: 10px;
+    background-color: rgba(255, 255, 255, 0);
+    background-image: -webkit-gradient(linear,
+            40% 0%,
+            75% 84%,
+            from(#4D9C41),
+            to(#19911D),
+            color-stop(.6, #54DE5D))
 }
