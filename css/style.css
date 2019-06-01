@@ -23,6 +23,7 @@ a {
 
 .navbar-brand {
     position: absolute;
+    cursor: pointer !important;
 }
 
 .row {
@@ -62,7 +63,11 @@ a {
     background-size: 200% auto;
 
 }
-
+.btn:hover {
+    background-position: right center;
+    color: white;
+    
+}
 .btn-green {
     border: 2px rgb(165, 247, 37);
     
@@ -237,6 +242,9 @@ section {
     top: 82px
 }
 
+.text-l{
+    text-align: left !important
+}
 
 .table td, .table th{
 vertical-align: inherit !important;}

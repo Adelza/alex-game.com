@@ -48,6 +48,8 @@ a {
     z-index: 100;
    
 }
+
+
 .btn:hover {
     background-position: right center;
     color: white;
@@ -59,14 +61,14 @@ a {
     border: 2px rgb(252, 114, 50);
     background: rgb(252, 114, 50);
     background-image: linear-gradient(90deg, rgba(252, 114, 50, 1) 0%, rgba(116, 3, 72, 1) 100%);
-    color: white;
+    color: white !important;
     font-weight: 600;
     transition: 0.5s;
     background-size: 200% auto;
 
 }
 
-.btn-green {
+/* .btn-green {
     border: 2px rgb(252, 114, 50);
     background: rgb(252, 114, 50);
     background: rgb(165, 247, 37);
@@ -75,7 +77,7 @@ a {
     font-weight: 600;
     transition: 0.5s;
     background-size: 200% auto;
-}
+} */
 
 .site-name {
     color: rgb(166, 247, 37);
@@ -124,7 +126,7 @@ h6 {
 }
 
 .top-social-icon {
-    margin: 0 15px 0 0;
+    margin: 0 10px 0 0;
 }
 
 .nav-menu {
@@ -236,7 +238,29 @@ section {
 .table td, .table th{
 vertical-align: inherit !important;}
 
+.btn:hover {
+    background-position: right center;
+    color: white;
+    
+}
+.btn-green {
+    border: 2px rgb(165, 247, 37);
+    
+    background: rgb(165, 247, 37);
 
+    background: rgb(165,247,37);
+    background: -moz-linear-gradient(229deg, rgba(165,247,37,1) 0%, rgba(1,132,45,1) 100%);
+    background: -webkit-linear-gradient(229deg, rgba(165,247,37,1) 0%, rgba(1,132,45,1) 100%);
+    background: linear-gradient(229deg, rgba(165,247,37,1) 0%, rgba(1,132,45,1) 100%);
+    filter: progid:DXImageTransform.Microsoft.gradient(startColorstr="#a5f725",endColorstr="#01842d",GradientType=1);
+
+
+    /* background: linear-gradient(90deg, rgba(165, 247, 37, 1) 0%, rgba(1, 132, 45, 1) 100%); */
+    color: white;
+    font-weight: 600;
+    transition: 0.5s;
+    background-size: 200% auto;
+}
 
 .bg-pic {
     
@@ -247,7 +271,7 @@ vertical-align: inherit !important;}
     background-position-x: center;
     height: 100%;
     width: 100vw;
-    z-index: -1;
+   
 }
 
 .seabattle{
@@ -296,6 +320,10 @@ vertical-align: inherit !important;}
 
 .modal {
     z-index: 1060;
+}
+
+.z-ind{
+    z-index: 99999 !important
 }
 
 /* FOOTER */
@@ -393,6 +421,10 @@ height: 70vh
     .btn-logout {
         margin-left: 4em
     }
+
+    .hidesmallscreen {
+        display: none;
+}
 }
 
 .profile-sm {
@@ -540,10 +572,6 @@ height: 70vh
         padding-right: 0 !important
     }
 
-    /* .footer {
-        position: absolute;
-    } */
-
 }
 
 @media (min-width: 992px) and (max-width: 1024px) {
@@ -552,20 +580,10 @@ height: 70vh
         font-size: 0.72em !important
     }
 
-    .social-icon {
-        padding: 0 1em 0 !important;
-    }
 
     .nav-name {
         font-size: 0.7em
     }
-
-    /* .nav-text h6 {
-        font-size: 0.6;
-        margin-left: 1.5em
-    } */
-
-    
 
 }
 
@@ -587,10 +605,6 @@ margin-left: 0
         margin-left: 1.5em
     }
 
-
-    .social-icon {
-        padding: 0 1em !important
-    }
     .nav-menu {
         min-width: 8.6em !important;
        
