@@ -57,14 +57,12 @@ body{
     display: none !important
 }
 
-/* .game-icon-img {
-    background-size: cover
-} */
-
 .game-icon-text {
     position: absolute;
     width: 250px;
     height: 250px;
+    max-width: 100%;
+   
 
 }
 
@@ -76,7 +74,9 @@ body{
 }
 
 hr {
-    border-top-width: 2px
+    border-top-width: 2px;
+    width:200px;
+    border-color: white
 }
 
 .game-icon-img {
@@ -108,14 +108,6 @@ hr {
     transition: 250ms ease;
     
 }
-
-
-
-
-
-
-
-
 .news-list li a{
     font-size: 0.8em
 }
@@ -233,14 +225,11 @@ hr {
     bottom: 0;
     margin: auto 0;
     
-    
 }
 
 .imac-pic{
     position: relative;
-    
-   
-    
+        
 }
 /* CAROUSEL */
 
@@ -252,7 +241,6 @@ hr {
     width: 100%;
     z-index: -1;
    
-
 }
 
 @media screen and (min-width: 320px) and (max-width: 567px) {
@@ -262,10 +250,7 @@ hr {
     padding-right: 0 !important
     }
 
-
 }
-
-
 
 @media screen and (max-width: 575px) {
 /* 
@@ -276,9 +261,6 @@ hr {
     .top-box-indent {
         margin-top: 0
     }
-
-
-
 }
 
 @media screen and (max-width: 767px) {
@@ -309,11 +291,8 @@ hr {
         background: rgb(0, 0, 0);
         background: linear-gradient(0deg, rgba(0,0,0,1) 0%, rgba(0,0,0,1) 85%, rgba(0,0,0,0.7959558823529411) 92%, rgba(0,0,0,0.24693627450980393) 97%, rgba(0,0,0,0) 100%);
     }
-
    
 }
-
-
 
 @media screen and (min-width: 768px) and (max-width: 991px) {
     .top-side-box-word {
@@ -328,12 +307,24 @@ hr {
         height: auto !important;
     }
 
-   
+    .game-icon-text{
+        width: 150px !important;
+        height: 150px;}
 
+        hr {
 
-    /* .img-item{
-        height: 270px;
-    } */
+            width:100px;}
+
+            .text-mid>h4 {
+                font-size: 1rem !important;
+                padding-bottom: 0 !important
+            }
+
+            .text-mid h5{ 
+                font-size: 0.8rem !important;
+                padding-top: 0 !important;
+                padding-bottom: 10px !important
+}
   
 }
 
@@ -358,6 +349,16 @@ hr {
 
 @media screen and (min-width: 992px) and (max-width: 1199px) {
     
+    hr {
+        
+        width:150px;}
+        .game-icon-text{
+            width: 203px !important;
+            height: 203px;
+
+}
+
+
 }
 
 
@@ -372,8 +373,7 @@ hr {
 
     .bg-white .container{
         max-width: 980px !important;
-            }}
-
-
-
+            }
+        
+           }
 
