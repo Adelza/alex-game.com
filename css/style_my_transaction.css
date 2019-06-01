@@ -3,6 +3,7 @@ table.TF th {
     color: white !important;
 }
 
+
 .bg-pic2 {
     background-position-y: 101px;
    
@@ -69,6 +70,22 @@ background-image: none !important;
 background-color: black
     }
 }
+@media screen and (max-width: 420px) {
+.nav>.nav-item{
+    padding-right: 0.5em !important;
+}
+.nav-item> a{
+    font-size: 0.8em !important
+}
+.nav-pills{
+    display: flex;
+    justify-content: space-between;
+}
+.tab-content{
+    font-size: 0.8em !important
+}
+}
+
 @media screen and (max-width: 415px) {
     .row .col-12{
         padding-left: 0;
