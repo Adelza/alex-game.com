@@ -60,10 +60,3 @@ $('game-icon-text').removeClass('show'); //убрать класс .show у ВС
 $(this).find('game-icon-text').addClass('show'); //добавить класс .show данному элементу с кнопками играть и правила
 });
 }
-
-
-
-    $(document).ready(function(){
-alert('Ваша версия jQuery ' + jQuery.fn.jquery);
-});
-
