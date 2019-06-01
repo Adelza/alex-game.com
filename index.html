@@ -13,6 +13,19 @@
     <link href="css/style.css" rel="stylesheet">
     <link href="css/style_main.css" rel="stylesheet">
     <title>alex-game.com</title>
+
+<script>
+if(ontouchstart in window) { //проверить, является ли экран touch-screen'ом
+$('game-icon-img').click(function(e){ //клик по элементу с иконкой игры
+e.preventDefault(); //отменить стандартный переход по ссылке
+$('game-icon-text').removeClass('show'); //убрать класс .show у ВСЕХ элементов с кнопками играть и правила
+$(this).find('game-icon-text').addClass('show'); //добавить класс .show данному элементу с кнопками играть и правила
+});
+}
+</script>
+
+
+
 </head>
 
 <body>
@@ -220,7 +233,7 @@
                                 </div>
                             </div>
                             <div class="col-md-4 col-6 game-icon top-box-indent">
-                                <div class="game-icon-text text-center text-uppercase text-white mob-hide">
+                                <div class="game-icon-text text-center text-uppercase text-white">
                                     <div class="text-mid">
                                         <h4 class="font-weight-bold pb-3">Шахматы</h4>
                                         <hr class="align-center" width="200" color="white" />
@@ -238,7 +251,7 @@
                                 </div>
                             </div>
                             <div class="col-md-4 col-6 game-icon top-box-indent hide-indent">
-                                <div class="game-icon-text text-center text-uppercase text-white mob-hide">
+                                <div class="game-icon-text text-center text-uppercase text-white">
                                     <div class="text-mid">
                                         <h4 class="font-weight-bold pb-3">Шашки</h4>
                                         <hr class="align-center" width="200" color="white" />
@@ -256,7 +269,7 @@
                                 </div>
                             </div>
                             <div class="col-md-4 col-6 game-icon">
-                                <div class="game-icon-text text-center text-uppercase text-white mob-hide"
+                                <div class="game-icon-text text-center text-uppercase text-white"
                                     style="width: 250px; height: 250px">
                                     <div class="text-mid">
                                         <h4 class="font-weight-bold pb-3">Бура</h4>
@@ -275,7 +288,7 @@
                                 </div>
                             </div>
                             <div class="col-md-4 col-6 game-icon">
-                                <div class="game-icon-text text-center text-uppercase text-white mob-hide"
+                                <div class="game-icon-text text-center text-uppercase text-white"
                                     style="width: 250px; height: 250px">
                                     <div class="text-mid">
                                         <h4 class="font-weight-bold pb-3">Преферанс</h4>
@@ -294,7 +307,7 @@
                                 </div>
                             </div>
                             <div class="col-md-4 col-6 game-icon">
-                                <div class="game-icon-text text-center text-uppercase text-white mob-hide"
+                                <div class="game-icon-text text-center text-uppercase text-white "
                                     style="width: 250px; height: 250px">
                                     <div class="text-mid">
                                         <h4 class="font-weight-bold pb-3">Деберц</h4>
@@ -313,7 +326,7 @@
                                 </div>
                             </div>
                             <div class="col-md-4 col-6 game-icon">
-                                <div class="game-icon-text text-center text-uppercase text-white mob-hide"
+                                <div class="game-icon-text text-center text-uppercase text-white "
                                     style="width: 250px; height: 250px">
                                     <div class="text-mid">
                                         <h5 class="font-weight-bold pb-3">Крестики - нолики</h5>
@@ -332,7 +345,7 @@
                                 </div>
                             </div>
                             <div class="col-md-4 col-6 game-icon">
-                                <div class="game-icon-text text-center text-uppercase text-white mob-hide"
+                                <div class="game-icon-text text-center text-uppercase text-white "
                                     style="width: 250px; height: 250px">
                                     <div class="text-mid">
                                         <h5 class="font-weight-bold pb-3">Морской бой</h5>
