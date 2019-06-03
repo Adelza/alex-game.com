@@ -1,3 +1,11 @@
+@font-face {
+    font-family: ALSRubl;
+    src: url(../font/rouble.ttf); /* Путь к файлу со шрифтом */
+    }
+
+    .rubznak {
+        font-family: 'ALSRubl';
+        }
 
 body{
     background-color: black;
@@ -103,15 +111,6 @@ hr {
 
 .game-icon .game-icon-text :hover {
 
-    opacity: 1;
-    transform: scale(1, 1);
-    color: rgb(166, 247, 37) !important;
-    transition: 250ms ease;
-    
-}
-
-.show {
-    background-color: rgba(0, 0, 0, 0.805);
     opacity: 1;
     transform: scale(1, 1);
     color: rgb(166, 247, 37) !important;
@@ -292,6 +291,9 @@ hr {
 
             width:100px !important;
     }
+    .play_ttt{
+        margin-bottom: 0;
+    }
 }
 
 
@@ -304,13 +306,27 @@ hr {
 
 }
 
-
+@media screen and (max-width: 340px) {
+    .text-mid> .ttt{
+        padding-bottom: 0 !important
+    }
+    hr {
+        margin-top: 0.8rem;
+        margin-bottom: 0.8rem
+    }
+}
 
 @media screen and (min-width: 576px) and (max-width: 767px) {
 
     .game-icon-text{
         max-width: 240px !important;
-        max-height: 240px;}}
+        max-height: 240px;}
+    
+        .py-xl-3{
+            padding-top: 1rem;
+            padding-bottom: 1rem;
+        }
+    }
 
 @media screen and (max-width: 575px) {
 /* 
@@ -351,6 +367,7 @@ hr {
         background: rgb(0, 0, 0);
         background: linear-gradient(0deg, rgba(0,0,0,1) 0%, rgba(0,0,0,1) 85%, rgba(0,0,0,0.7959558823529411) 92%, rgba(0,0,0,0.24693627450980393) 97%, rgba(0,0,0,0) 100%);
     }
+    
    
 }
 
@@ -441,3 +458,9 @@ hr {
                    display: none;
                }
            }
+           @media screen and (min-width: 1200px){
+            .py-xl-3{
+                padding-top: 1rem;
+                padding-bottom: 1rem;
+            }
+        }

@@ -34,10 +34,15 @@
     color: #2ec700 !important;
 }
 .black {
-    color: #000000
+    color: #000000!important
 }
+
 .f-s{
     font-size: 0.9375rem;
+}
+
+.wd{
+    width: 100%;
 }
 .bg-pic2 { 
     background-position-y: 101px;
@@ -49,10 +54,28 @@
     width: 101vw; 
     background-size: cover
 }
+ .bg-pic3 { 
+    background-position-y: 101px;
+    background-position: cover;
+    background-repeat: no-repeat;
+    background-attachment: fixed;
+    background-position-x: center;
+    z-index: -1;
+    width: 101vw; 
+    background-size: cover
+} 
+
 .img {
+    width: 200px;
     max-width: 100%;
-    
-    float: left;}
+    float:left; 
+    margin: 10px 10px 10px 0; 
+}
+.img2 {
+
+    float:left; 
+
+}
 .rd{
     border-radius: 2%;
 }
@@ -60,49 +83,76 @@
     margin-top: 7.5rem !important;
 }
 .m-tp2{
-    margin-top: 2.0rem !important;
+   
     flex-wrap: wrap;
 }
 
 
-
+@media screen and (min-height: 1054px) { 
+    .bg-pic3{ 
+    height: 71.5vh; 
+    } }
 @media screen and (max-width: 575px) {
-    .bg-pic2  { background: rgb(255, 255, 255); }
+    .bg-pic2  { background: rgb(255, 255, 255);}
+    .bg-pic3  { background: rgb(255, 255, 255); } 
     .m-tp{margin-top: 0rem !important}
     .bg-pic  { background: rgb(255, 255, 255); }
+
 }
 @media screen and (max-width: 992px) {
-    
-    .bg-pic  {background-position-y: 0px;}
+    .bg-pic2 .container{ 
+        max-width: 980px}
+    .bg-pic  {background-position-y: 0px;
+    }
 }
 @media screen and (max-width: 1199px) {
 .product-options input[type="radio"]+label {
     height: 89px !important;
-   
+    
+    top: 7px;
+    margin: 0px !important;
 }}
 @media screen and (max-width: 461px) {
     .product-options input[type="radio"]+label {
-        width: 88px!important;
-    }
-}
-
-@media screen and (max-width: 381px ) {
-    .product-options input[type="radio"]+label {
-        margin-left: 0!important;
-    }
-    .row> .col-lg-10,  .row .product-options {
-        padding-left: 0 !important;
-        padding-right: 0 !important
-    }
-   
-    
-}
-
-
+        height: 79px!important;
+        margin: 0px !important;
+        top: 7px;
+    }}
+@media screen and (max-width: 411px) {
+        .product-options input[type="radio"]+label {
+            width: 100px!important;
+            margin: 0px !important;
+            top: 7px;
+        }}
+        @media screen and (max-width: 366px) {
+            .product-options input[type="radio"]+label {
+                width: 90px!important;
+                margin: 0px !important;
+                top: 7px;
+            }}
+            @media screen and (max-width: 337px) {
+                .product-options input[type="radio"]+label {
+                    width: 80px!important;
+                    margin: 0px !important;
+                    top: 7px;
+                }}
+                @media screen and (max-width: 306px) {
+                    .product-options input[type="radio"]+label {
+                        width: 70px!important;
+                        margin: 0px !important;
+                        top: 7px;
+                    }}
 
 @media screen and (max-width: 991px) {
 
     .bg-pic2  {
+        background-attachment: scroll !important;
+        background-size: auto;
+        background-position-y: 0;
+        background-repeat: no-repeat;
+        
+    }
+    .bg-pic3  {
         background-attachment: scroll !important;
         background-size: auto;
         background-position-y: 0;
@@ -149,12 +199,7 @@
         background: linear-gradient(0deg, rgba(0,0,0,1) 0%, rgba(0,0,0,1) 80%, rgba(0,0,0,0.7959558823529411) 90%, rgba(0,0,0,0.24693627450980393) 95%, rgba(0,0,0,0) 100%), url(../img/checkers.jpg);
         background-position-x: center; 
     } 
-    .bg-gradient-black-blackjack {
-        background: rgb(0, 0, 0);
-        background: linear-gradient(0deg, rgba(0, 0, 0, 0.082) 0%, rgba(0,0,0,1) 70%, rgba(0, 0, 0, 0.13) 90%, rgba(0, 0, 0, 0.055) 95%, rgba(0,0,0,0) 100%), url(../img/BlackJack.png);
-        background-position-x: center; 
-    } 
-    .preference{
+     .preference{
         background-image: none !important
     }
     .bura{
@@ -177,10 +222,7 @@
     }
     .tic-tac-toe{
         background-image: none !important
-    } 
-    .black-jack{
-        background-image: none !important
-    }
+    }  
       }
 .zi{
     z-index: 100;
@@ -211,9 +253,9 @@ height: 100%;
 }
 #map {
     width: 100%;
-    height: 400px;
+     height: 400px;
 }
-.pd{padding-right: 90px
+.pd{padding-right: 75px
 }
 .page-link {
     position: relative;
@@ -240,9 +282,8 @@ height: 100%;
   }
 
 #main-image {
-    width: 560px;
-    max-width: 100%;
-    /* height: 300px; */
+    /* width: 657px; */
+    height: 100%;
 }
 #main-image img {
     max-width: 100%;
@@ -260,7 +301,6 @@ height: 100%;
     position: relative;
     width: 115px;
     height: 110px;
-    max-width: 100%;
     background-color: #999; 
     margin-left: 17px;
     font-size: 0;
@@ -357,17 +397,17 @@ height: 100%;
 
 
 .product-options input[type="radio"]+label.silver6 {
-    background-image:url(../img/Durak_1.jpg);
+    background-image:url(../img/durak_1.jpg);
     background-size: cover;
     background-position: center center  
 }
 .product-options input[type="radio"]+label.pink6 {
-    background-image:url(../img/Durak_2.jpg);
+    background-image:url(../img/durak_2.jpg);
     background-size: cover;
     background-position: center center
 }
 .product-options input[type="radio"]+label.gold6 {
-    background-image:url(../img/Durak_3.jpg);
+    background-image:url(../img/durak_3.jpg);
     background-size: cover;
     background-position: center center
 }
@@ -405,4 +445,40 @@ height: 100%;
     background-position: center center
 }
 
+@media screen and (max-width: 400px) {
+    div .img{
+        width: 150px !important;
+    }}
 
+
+
+
+    #summary {
+        font-size: 14px;
+        line-height: 1.5;
+      }
+      
+      #summary p.collapse:not(.show) {
+          height: 42px !important;
+          overflow: hidden;
+        
+          display: -webkit-box;
+          -webkit-line-clamp: 2;
+          -webkit-box-orient: vertical;  
+      }
+      
+      #summary p.collapsing {
+          min-height: 42px !important;
+      }
+      
+      #summary a.collapsed:after  {
+          content: 'Подробнее';
+          color: #000000;
+          font-style: italic;
+      }
+      
+      #summary a:not(.collapsed):after {
+          content: 'Свернуть';
+          color: #000000;
+          font-style: italic;
+      }

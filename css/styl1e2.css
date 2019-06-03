@@ -1,3 +1,8 @@
+
+li{
+    list-style-type: none;
+}
+
 .inv{
     display: none;
 }
@@ -22,11 +27,13 @@
       #summary a.collapsed:after  {
           content: 'Подробнее';
           color: #ffffff;
+          font-style: normal 
       }
       
       #summary a:not(.collapsed):after {
           content: 'Свернуть';
           color: #ffffff;
+          font-style: normal 
       }
       .white{
           color:  #2ec700 !important;
