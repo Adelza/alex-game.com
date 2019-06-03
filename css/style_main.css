@@ -244,7 +244,7 @@ hr {
 }
 
 .rub {
-    font-family: arial;
+    font-family: arial !important;
     vertical-align: middle;   
     line-height: 5px;
     display: inline-block;
