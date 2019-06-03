@@ -1,3 +1,13 @@
+@font-face{
+
+    font-family: 'ALS Rubl';
+    
+    src: url('../font/rouble.ttf');
+    
+    }
+    
+
+
 body{
     background-color: black;
     overflow-x: hidden !important;
@@ -244,8 +254,8 @@ hr {
 }
 
 p>.rub {
-    font-family: Arial, Helvetica, sans-serif !important;
-    vertical-align: middle;   
+    font-family: 'ALS Rubl' !important;
+    /* vertical-align: middle;    */
     line-height: 5px;
     display: inline-block;
     width: 0.4em;
