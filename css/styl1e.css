@@ -389,5 +389,20 @@ height: 100%;
     background-position: center center
 }
 
+.product-options input[type="radio"]+label.silver8 {
+    background-image:url(../img/preferance_1.jpg);
+    background-size: cover;
+    background-position: center center  
+}
+.product-options input[type="radio"]+label.pink8 {
+    background-image:url(../img/preferance_2.jpg);
+    background-size: cover;
+    background-position: center center
+}
+.product-options input[type="radio"]+label.gold8 {
+    background-image:url(../img/preferance_3.jpg);
+    background-size: cover;
+    background-position: center center
+}
 
 
