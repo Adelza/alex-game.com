@@ -1,12 +1,3 @@
-@font-face{
-
-    font-family: 'ALS Rubl';
-    
-    src: url('../font/rouble.ttf');
-    
-    }
-    
-
 
 body{
     background-color: black;
@@ -118,11 +109,6 @@ hr {
     transition: 250ms ease;
     
 }
-
-/* .game-icon-text .show {
-    background-color: rgba(0, 0, 0, 0.805);
-    transition: 400ms
-} */
 
 .show {
     background-color: rgba(0, 0, 0, 0.805);
@@ -254,8 +240,8 @@ hr {
 }
 
 p>.rub {
-    font-family: 'ALS Rubl' !important;
-    /* vertical-align: middle;    */
+    font-family: Arial, Helvetica, sans-serif !important;
+    vertical-align: middle;   
     line-height: 5px;
     display: inline-block;
     width: 0.4em;
