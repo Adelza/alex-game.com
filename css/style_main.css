@@ -1,12 +1,3 @@
-@font-face {
-    font-family: ALSRubl;
-    src: url(../font/rouble.ttf); /* Путь к файлу со шрифтом */
-    }
-
-    .rubznak {
-        font-family: 'ALSRubl';
-        }
-
 body{
     background-color: black;
     overflow-x: hidden !important;
