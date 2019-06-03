@@ -396,17 +396,17 @@ height: 100%;
 }
 
 .product-options input[type="radio"]+label.silver6 {
-    background-image:url(../img/Durak_1.jpg);
+    background-image:url(../img/durak_1.jpg);
     background-size: cover;
     background-position: center center  
 }
 .product-options input[type="radio"]+label.pink6 {
-    background-image:url(../img/Durak_2.jpg);
+    background-image:url(../img/durak_2.jpg);
     background-size: cover;
     background-position: center center
 }
 .product-options input[type="radio"]+label.gold6 {
-    background-image:url(../img/Durak_3.jpg);
+    background-image:url(../img/durak_3.jpg);
     background-size: cover;
     background-position: center center
 }
