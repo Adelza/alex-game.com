@@ -36,6 +36,9 @@ header {
     .ad_m_0 {
         margin-top: 0 !important
     }
+    .container-fluid>.durak {
+        height: 50vh !important;
+    }
     
 }
 
@@ -129,7 +132,11 @@ max-width: 100%;
             height: 70vh !important;
         }
         
-        
+        .container-fluid>.durak {
+            height: 70vh !important;
+        }
+
+
         }
         @media screen and (min-width: 768px) {
         .bg-pic{
