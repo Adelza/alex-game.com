@@ -22,11 +22,17 @@ table.TF th {
 }
 
 
-@media screen and (min-width: 992px){
+@media screen and (min-width: 768px) and (max-width: 991px)  {
     .container-fluid>.chess{
-        height: 70vh !important;
+        height: 50vh !important;
     }
 }
+@media screen and (min-width: 992px){
+    .container-fluid>.chess{
+        height: 75vh !important;
+    }
+}
+
 
 
 @media screen and (min-height: 540px){
