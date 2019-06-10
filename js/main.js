@@ -1,7 +1,7 @@
 document.addEventListener('DOMContentLoaded', function (e) {
     let tf = new TableFilter('emp', {
         paging: {
-            results_per_page: ['Records: ', [10, 25, 50, 100]]
+            results_per_page: ['Records: ', [10]]
         },
         state: {
             types: ['local_storage'],
@@ -28,7 +28,7 @@ document.addEventListener('DOMContentLoaded', function (e) {
 document.addEventListener('DOMContentLoaded', function (e) {
     let tf = new TableFilter('emp2', {
         paging: {
-            results_per_page: ['Records: ', [10, 25, 50, 100]]
+            results_per_page: ['Records: ', [10]]
         },
         state: {
             types: ['local_storage'],

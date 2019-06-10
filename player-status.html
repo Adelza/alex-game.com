@@ -12,462 +12,598 @@
     <link href="css/fontello.css" rel="stylesheet">
     <link href="css/style.css" rel="stylesheet">
     <link href="css/style_online_status.css" rel="stylesheet">
-   
+    <!-- <link href="css/style_table_scroll.css" rel="stylesheet"> -->
+
 
     <title>Document</title>
 </head>
 
 <body>
-        <header class="container-fluid bg-green-nav">
-            <div class="container">
-                <div class="row logo-img">
-                    <div class="col logo-img">
-                        <a class="navbar-brand" href="./index.html">
-                            <img src="img/logo.png"></a></div>
-                    <div class="flex-column col-11 offset-1 pl-5 pb-1 pr-0 side-bar">
-                        <nav class="navbar navbar-expand-lg navbar-light nav-text logo-img">
-                            <h6><span class="text-uppercase font-weight-bold site-name">alex-game.com</span><br>
-                                Игра только с реальными игроками</h6>
-                            <div class="collapse navbar-collapse justify-content-between" id="navbarNavDropdown">
-    
-                                <ul class="navbar-nav social-icon pl-3">
-                                    <!-- Кнопка "Написать нам" в верхнем меню (модальное окно в конце кода)-->
-                                    <li class="nav-item text-center top-social-icon">
-                                        <button type="button" class="btn bg-danger rounded text-white p-0"
-                                            data-toggle="modal" data-target="#mail" style="height:26px;width:26px">
-                                            <i class="icon-mail-1"></i>
-                                        </button>
-                                    </li>
-                                    <li class="nav-item text-center top-social-icon">
-                                        <a class="nav-link bg-vk rounded  base-icon" href="https://vk.com/public171133653">
-                                            <i class="icon-vkontakte"></i>
-                                        </a>
-                                    </li>
-                                    <li class="nav-item text-center top-social-icon">
-                                        <a class="nav-link bg-ok rounded base-icon"
-                                            href="https://ok.ru/group/55514326302733">
-                                            <i class="icon-odnoklassniki"></i>
-                                        </a>
-                                    </li>
-                                    <li class="nav-item text-center top-social-icon">
-                                        <a class="nav-link bg-f rounded base-icon"
-                                            href="https://www.facebook.com/groups/892129730993336/">
-                                            <i class="icon-facebook-1"></i>
-                                        </a>
-                                    </li>
-                                </ul>
-                                <div class="d-flex profile-sm">
-                                    <div class="balance-info pr-3">
-                                        <h6>Основной счет: 1000.00</h6>
-                                        <h6>Бонусный счет: 10.00</h6>
-                                    </div>
-                                    <div class="profile-info d-flex">
-                                        <div class="pr-2">
-                                            <a class="nav-name" href="./profile.html">Вася
-                                                Васили571159826275, кабинет</a><br>
-                                            <button class="btn btn-logout"><i class="icon-logout"></i>Выход</button>
-    
-                                        </div>
-                                        <div class="player-icon">
-                                            <img class="rounded " width="50" height="50"
-                                                src="https://via.placeholder.com/50">
-                                        </div>
-                                    </div>
-                                </div>
-                                <div class="nav-btn top-text d-none">
-                                    <button type="button"
-                                        class="btn btn-red rounded dropdown-item text-center d-inline-block"
-                                        data-toggle="modal" data-target="#SignIn">Вход</button>
-                                        <button type="button"
-                                        class="btn btn-green rounded text-center d-inline-block px-3"
-                                        data-toggle="modal" data-target="#Signup">Регистрация</button>
-                                </div>
-                            </div>
-                        </nav>
-                        <nav class="navbar navbar-expand-lg navbar-light menu-items  ">
-                            <button class="container-fluid navbar-toggler justify-content-center" type="button"
-                                data-toggle="collapse" data-target="#navbarNavDropdown" aria-controls="navbarNavDropdown"
-                                aria-expanded="false" aria-label="Toggle navigation">
-                                <span class="icon-menu-1 text-white"></span>
-                                <h5 class="pl-2 mb-0 text-white">Меню</h5>
-                            </button>
-                            <div class="collapse navbar-collapse justify-content-between " id="navbarNavDropdown">
-                                <ul class="navbar-nav side-item ">
-                                    <li class="nav-item nav-menu">
-                                        <a class="nav-link " href="./index.html">
-                                            <i class="icon-home-1 ml-5"></i></a>
-                                    </li>
-                                    <li class="nav-item nav-menu">
-                                        <a class="nav-link " href="./news.html">
-                                            <i class="icon-newspaper p-1"></i>Новости
-                                        </a>
-                                    </li>
-                                    <li class="nav-item nav-menu">
-                                        <a class="nav-link " href="./glory-hall.html">
-                                            <i class="icon-star"></i>Зал славы
-                                        </a>
-                                    </li>
-                                    <li class="nav-item nav-menu">
-                                        <a class="nav-link " href="./turnir.html">
-                                            <i class="icon-award"></i>Турниры
-                                        </a>
-                                    </li>
-                                    <li class="nav-item nav-menu">
-                                        <a class="nav-link " href="#">
-                                            <i class="icon-chat"></i>Чат
-                                        </a>
-                                    <li class="nav-item dropdown nav-menu">
-                                        <a class="nav-link dropdown-toggle" href="#" id="navbarDropdownMenuLink"
-                                            role="button" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
-                                            <i class="icon-ace-of-club-and-spades"></i>
-                                            О клубе
-                                        </a>
-                                        <div class="dropdown-menu nav-item dropdown nav-menu hide-block-menu drop-menu"
-                                            aria-labelledby="navbarDropdownMenuLink">
-                                            <a class="dropdown-item px-3" href="./rules.html">Правила
-                                                клуба</a>
-                                            <a class="dropdown-item px-3" href="./about.html">О
-                                                сайте</a>
-                                        </div>
-                                    </li>
-                                </ul>
-                            </div>
-                        </nav>
-                    </div>
-                </div>
-            </div>
-        </header>
-    
-    
-        <main>
-            <div class="container-fluid bg-img bg-pic2 b" style="background-image: url(./img/preference.jpg)">
-                <div class="container top-box-indent ad_m_0">
-                    <div class="row">
-                        <div class="col-12 top-box-indent ">
-                              
-    
-                                <table class="table table-responsive-sm table-sm table-hover bg-light text-center rounded">
-                                        <thead>
-                                            <tr class="table-head-font btn-green">
-                                                <th scope="col">№ Комнаты</th>
-                                                <th scope="col">Наименование игры</th>
-                                                <th scope="col">Создал</th>
-                                                <th scope="col">Входная ставка</th>
-                                                <th scope="col">Игроки в партии</th>
-                                                <th scope="col">Участвовать</th>
-        
-                                            </tr>
-                                        </thead>
-                                        <tbody>
-                                            <tr>
-                                                <th scope="row">1</th>
-                                                <td>Дурак</td>
-                                                <td>User1</td>
-                                                <td>0</td>
-                                                <td>1/2</td>
-                                                <td><a href="#" class="btn btn-red px-3 rounded">Присоединиться</a></td>
-                                            </tr>
-                                            <tr>
-                                                <th scope="row">2</th>
-                                                <td>Дурак</td>
-                                                <td>User2</td>
-                                                <td>10</td>
-                                                <td>2/2</td>
-                                                <td><a href="#" class="btn btn-red px-3 rounded disabled">Присоединиться</a></td>
-                                            </tr>
-                                            <tr>
-                                                <th scope="row">3</th>
-                                                <td>Дурак</td>
-                                                <td>User3</td>
-                                                <td>20</td>
-                                                <td>1/4</td>
-                                                <td><a href="#" class="btn btn-red px-3 rounded">Присоединиться</a></td>
-                                            </tr>
-                                        </tbody>
-                                    </table>
-                        </div>
-                    </div>
-                </div>
-        </main>
-    
-        <footer class="footer">
-            <div class="container-fluid bg-green-inv">
-                <div class="container">
-                    <div class="row">
-                        <div class="col my-1 d-flex justify-content-between kassa-img">
-                            <div class="align-items-center d-flex">
-                                <a class="pr-2" href="http://www.free-kassa.ru">
-                                    <img src="img/fk.png" class="img-fluid" alt="Responsive image"></a>
-                                <a class="pr-2" href="https://payeer.com/ru">
-                                    <img src="img/payeer.png" class="img-fluid" alt="Responsive image"></a>
-                                <a class="pr-2" href="https://www.interkassa.com">
-                                    <img src="img/ik.png" class="img-fluid" alt="Responsive image"></a>
-                                <h1><i class="icon-18plus text-white"></i></h1>
-                            </div>
-                            <div class="d-flex align-items-center justify-content-end hide-items">
-                                <ul class="navbar-nav social-icon d-flex d-inline-block">
-                                    <li class="nav-item text-center top-social-icon">
-                                        <a class="nav-link bg-danger rounded base-icon" href="#">
-                                            <i class="icon-mail-1"></i></a>
-                                    </li>
-                                    <li class="nav-item text-center top-social-icon">
-                                        <a class="nav-link bg-vk rounded  base-icon" href="https://vk.com/public171133653">
-                                            <i class="icon-vkontakte"></i>
-                                        </a>
-                                    </li>
-                                    <li class="nav-item text-center top-social-icon">
-                                        <a class="nav-link bg-ok rounded base-icon"
-                                            href="https://ok.ru/group/55514326302733">
-                                            <i class="icon-odnoklassniki"></i>
-                                        </a>
-                                    </li>
-                                    <li class="nav-item text-center">
-                                        <a class="nav-link bg-f rounded base-icon"
-                                            href="https://www.facebook.com/groups/892129730993336/">
-                                            <i class="icon-facebook-1"></i>
-                                        </a>
-                                    </li>
-                                </ul>
-                            </div>
-                        </div>
-                    </div>
-                </div>
-            </div>
-            <div class="container-fluid bg-green-nav pt-2 ">
-                <div class="container">
-                    <div class="row">
-                        <div class="col-lg-4 col-md-4 col-sm-12">
-                            <h5 class="text-white">
-                                <i class="icon-info ">Информация</i>
-                            </h5>
-                            <ul class="nav-menu navbar-nav item-list">
-                                <li><a class="nav-link" href="./news.html">Новости</a></li>
-                                <li><a class="nav-link" href="./rules.html">Правила клуба</a></li>
-                                <li><a class="nav-link" href="./rules-alex.html">Условия использования
-                                        сайтом</a></li>
-                                <li><a class="nav-link" href="./pr-policy.html">Политика
-                                        конфиденциальности</a></li>
-                                <li><a class="nav-link" href="./c-b-policy.html">Политика отмены и
-                                        возврата платежей</a></li>
-                            </ul><br>
-                            <p class="nav-menu"><a class="text-white item-list"
-                                    href="./about.html"><span class="font-weight-bold">Контактная
-                                        информация</span><br>
-                                    Москва, Россия, 119019, ул. Волхонка, 18</a></p>
-                        </div>
-                        <div class="col-lg-4 col-md-4 col-sm-12 hide-items">
-                            <div class="col-auto">
-                                <h5 class="text-white">
-                                    <i class="icon-coin">Игры на деньги</i>
-                                </h5>
-                            </div>
-                            <div class="col d-flex ">
-                                <div class="col-6 nav-menu p-0 ">
-                                    <ul class="nav-link">
-                                        <li><a href="./durak.html">Дурак</a></li>
-                                        <li><a href="./chess.html">Шахматы</a></li>
-                                        <li><a href="./checkers.html">Шашки</a></li>
-                                        <li><a href="./bura.html">Бура</a></li>
-                                        <li><a href="./preference.html">Преферанс</a></li>
-                                        <li><a href="./deberc.html">Дебертс</a></li>
-                                        <li><a href="./tic-tac-toe.html">Крестики - нолики</a>
-                                        </li>
-                                        <li><a href="./seabattle.html">Морской бой</a></li>
-                                    </ul>
-                                </div>
-                            </div>
-                        </div>
-                        <div class="col-lg-4 col-md-4 col-sm-12 hide-items">
-                            <div class="col-auto">
-                                <h5 class="text-white">
-                                    <i class="icon-free">Игры бесплатно</i>
-                                </h5>
-                            </div>
-                            <div class="col d-flex">
-                                <div class="col-6 nav-menu p-0 ">
-                                    <ul class="nav-link">
-                                        <li><a href="./durak.html">Дурак</a></li>
-                                        <li><a href="./chess.html">Шахматы</a></li>
-                                        <li><a href="./checkers.html">Шашки</a></li>
-                                        <li><a href="./bura.html">Бура</a></li>
-                                        <li><a href="./preference.html">Преферанс</a></li>
-                                        <li><a href="./deberc.html">Дебертс</a></li>
-                                        <li><a href="./tic-tac-toe.html">Крестики - нолики</a>
-                                        </li>
-                                        <li><a href="./seabattle.html">Морской бой</a></li>
-                                    </ul>
-                                </div>
-                            </div>
-                        </div>
-                        <div class="col-12">
-                            <h6 class="text-center">Copyright <i class="icon-copyright"></i>2018 - 2019, Игровой Дом.
-                                Все права защищены.</p>
-                        </div>
-                    </div>
-                </div>
-            </div>
-        </footer>
-    
-        <!-- Modal "Написать нам" -->
-        <div class="modal fade" id="mail" tabindex="-1" role="dialog" aria-labelledby="exampleModalCenterTitle"
-            aria-hidden="true">
-            <div class="modal-dialog modal-dialog-centered" role="document">
-                <div class="modal-content">
-                    <div class="modal-header btn-green">
-                        <h5 class="modal-title" id="exampleModalCenterTitle">Написать нам</h5>
-                        <button type="button" class="close" data-dismiss="modal" aria-label="Close">
-                            <span aria-hidden="true">&times;</span>
-                        </button>
-                    </div>
-                    <div class="modal-body">
-                        <form>
-                            <div class="form-group">
-                                <input type="email" class="form-control" id="exampleInputEmail1"
-                                    aria-describedby="emailHelp" placeholder="Ваш e-mail " required aria-required="true">
-                            </div>
-                            <div class="form-group">
-                                <input type="text" class="form-control mt-4" id="userlogin" aria-describedby="userlogin"
-                                    placeholder="Тема сообщения" required aria-required="true">
-                            </div>
-                            <div class="form-group">
-                                <label for="exampleFormControlTextarea1">Ваше сообщение</label>
-                                <textarea class="form-control" id="exampleFormControlTextarea1" rows="3" required
-                                    aria-required="true"></textarea>
-                            </div>
-                    </div>
-                    <div class="modal-footer">
-                        <button type="submit" class="btn btn-primary btn-green ">Отправить</button>
-                        <button type="button" class="btn btn-secondary btn-red" data-dismiss="modal">Закрыть</button>
-                    </div>
-                </div>
-            </div>
-        </div>
-        <!-- Modal "Вход"-->
-        <div class="modal fade" id="SignIn" tabindex="-1" role="dialog" aria-labelledby="exampleModalCenterTitle"
-            aria-hidden="true">
-            <div class="modal-dialog modal-dialog-centered" role="document">
-                <div class="modal-content">
-                    <div class="modal-header btn-green">
-                        <h5 class="modal-title font-weight-bold" id="exampleModalCenterTitle">
-                            Вход</h5>
-                        <button type="button" class="close" data-dismiss="modal" aria-label="Close">
-                            <span aria-hidden="true">&times;</span>
-                        </button>
-                    </div>
-                    <div class="col text-left">
-                        <form>
-                            <div class="form-group">
-                                <input type="text" class="form-control mt-4" id="userlogin" aria-describedby="userlogin"
-                                    placeholder="Ваш логин" required="true">
-                            </div>
-                            <div class="form-group">
-                                <input type="password" class="form-control" id="exampleInputPassword1"
-                                    placeholder="Ваш пароль" required="true">
-                            </div>
-                            <div class="form-check">
-                                <input type="checkbox" class="form-check-input" id="exampleCheck1">
-                                <label class="form-check-label" for="exampleCheck1">Запомнить
-                                    меня</label>
-                            </div>
-                            <div class="my-3 log-line"> <button type="submit" class="btn btn-green ">Войти</button>
-                                <a class="text-dark mx-3 " href="https://alex-game.com/site/request-password-reset">
-                                    Забыли пароль?
-                                </a>
-                                <div class="d-flex mt-4">
-                                    <p>Войти через:</p>
-                                    <ul class="navbar-nav social-icon px-5">
-                                        <li class="nav-item text-center top-social-icon">
-                                            <a class="nav-link bg-vk rounded  base-icon"
-                                                href="https://alex-game.com/site/auth?authclient=vk">
-                                                <i class="icon-vkontakte"></i>
-                                            </a>
-                                        </li>
-                                        <li class="nav-item text-center top-social-icon">
-                                            <a class="nav-link bg-ok rounded base-icon"
-                                                href="https://alex-game.com/site/auth?authclient=ok">
-                                                <i class="icon-odnoklassniki"></i>
-                                            </a>
-                                        </li>
-                                    </ul>
-                                </div>
-                            </div>
-                        </form>
-                    </div>
-                </div>
-            </div>
-        </div>
-    <!-- Modal "Регистрация"-->
-    <div class="modal fade" id="Signup" tabindex="-1" role="dialog" aria-labelledby="exampleModalCenterTitle"
-    aria-hidden="true">
-    <div class="modal-dialog modal-dialog-centered" role="document">
-        <div class="modal-content">
-            <div class="modal-header btn-green">
-                <h5 class="modal-title font-weight-bold" id="exampleModalCenterTitle">
-                    Регистрация</h5>
-                <button type="button" class="close" data-dismiss="modal" aria-label="Close">
-                    <span aria-hidden="true">&times;</span>
-                </button>
-            </div>
-            <div class="col text-left">
-                <form>
-                    <div class="form-group">
-                        <input type="text" class="form-control mt-4" id="userlogin" aria-describedby="userlogin"
-                            placeholder="Ваш ник" required="true">
-                    </div>
-                    <div class="form-group">
-                       <input type="email" class="form-control mt-4" id="userlogin" aria-describedby="userlogin"
-                           placeholder="Email" required="true">
-                   </div>
-                    <div class="form-group">
-                        <input type="password" class="form-control" id="exampleInputPassword1"
-                            placeholder="Ваш пароль" required="true">
-                    </div>
-                    <div class="form-group">
-                       <input type="text" class="form-control" id="exampleInputPassword1"
-                           placeholder="Реферал" required="true">
-                   </div>
-                    <div class="form-check">
-                        <input type="checkbox" class="form-check-input" id="exampleCheck1">
-                        <label class="form-check-label" for="exampleCheck1">Подтверждаю, что мне 18 лет</label>
-                    </div>
-                    <div class="my-3 log-line"> <button type="submit" class="btn btn-green ">Зарегистрироваться</button>
-                        
-                        <div class="d-flex mt-4">
-                            <p>Войти через:</p>
-                            <ul class="navbar-nav social-icon px-5">
+    <header class="container-fluid bg-green-nav">
+        <div class="container">
+            <div class="row logo-img">
+                <div class="col logo-img">
+                    <a class="navbar-brand" href="./index.html">
+                        <img src="img/logo.png"></a></div>
+                <div class="flex-column col-11 offset-1 pl-5 pb-1 pr-0 side-bar">
+                    <nav class="navbar navbar-expand-lg navbar-light nav-text logo-img">
+                        <h6><span class="text-uppercase font-weight-bold site-name">alex-game.com</span><br>
+                            Игра только с реальными игроками</h6>
+                        <div class="collapse navbar-collapse justify-content-between" id="navbarNavDropdown">
+
+                            <ul class="navbar-nav social-icon pl-3">
+                                <!-- Кнопка "Написать нам" в верхнем меню (модальное окно в конце кода)-->
                                 <li class="nav-item text-center top-social-icon">
-                                    <a class="nav-link bg-vk rounded  base-icon"
-                                        href="https://alex-game.com/site/auth?authclient=vk">
+                                    <button type="button" class="btn bg-danger rounded text-white p-0"
+                                        data-toggle="modal" data-target="#mail" style="height:26px;width:26px">
+                                        <i class="icon-mail-1"></i>
+                                    </button>
+                                </li>
+                                <li class="nav-item text-center top-social-icon">
+                                    <a class="nav-link bg-vk rounded  base-icon" href="https://vk.com/public171133653">
                                         <i class="icon-vkontakte"></i>
                                     </a>
                                 </li>
                                 <li class="nav-item text-center top-social-icon">
                                     <a class="nav-link bg-ok rounded base-icon"
-                                        href="https://alex-game.com/site/auth?authclient=ok">
+                                        href="https://ok.ru/group/55514326302733">
                                         <i class="icon-odnoklassniki"></i>
+                                    </a>
+                                </li>
+                                <li class="nav-item text-center top-social-icon">
+                                    <a class="nav-link bg-f rounded base-icon"
+                                        href="https://www.facebook.com/groups/892129730993336/">
+                                        <i class="icon-facebook-1"></i>
+                                    </a>
+                                </li>
+                            </ul>
+                            <div class="d-flex profile-sm">
+                                <div class="balance-info pr-3">
+                                    <h6>Основной счет: 1000.00</h6>
+                                    <h6>Бонусный счет: 10.00</h6>
+                                </div>
+                                <div class="profile-info d-flex">
+                                    <div class="pr-2">
+                                        <a class="nav-name" href="./profile.html">Вася
+                                            Васили571159826275, кабинет</a><br>
+                                        <button class="btn btn-logout"><i class="icon-logout"></i>Выход</button>
+
+                                    </div>
+                                    <div class="player-icon">
+                                        <img class="rounded " width="50" height="50"
+                                            src="https://via.placeholder.com/50">
+                                    </div>
+                                </div>
+                            </div>
+                            <div class="nav-btn top-text d-none">
+                                <button type="button"
+                                    class="btn btn-red rounded dropdown-item text-center d-inline-block"
+                                    data-toggle="modal" data-target="#SignIn">Вход</button>
+                                <button type="button" class="btn btn-green rounded text-center d-inline-block px-3"
+                                    data-toggle="modal" data-target="#Signup">Регистрация</button>
+                            </div>
+                        </div>
+                    </nav>
+                    <nav class="navbar navbar-expand-lg navbar-light menu-items  ">
+                        <button class="container-fluid navbar-toggler justify-content-center" type="button"
+                            data-toggle="collapse" data-target="#navbarNavDropdown" aria-controls="navbarNavDropdown"
+                            aria-expanded="false" aria-label="Toggle navigation">
+                            <span class="icon-menu-1 text-white"></span>
+                            <h5 class="pl-2 mb-0 text-white">Меню</h5>
+                        </button>
+                        <div class="collapse navbar-collapse justify-content-between " id="navbarNavDropdown">
+                            <ul class="navbar-nav side-item ">
+                                <li class="nav-item nav-menu">
+                                    <a class="nav-link " href="./index.html">
+                                        <i class="icon-home-1 ml-5"></i></a>
+                                </li>
+                                <li class="nav-item nav-menu">
+                                    <a class="nav-link " href="./news.html">
+                                        <i class="icon-newspaper p-1"></i>Новости
+                                    </a>
+                                </li>
+                                <li class="nav-item nav-menu">
+                                    <a class="nav-link " href="./glory-hall.html">
+                                        <i class="icon-star"></i>Зал славы
+                                    </a>
+                                </li>
+                                <li class="nav-item nav-menu">
+                                    <a class="nav-link " href="./turnir.html">
+                                        <i class="icon-award"></i>Турниры
+                                    </a>
+                                </li>
+                                <li class="nav-item nav-menu">
+                                    <a class="nav-link " href="#">
+                                        <i class="icon-chat"></i>Чат
+                                    </a>
+                                <li class="nav-item dropdown nav-menu">
+                                    <a class="nav-link dropdown-toggle" href="#" id="navbarDropdownMenuLink"
+                                        role="button" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
+                                        <i class="icon-ace-of-club-and-spades"></i>
+                                        О клубе
+                                    </a>
+                                    <div class="dropdown-menu nav-item dropdown nav-menu hide-block-menu drop-menu"
+                                        aria-labelledby="navbarDropdownMenuLink">
+                                        <a class="dropdown-item px-3" href="./rules.html">Правила
+                                            клуба</a>
+                                        <a class="dropdown-item px-3" href="./about.html">О
+                                            сайте</a>
+                                    </div>
+                                </li>
+                            </ul>
+                        </div>
+                    </nav>
+                </div>
+            </div>
+        </div>
+    </header>
+
+
+    <main>
+        <div class="container-fluid bg-img bg-pic2 b scroll_bg" style="background-image: url(./img/preference.jpg)">
+            <div class="container top-box-indent ad_m_0">
+                <div class="row">
+                    <div class="col-12 top-box-indent ">
+                        <table class="table table-responsive-sm table-sm table-hover bg-light text-center rounded table-scroll">
+                            <thead>
+                                <tr class="table-head-font btn-green">
+                                    <th scope="col">№ Комнаты</th>
+                                    <th scope="col">Наименование игры</th>
+                                    <th scope="col">Создал</th>
+                                    <th scope="col">Входная ставка</th>
+                                    <th scope="col">Игроки в партии</th>
+                                    <th scope="col">Участвовать</th>
+
+                                </tr>
+                            </thead>
+                            <tbody>
+                                <tr>
+                                    <th scope="row">1</th>
+                                    <td>Дурак</td>
+                                    <td>User1</td>
+                                    <td>0</td>
+                                    <td>1/2</td>
+                                    <td><a href="#" class="btn btn-red px-3 rounded">Присоединиться</a></td>
+                                </tr>
+                                <tr>
+                                    <th scope="row">2</th>
+                                    <td>Дурак</td>
+                                    <td>User2</td>
+                                    <td>10</td>
+                                    <td>2/2</td>
+                                    <td><a href="#" class="btn btn-red px-3 rounded disabled">Присоединиться</a></td>
+                                </tr>
+                                <tr>
+                                    <th scope="row">3</th>
+                                    <td>Дурак</td>
+                                    <td>User3</td>
+                                    <td>20</td>
+                                    <td>1/4</td>
+                                    <td><a href="#" class="btn btn-red px-3 rounded">Присоединиться</a></td>
+                                </tr>
+                                <tr>
+                                    <th scope="row">3</th>
+                                    <td>Дурак</td>
+                                    <td>User3</td>
+                                    <td>20</td>
+                                    <td>1/4</td>
+                                    <td><a href="#" class="btn btn-red px-3 rounded">Присоединиться</a></td>
+                                </tr>
+                                <tr>
+                                    <th scope="row">3</th>
+                                    <td>Дурак</td>
+                                    <td>User3</td>
+                                    <td>20</td>
+                                    <td>1/4</td>
+                                    <td><a href="#" class="btn btn-red px-3 rounded">Присоединиться</a></td>
+                                </tr>
+                                <tr>
+                                    <th scope="row">3</th>
+                                    <td>Дурак</td>
+                                    <td>User3</td>
+                                    <td>20</td>
+                                    <td>1/4</td>
+                                    <td><a href="#" class="btn btn-red px-3 rounded">Присоединиться</a></td>
+                                </tr>
+                                <tr>
+                                    <th scope="row">3</th>
+                                    <td>Дурак</td>
+                                    <td>User3</td>
+                                    <td>20</td>
+                                    <td>1/4</td>
+                                    <td><a href="#" class="btn btn-red px-3 rounded">Присоединиться</a></td>
+                                </tr>
+                                <tr>
+                                    <th scope="row">3</th>
+                                    <td>Дурак</td>
+                                    <td>User3</td>
+                                    <td>20</td>
+                                    <td>1/4</td>
+                                    <td><a href="#" class="btn btn-red px-3 rounded">Присоединиться</a></td>
+                                </tr>
+                                <tr>
+                                    <th scope="row">3</th>
+                                    <td>Дурак</td>
+                                    <td>User3</td>
+                                    <td>20</td>
+                                    <td>1/4</td>
+                                    <td><a href="#" class="btn btn-red px-3 rounded">Присоединиться</a></td>
+                                </tr>
+                                <tr>
+                                    <th scope="row">3</th>
+                                    <td>Дурак</td>
+                                    <td>User3</td>
+                                    <td>20</td>
+                                    <td>1/4</td>
+                                    <td><a href="#" class="btn btn-red px-3 rounded">Присоединиться</a></td>
+                                </tr>
+                                <tr>
+                                    <th scope="row">3</th>
+                                    <td>Дурак</td>
+                                    <td>User3</td>
+                                    <td>20</td>
+                                    <td>1/4</td>
+                                    <td><a href="#" class="btn btn-red px-3 rounded">Присоединиться</a></td>
+                                </tr>
+                                <tr>
+                                    <th scope="row">3</th>
+                                    <td>Дурак</td>
+                                    <td>User3</td>
+                                    <td>20</td>
+                                    <td>1/4</td>
+                                    <td><a href="#" class="btn btn-red px-3 rounded">Присоединиться</a></td>
+                                </tr>
+                                <tr>
+                                    <th scope="row">3</th>
+                                    <td>Дурак</td>
+                                    <td>User3</td>
+                                    <td>20</td>
+                                    <td>1/4</td>
+                                    <td><a href="#" class="btn btn-red px-3 rounded">Присоединиться</a></td>
+                                </tr>
+                                <tr>
+                                    <th scope="row">3</th>
+                                    <td>Дурак</td>
+                                    <td>User3</td>
+                                    <td>20</td>
+                                    <td>1/4</td>
+                                    <td><a href="#" class="btn btn-red px-3 rounded">Присоединиться</a></td>
+                                </tr>
+                                <tr>
+                                    <th scope="row">3</th>
+                                    <td>Дурак</td>
+                                    <td>User3</td>
+                                    <td>20</td>
+                                    <td>1/4</td>
+                                    <td><a href="#" class="btn btn-red px-3 rounded">Присоединиться</a></td>
+                                </tr>
+                                <tr>
+                                    <th scope="row">3</th>
+                                    <td>Дурак</td>
+                                    <td>User3</td>
+                                    <td>20</td>
+                                    <td>1/4</td>
+                                    <td><a href="#" class="btn btn-red px-3 rounded">Присоединиться</a></td>
+                                </tr>
+                                <tr>
+                                    <th scope="row">3</th>
+                                    <td>Дурак</td>
+                                    <td>User3</td>
+                                    <td>20</td>
+                                    <td>1/4</td>
+                                    <td><a href="#" class="btn btn-red px-3 rounded">Присоединиться</a></td>
+                                </tr>
+                                <tr>
+                                    <th scope="row">3</th>
+                                    <td>Дурак</td>
+                                    <td>User3</td>
+                                    <td>20</td>
+                                    <td>1/4</td>
+                                    <td><a href="#" class="btn btn-red px-3 rounded">Присоединиться</a></td>
+                                </tr>
+                                <tr>
+                                    <th scope="row">3</th>
+                                    <td>Дурак</td>
+                                    <td>User3</td>
+                                    <td>20</td>
+                                    <td>1/4</td>
+                                    <td><a href="#" class="btn btn-red px-3 rounded">Присоединиться</a></td>
+                                </tr>
+                                <tr>
+                                    <th scope="row">3</th>
+                                    <td>Дурак</td>
+                                    <td>User3</td>
+                                    <td>20</td>
+                                    <td>1/4</td>
+                                    <td><a href="#" class="btn btn-red px-3 rounded">Присоединиться</a></td>
+                                </tr>
+                            </tbody>
+                        </table>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </main>
+
+    <footer class="footer">
+        <div class="container-fluid bg-green-inv">
+            <div class="container">
+                <div class="row">
+                    <div class="col my-1 d-flex justify-content-between kassa-img">
+                        <div class="align-items-center d-flex">
+                            <a class="pr-2" href="http://www.free-kassa.ru">
+                                <img src="img/fk.png" class="img-fluid" alt="Responsive image"></a>
+                            <a class="pr-2" href="https://payeer.com/ru">
+                                <img src="img/payeer.png" class="img-fluid" alt="Responsive image"></a>
+                            <a class="pr-2" href="https://www.interkassa.com">
+                                <img src="img/ik.png" class="img-fluid" alt="Responsive image"></a>
+                            <h1><i class="icon-18plus text-white"></i></h1>
+                        </div>
+                        <div class="d-flex align-items-center justify-content-end hide-items">
+                            <ul class="navbar-nav social-icon d-flex d-inline-block">
+                                <li class="nav-item text-center top-social-icon">
+                                    <a class="nav-link bg-danger rounded base-icon" href="#">
+                                        <i class="icon-mail-1"></i></a>
+                                </li>
+                                <li class="nav-item text-center top-social-icon">
+                                    <a class="nav-link bg-vk rounded  base-icon" href="https://vk.com/public171133653">
+                                        <i class="icon-vkontakte"></i>
+                                    </a>
+                                </li>
+                                <li class="nav-item text-center top-social-icon">
+                                    <a class="nav-link bg-ok rounded base-icon"
+                                        href="https://ok.ru/group/55514326302733">
+                                        <i class="icon-odnoklassniki"></i>
+                                    </a>
+                                </li>
+                                <li class="nav-item text-center">
+                                    <a class="nav-link bg-f rounded base-icon"
+                                        href="https://www.facebook.com/groups/892129730993336/">
+                                        <i class="icon-facebook-1"></i>
                                     </a>
                                 </li>
                             </ul>
                         </div>
                     </div>
-                </form>
+                </div>
+            </div>
+        </div>
+        <div class="container-fluid bg-green-nav pt-2 ">
+            <div class="container">
+                <div class="row">
+                    <div class="col-lg-4 col-md-4 col-sm-12">
+                        <h5 class="text-white">
+                            <i class="icon-info ">Информация</i>
+                        </h5>
+                        <ul class="nav-menu navbar-nav item-list">
+                            <li><a class="nav-link" href="./news.html">Новости</a></li>
+                            <li><a class="nav-link" href="./rules.html">Правила клуба</a></li>
+                            <li><a class="nav-link" href="./rules-alex.html">Условия использования
+                                    сайтом</a></li>
+                            <li><a class="nav-link" href="./pr-policy.html">Политика
+                                    конфиденциальности</a></li>
+                            <li><a class="nav-link" href="./c-b-policy.html">Политика отмены и
+                                    возврата платежей</a></li>
+                        </ul><br>
+                        <p class="nav-menu"><a class="text-white item-list" href="./about.html"><span
+                                    class="font-weight-bold">Контактная
+                                    информация</span><br>
+                                Москва, Россия, 119019, ул. Волхонка, 18</a></p>
+                    </div>
+                    <div class="col-lg-4 col-md-4 col-sm-12 hide-items">
+                        <div class="col-auto">
+                            <h5 class="text-white">
+                                <i class="icon-coin">Игры на деньги</i>
+                            </h5>
+                        </div>
+                        <div class="col d-flex ">
+                            <div class="col-6 nav-menu p-0 ">
+                                <ul class="nav-link">
+                                    <li><a href="./durak.html">Дурак</a></li>
+                                    <li><a href="./chess.html">Шахматы</a></li>
+                                    <li><a href="./checkers.html">Шашки</a></li>
+                                    <li><a href="./bura.html">Бура</a></li>
+                                    <li><a href="./preference.html">Преферанс</a></li>
+                                    <li><a href="./deberc.html">Дебертс</a></li>
+                                    <li><a href="./tic-tac-toe.html">Крестики - нолики</a>
+                                    </li>
+                                    <li><a href="./seabattle.html">Морской бой</a></li>
+                                </ul>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="col-lg-4 col-md-4 col-sm-12 hide-items">
+                        <div class="col-auto">
+                            <h5 class="text-white">
+                                <i class="icon-free">Игры бесплатно</i>
+                            </h5>
+                        </div>
+                        <div class="col d-flex">
+                            <div class="col-6 nav-menu p-0 ">
+                                <ul class="nav-link">
+                                    <li><a href="./durak.html">Дурак</a></li>
+                                    <li><a href="./chess.html">Шахматы</a></li>
+                                    <li><a href="./checkers.html">Шашки</a></li>
+                                    <li><a href="./bura.html">Бура</a></li>
+                                    <li><a href="./preference.html">Преферанс</a></li>
+                                    <li><a href="./deberc.html">Дебертс</a></li>
+                                    <li><a href="./tic-tac-toe.html">Крестики - нолики</a>
+                                    </li>
+                                    <li><a href="./seabattle.html">Морской бой</a></li>
+                                </ul>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="col-12">
+                        <h6 class="text-center">Copyright <i class="icon-copyright"></i>2018 - 2019, Игровой Дом.
+                            Все права защищены.</p>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </footer>
+
+    <!-- Modal "Написать нам" -->
+    <div class="modal fade" id="mail" tabindex="-1" role="dialog" aria-labelledby="exampleModalCenterTitle"
+        aria-hidden="true">
+        <div class="modal-dialog modal-dialog-centered" role="document">
+            <div class="modal-content">
+                <div class="modal-header btn-green">
+                    <h5 class="modal-title" id="exampleModalCenterTitle">Написать нам</h5>
+                    <button type="button" class="close" data-dismiss="modal" aria-label="Close">
+                        <span aria-hidden="true">&times;</span>
+                    </button>
+                </div>
+                <div class="modal-body">
+                    <form>
+                        <div class="form-group">
+                            <input type="email" class="form-control" id="exampleInputEmail1"
+                                aria-describedby="emailHelp" placeholder="Ваш e-mail " required aria-required="true">
+                        </div>
+                        <div class="form-group">
+                            <input type="text" class="form-control mt-4" id="userlogin" aria-describedby="userlogin"
+                                placeholder="Тема сообщения" required aria-required="true">
+                        </div>
+                        <div class="form-group">
+                            <label for="exampleFormControlTextarea1">Ваше сообщение</label>
+                            <textarea class="form-control" id="exampleFormControlTextarea1" rows="3" required
+                                aria-required="true"></textarea>
+                        </div>
+                </div>
+                <div class="modal-footer">
+                    <button type="submit" class="btn btn-primary btn-green ">Отправить</button>
+                    <button type="button" class="btn btn-secondary btn-red" data-dismiss="modal">Закрыть</button>
+                </div>
             </div>
         </div>
     </div>
-</div>  
-    
-    
-    
-    
-        <script src="https://code.jquery.com/jquery-3.3.1.slim.min.js"
-            integrity="sha384-q8i/X+965DzO0rT7abK41JStQIAqVgRVzpbzo5smXKp4YfRvH+8abtTE1Pi6jizo" crossorigin="anonymous">
-        </script>
-        <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.14.7/umd/popper.min.js"
-            integrity="sha384-UO2eT0CpHqdSJQ6hJty5KVphtPhzWj9WO1clHTMGa3JDZwrnQq4sF86dIHNDz0W1" crossorigin="anonymous">
-        </script>
-        <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/js/bootstrap.min.js"
-            integrity="sha384-JjSmVgyd0p3pXB1rRibZUAYoIIy6OrQ6VrjIEaFf/nJGzIxFDsf4x0xIM+B07jRM" crossorigin="anonymous">
-        </script>
-    </body>
-    
-    </html>
+    <!-- Modal "Вход"-->
+    <div class="modal fade" id="SignIn" tabindex="-1" role="dialog" aria-labelledby="exampleModalCenterTitle"
+        aria-hidden="true">
+        <div class="modal-dialog modal-dialog-centered" role="document">
+            <div class="modal-content">
+                <div class="modal-header btn-green">
+                    <h5 class="modal-title font-weight-bold" id="exampleModalCenterTitle">
+                        Вход</h5>
+                    <button type="button" class="close" data-dismiss="modal" aria-label="Close">
+                        <span aria-hidden="true">&times;</span>
+                    </button>
+                </div>
+                <div class="col text-left">
+                    <form>
+                        <div class="form-group">
+                            <input type="text" class="form-control mt-4" id="userlogin" aria-describedby="userlogin"
+                                placeholder="Ваш логин" required="true">
+                        </div>
+                        <div class="form-group">
+                            <input type="password" class="form-control" id="exampleInputPassword1"
+                                placeholder="Ваш пароль" required="true">
+                        </div>
+                        <div class="form-check">
+                            <input type="checkbox" class="form-check-input" id="exampleCheck1">
+                            <label class="form-check-label" for="exampleCheck1">Запомнить
+                                меня</label>
+                        </div>
+                        <div class="my-3 log-line"> <button type="submit" class="btn btn-green ">Войти</button>
+                            <a class="text-dark mx-3 " href="https://alex-game.com/site/request-password-reset">
+                                Забыли пароль?
+                            </a>
+                            <div class="d-flex mt-4">
+                                <p>Войти через:</p>
+                                <ul class="navbar-nav social-icon px-5">
+                                    <li class="nav-item text-center top-social-icon">
+                                        <a class="nav-link bg-vk rounded  base-icon"
+                                            href="https://alex-game.com/site/auth?authclient=vk">
+                                            <i class="icon-vkontakte"></i>
+                                        </a>
+                                    </li>
+                                    <li class="nav-item text-center top-social-icon">
+                                        <a class="nav-link bg-ok rounded base-icon"
+                                            href="https://alex-game.com/site/auth?authclient=ok">
+                                            <i class="icon-odnoklassniki"></i>
+                                        </a>
+                                    </li>
+                                </ul>
+                            </div>
+                        </div>
+                    </form>
+                </div>
+            </div>
+        </div>
+    </div>
+    <!-- Modal "Регистрация"-->
+    <div class="modal fade" id="Signup" tabindex="-1" role="dialog" aria-labelledby="exampleModalCenterTitle"
+        aria-hidden="true">
+        <div class="modal-dialog modal-dialog-centered" role="document">
+            <div class="modal-content">
+                <div class="modal-header btn-green">
+                    <h5 class="modal-title font-weight-bold" id="exampleModalCenterTitle">
+                        Регистрация</h5>
+                    <button type="button" class="close" data-dismiss="modal" aria-label="Close">
+                        <span aria-hidden="true">&times;</span>
+                    </button>
+                </div>
+                <div class="col text-left">
+                    <form>
+                        <div class="form-group">
+                            <input type="text" class="form-control mt-4" id="userlogin" aria-describedby="userlogin"
+                                placeholder="Ваш ник" required="true">
+                        </div>
+                        <div class="form-group">
+                            <input type="email" class="form-control mt-4" id="userlogin" aria-describedby="userlogin"
+                                placeholder="Email" required="true">
+                        </div>
+                        <div class="form-group">
+                            <input type="password" class="form-control" id="exampleInputPassword1"
+                                placeholder="Ваш пароль" required="true">
+                        </div>
+                        <div class="form-group">
+                            <input type="text" class="form-control" id="exampleInputPassword1" placeholder="Реферал"
+                                required="true">
+                        </div>
+                        <div class="form-check">
+                            <input type="checkbox" class="form-check-input" id="exampleCheck1">
+                            <label class="form-check-label" for="exampleCheck1">Подтверждаю, что мне 18 лет</label>
+                        </div>
+                        <div class="my-3 log-line"> <button type="submit"
+                                class="btn btn-green ">Зарегистрироваться</button>
+
+                            <div class="d-flex mt-4">
+                                <p>Войти через:</p>
+                                <ul class="navbar-nav social-icon px-5">
+                                    <li class="nav-item text-center top-social-icon">
+                                        <a class="nav-link bg-vk rounded  base-icon"
+                                            href="https://alex-game.com/site/auth?authclient=vk">
+                                            <i class="icon-vkontakte"></i>
+                                        </a>
+                                    </li>
+                                    <li class="nav-item text-center top-social-icon">
+                                        <a class="nav-link bg-ok rounded base-icon"
+                                            href="https://alex-game.com/site/auth?authclient=ok">
+                                            <i class="icon-odnoklassniki"></i>
+                                        </a>
+                                    </li>
+                                </ul>
+                            </div>
+                        </div>
+                    </form>
+                </div>
+            </div>
+        </div>
+    </div>
+
+
+
+
+    <script src="https://code.jquery.com/jquery-3.3.1.slim.min.js"
+        integrity="sha384-q8i/X+965DzO0rT7abK41JStQIAqVgRVzpbzo5smXKp4YfRvH+8abtTE1Pi6jizo" crossorigin="anonymous">
+    </script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.14.7/umd/popper.min.js"
+        integrity="sha384-UO2eT0CpHqdSJQ6hJty5KVphtPhzWj9WO1clHTMGa3JDZwrnQq4sF86dIHNDz0W1" crossorigin="anonymous">
+    </script>
+    <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/js/bootstrap.min.js"
+        integrity="sha384-JjSmVgyd0p3pXB1rRibZUAYoIIy6OrQ6VrjIEaFf/nJGzIxFDsf4x0xIM+B07jRM" crossorigin="anonymous">
+    </script>
+</body>
+
+</html>

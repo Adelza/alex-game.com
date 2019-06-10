@@ -1,0 +1,47 @@
+
+    .table-scroll>tbody {
+   
+        overflow-y:auto;
+        width: 100%;
+        height:500px;}
+    
+        thead,tbody{
+            display:block;}
+            .table thead th{
+                border: none
+            }
+            tbody>tr{
+                display: flex;
+                justify-content: space-between;
+                align-items: center
+            }
+            thead>tr{
+                display: flex;
+                justify-content: space-between;
+               
+            }
+            .table th{
+                border: none
+            
+            }
+                
+            .table td{
+                border: none
+            }
+            tbody>tr{
+                border-bottom: 1px solid #dee2e6;
+            }
+            @media (min-width: 992px){
+               .container-fluid>.domino{
+                   height: 100vh !important;
+               }
+            }
+            @media (max-width: 768px) and (min-width:610px) {
+                .f-sm{
+font-size: 0.8em
+                }}
+
+               @media (max-width: 609px) {
+                .f-sm>thead{
+                    font-size: 0.65em
+                }
